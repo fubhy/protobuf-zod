@@ -1,0 +1,40 @@
+name: Changeset
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish packages
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.12.2
+
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          node-version: 18
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Create release pull request or publish
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset:version
+          publish: pnpm changeset:publish
+          commit: 'chore: publish packages'
+          title: 'chore: publish packages'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

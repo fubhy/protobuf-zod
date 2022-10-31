@@ -1,0 +1,28 @@
+# Ignore all dot files
+.*
+
+# Ignore changeset changelogs
+CHANGELOG.md
+
+# Ignore all dotfiles except the whitelisted ones
+!.changeset
+!.github
+!.gitignore
+!.eslintrc.yaml
+!.eslintignore
+!.prettierignore
+!.prettierrc
+!.vscode
+!.node-version
+!.npmrc
+
+# Ignore log output
+*.log
+
+# Ignore build output
+dist/
+build/
+coverage/
+
+# Ignore dependencies
+node_modules/

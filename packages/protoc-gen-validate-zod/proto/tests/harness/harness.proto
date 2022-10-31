@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_VERSION_SUFFIX
+package tests.harness;
+
+import "google/protobuf/any.proto";
+
+message TestCase {
+    string name = 1;
+    uint32 failures = 2;
+    google.protobuf.Any message = 3;
+}

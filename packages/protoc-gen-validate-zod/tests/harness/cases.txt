@@ -1,0 +1,1028 @@
+{"name":"float - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatNone","val":-1.23456}}
+{"name":"float - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatConst","val":1.23}}
+{"name":"float - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatConst","val":4.56}}
+{"name":"float - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatIn","val":7.89}}
+{"name":"float - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatIn","val":10.11}}
+{"name":"float - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatNotIn","val":1}}
+{"name":"float - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatNotIn"}}
+{"name":"float - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLT","val":-1}}
+{"name":"float - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLT"}}
+{"name":"float - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLT","val":1}}
+{"name":"float - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLTE","val":63}}
+{"name":"float - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLTE","val":64}}
+{"name":"float - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatLTE","val":65}}
+{"name":"float - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGT","val":17}}
+{"name":"float - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGT","val":16}}
+{"name":"float - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGT","val":15}}
+{"name":"float - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTE","val":9}}
+{"name":"float - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTE","val":8}}
+{"name":"float - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTE","val":7}}
+{"name":"float - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTLT","val":5}}
+{"name":"float - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTLT","val":11}}
+{"name":"float - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTLT","val":-1}}
+{"name":"float - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTLT","val":10}}
+{"name":"float - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTLT"}}
+{"name":"float - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExLTGT","val":11}}
+{"name":"float - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExLTGT","val":-1}}
+{"name":"float - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExLTGT","val":5}}
+{"name":"float - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExLTGT","val":10}}
+{"name":"float - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExLTGT"}}
+{"name":"float - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTELTE","val":200}}
+{"name":"float - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTELTE","val":256}}
+{"name":"float - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTELTE","val":128}}
+{"name":"float - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTELTE","val":300}}
+{"name":"float - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatGTELTE","val":100}}
+{"name":"float - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExGTELTE","val":300}}
+{"name":"float - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExGTELTE","val":100}}
+{"name":"float - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExGTELTE","val":256}}
+{"name":"float - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExGTELTE","val":128}}
+{"name":"float - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.FloatExGTELTE","val":200}}
+{"name":"float - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.FloatIgnore"}}
+{"name":"double - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleNone","val":-1.23456}}
+{"name":"double - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleConst","val":1.23}}
+{"name":"double - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleConst","val":4.56}}
+{"name":"double - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleIn","val":7.89}}
+{"name":"double - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleIn","val":10.11}}
+{"name":"double - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleNotIn","val":1}}
+{"name":"double - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleNotIn"}}
+{"name":"double - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLT","val":-1}}
+{"name":"double - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLT"}}
+{"name":"double - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLT","val":1}}
+{"name":"double - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLTE","val":63}}
+{"name":"double - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLTE","val":64}}
+{"name":"double - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleLTE","val":65}}
+{"name":"double - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGT","val":17}}
+{"name":"double - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGT","val":16}}
+{"name":"double - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGT","val":15}}
+{"name":"double - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTE","val":9}}
+{"name":"double - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTE","val":8}}
+{"name":"double - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTE","val":7}}
+{"name":"double - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTLT","val":5}}
+{"name":"double - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTLT","val":11}}
+{"name":"double - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTLT","val":-1}}
+{"name":"double - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTLT","val":10}}
+{"name":"double - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTLT"}}
+{"name":"double - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExLTGT","val":11}}
+{"name":"double - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExLTGT","val":-1}}
+{"name":"double - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExLTGT","val":5}}
+{"name":"double - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExLTGT","val":10}}
+{"name":"double - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExLTGT"}}
+{"name":"double - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTELTE","val":200}}
+{"name":"double - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTELTE","val":256}}
+{"name":"double - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTELTE","val":128}}
+{"name":"double - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTELTE","val":300}}
+{"name":"double - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleGTELTE","val":100}}
+{"name":"double - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExGTELTE","val":300}}
+{"name":"double - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExGTELTE","val":100}}
+{"name":"double - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExGTELTE","val":256}}
+{"name":"double - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExGTELTE","val":128}}
+{"name":"double - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleExGTELTE","val":200}}
+{"name":"double - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DoubleIgnore"}}
+{"name":"int32 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32None","val":123}}
+{"name":"int32 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32Const","val":1}}
+{"name":"int32 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32Const","val":2}}
+{"name":"int32 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32In","val":3}}
+{"name":"int32 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32In","val":5}}
+{"name":"int32 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32NotIn","val":1}}
+{"name":"int32 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32NotIn"}}
+{"name":"int32 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LT","val":-1}}
+{"name":"int32 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LT"}}
+{"name":"int32 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LT","val":1}}
+{"name":"int32 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LTE","val":63}}
+{"name":"int32 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LTE","val":64}}
+{"name":"int32 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32LTE","val":65}}
+{"name":"int32 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GT","val":17}}
+{"name":"int32 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GT","val":16}}
+{"name":"int32 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GT","val":15}}
+{"name":"int32 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTE","val":9}}
+{"name":"int32 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTE","val":8}}
+{"name":"int32 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTE","val":7}}
+{"name":"int32 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTLT","val":5}}
+{"name":"int32 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTLT","val":11}}
+{"name":"int32 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTLT","val":-1}}
+{"name":"int32 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTLT","val":10}}
+{"name":"int32 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTLT"}}
+{"name":"int32 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExLTGT","val":11}}
+{"name":"int32 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExLTGT","val":-1}}
+{"name":"int32 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExLTGT","val":5}}
+{"name":"int32 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExLTGT","val":10}}
+{"name":"int32 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExLTGT"}}
+{"name":"int32 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTELTE","val":200}}
+{"name":"int32 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTELTE","val":256}}
+{"name":"int32 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTELTE","val":128}}
+{"name":"int32 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTELTE","val":300}}
+{"name":"int32 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32GTELTE","val":100}}
+{"name":"int32 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExGTELTE","val":300}}
+{"name":"int32 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExGTELTE","val":100}}
+{"name":"int32 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExGTELTE","val":256}}
+{"name":"int32 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExGTELTE","val":128}}
+{"name":"int32 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int32ExGTELTE","val":200}}
+{"name":"int32 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int32Ignore"}}
+{"name":"int64 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64None","val":"123"}}
+{"name":"int64 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64Const","val":"1"}}
+{"name":"int64 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64Const","val":"2"}}
+{"name":"int64 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64In","val":"3"}}
+{"name":"int64 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64In","val":"5"}}
+{"name":"int64 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64NotIn","val":"1"}}
+{"name":"int64 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64NotIn"}}
+{"name":"int64 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LT","val":"-1"}}
+{"name":"int64 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LT"}}
+{"name":"int64 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LT","val":"1"}}
+{"name":"int64 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTE","val":"63"}}
+{"name":"int64 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTE","val":"64"}}
+{"name":"int64 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTE","val":"65"}}
+{"name":"int64 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GT","val":"17"}}
+{"name":"int64 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GT","val":"16"}}
+{"name":"int64 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GT","val":"15"}}
+{"name":"int64 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTE","val":"9"}}
+{"name":"int64 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTE","val":"8"}}
+{"name":"int64 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTE","val":"7"}}
+{"name":"int64 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTLT","val":"5"}}
+{"name":"int64 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTLT","val":"11"}}
+{"name":"int64 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTLT","val":"-1"}}
+{"name":"int64 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTLT","val":"10"}}
+{"name":"int64 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTLT"}}
+{"name":"int64 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExLTGT","val":"11"}}
+{"name":"int64 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExLTGT","val":"-1"}}
+{"name":"int64 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExLTGT","val":"5"}}
+{"name":"int64 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExLTGT","val":"10"}}
+{"name":"int64 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExLTGT"}}
+{"name":"int64 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTELTE","val":"200"}}
+{"name":"int64 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTELTE","val":"256"}}
+{"name":"int64 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTELTE","val":"128"}}
+{"name":"int64 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTELTE","val":"300"}}
+{"name":"int64 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64GTELTE","val":"100"}}
+{"name":"int64 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExGTELTE","val":"300"}}
+{"name":"int64 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExGTELTE","val":"100"}}
+{"name":"int64 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExGTELTE","val":"256"}}
+{"name":"int64 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExGTELTE","val":"128"}}
+{"name":"int64 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Int64ExGTELTE","val":"200"}}
+{"name":"int64 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64Ignore"}}
+{"name":"int64 optional - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTEOptional","val":"63"}}
+{"name":"int64 optional - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTEOptional","val":"64"}}
+{"name":"int64 optional - lte - valid (unset)","message":{"@type":"type.googleapis.com/tests.harness.cases.Int64LTEOptional"}}
+{"name":"uint32 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32None","val":123}}
+{"name":"uint32 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32Const","val":1}}
+{"name":"uint32 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32Const","val":2}}
+{"name":"uint32 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32In","val":3}}
+{"name":"uint32 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32In","val":5}}
+{"name":"uint32 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32NotIn","val":1}}
+{"name":"uint32 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32NotIn"}}
+{"name":"uint32 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LT","val":4}}
+{"name":"uint32 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LT","val":5}}
+{"name":"uint32 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LT","val":6}}
+{"name":"uint32 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LTE","val":63}}
+{"name":"uint32 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LTE","val":64}}
+{"name":"uint32 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32LTE","val":65}}
+{"name":"uint32 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GT","val":17}}
+{"name":"uint32 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GT","val":16}}
+{"name":"uint32 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GT","val":15}}
+{"name":"uint32 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTE","val":9}}
+{"name":"uint32 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTE","val":8}}
+{"name":"uint32 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTE","val":7}}
+{"name":"uint32 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTLT","val":7}}
+{"name":"uint32 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTLT","val":11}}
+{"name":"uint32 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTLT","val":1}}
+{"name":"uint32 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTLT","val":10}}
+{"name":"uint32 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTLT","val":5}}
+{"name":"uint32 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExLTGT","val":11}}
+{"name":"uint32 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExLTGT","val":4}}
+{"name":"uint32 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExLTGT","val":7}}
+{"name":"uint32 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExLTGT","val":10}}
+{"name":"uint32 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExLTGT","val":5}}
+{"name":"uint32 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTELTE","val":200}}
+{"name":"uint32 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTELTE","val":256}}
+{"name":"uint32 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTELTE","val":128}}
+{"name":"uint32 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTELTE","val":300}}
+{"name":"uint32 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32GTELTE","val":100}}
+{"name":"uint32 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExGTELTE","val":300}}
+{"name":"uint32 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExGTELTE","val":100}}
+{"name":"uint32 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExGTELTE","val":256}}
+{"name":"uint32 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExGTELTE","val":128}}
+{"name":"uint32 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32ExGTELTE","val":200}}
+{"name":"uint32 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt32Ignore"}}
+{"name":"uint64 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64None","val":"123"}}
+{"name":"uint64 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64Const","val":"1"}}
+{"name":"uint64 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64Const","val":"2"}}
+{"name":"uint64 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64In","val":"3"}}
+{"name":"uint64 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64In","val":"5"}}
+{"name":"uint64 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64NotIn","val":"1"}}
+{"name":"uint64 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64NotIn"}}
+{"name":"uint64 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LT","val":"4"}}
+{"name":"uint64 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LT","val":"5"}}
+{"name":"uint64 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LT","val":"6"}}
+{"name":"uint64 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LTE","val":"63"}}
+{"name":"uint64 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LTE","val":"64"}}
+{"name":"uint64 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64LTE","val":"65"}}
+{"name":"uint64 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GT","val":"17"}}
+{"name":"uint64 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GT","val":"16"}}
+{"name":"uint64 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GT","val":"15"}}
+{"name":"uint64 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTE","val":"9"}}
+{"name":"uint64 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTE","val":"8"}}
+{"name":"uint64 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTE","val":"7"}}
+{"name":"uint64 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTLT","val":"7"}}
+{"name":"uint64 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTLT","val":"11"}}
+{"name":"uint64 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTLT","val":"1"}}
+{"name":"uint64 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTLT","val":"10"}}
+{"name":"uint64 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTLT","val":"5"}}
+{"name":"uint64 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExLTGT","val":"11"}}
+{"name":"uint64 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExLTGT","val":"4"}}
+{"name":"uint64 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExLTGT","val":"7"}}
+{"name":"uint64 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExLTGT","val":"10"}}
+{"name":"uint64 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExLTGT","val":"5"}}
+{"name":"uint64 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTELTE","val":"200"}}
+{"name":"uint64 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTELTE","val":"256"}}
+{"name":"uint64 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTELTE","val":"128"}}
+{"name":"uint64 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTELTE","val":"300"}}
+{"name":"uint64 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64GTELTE","val":"100"}}
+{"name":"uint64 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExGTELTE","val":"300"}}
+{"name":"uint64 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExGTELTE","val":"100"}}
+{"name":"uint64 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExGTELTE","val":"256"}}
+{"name":"uint64 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExGTELTE","val":"128"}}
+{"name":"uint64 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64ExGTELTE","val":"200"}}
+{"name":"uint64 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.UInt64Ignore"}}
+{"name":"sint32 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32None","val":123}}
+{"name":"sint32 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32Const","val":1}}
+{"name":"sint32 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32Const","val":2}}
+{"name":"sint32 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32In","val":3}}
+{"name":"sint32 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32In","val":5}}
+{"name":"sint32 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32NotIn","val":1}}
+{"name":"sint32 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32NotIn"}}
+{"name":"sint32 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LT","val":-1}}
+{"name":"sint32 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LT"}}
+{"name":"sint32 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LT","val":1}}
+{"name":"sint32 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LTE","val":63}}
+{"name":"sint32 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LTE","val":64}}
+{"name":"sint32 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32LTE","val":65}}
+{"name":"sint32 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GT","val":17}}
+{"name":"sint32 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GT","val":16}}
+{"name":"sint32 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GT","val":15}}
+{"name":"sint32 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTE","val":9}}
+{"name":"sint32 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTE","val":8}}
+{"name":"sint32 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTE","val":7}}
+{"name":"sint32 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTLT","val":5}}
+{"name":"sint32 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTLT","val":11}}
+{"name":"sint32 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTLT","val":-1}}
+{"name":"sint32 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTLT","val":10}}
+{"name":"sint32 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTLT"}}
+{"name":"sint32 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExLTGT","val":11}}
+{"name":"sint32 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExLTGT","val":-1}}
+{"name":"sint32 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExLTGT","val":5}}
+{"name":"sint32 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExLTGT","val":10}}
+{"name":"sint32 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExLTGT"}}
+{"name":"sint32 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTELTE","val":200}}
+{"name":"sint32 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTELTE","val":256}}
+{"name":"sint32 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTELTE","val":128}}
+{"name":"sint32 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTELTE","val":300}}
+{"name":"sint32 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32GTELTE","val":100}}
+{"name":"sint32 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExGTELTE","val":300}}
+{"name":"sint32 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExGTELTE","val":100}}
+{"name":"sint32 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExGTELTE","val":256}}
+{"name":"sint32 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExGTELTE","val":128}}
+{"name":"sint32 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32ExGTELTE","val":200}}
+{"name":"sint32 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt32Ignore"}}
+{"name":"sint64 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64None","val":"123"}}
+{"name":"sint64 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64Const","val":"1"}}
+{"name":"sint64 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64Const","val":"2"}}
+{"name":"sint64 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64In","val":"3"}}
+{"name":"sint64 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64In","val":"5"}}
+{"name":"sint64 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64NotIn","val":"1"}}
+{"name":"sint64 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64NotIn"}}
+{"name":"sint64 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LT","val":"-1"}}
+{"name":"sint64 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LT"}}
+{"name":"sint64 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LT","val":"1"}}
+{"name":"sint64 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LTE","val":"63"}}
+{"name":"sint64 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LTE","val":"64"}}
+{"name":"sint64 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64LTE","val":"65"}}
+{"name":"sint64 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GT","val":"17"}}
+{"name":"sint64 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GT","val":"16"}}
+{"name":"sint64 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GT","val":"15"}}
+{"name":"sint64 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTE","val":"9"}}
+{"name":"sint64 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTE","val":"8"}}
+{"name":"sint64 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTE","val":"7"}}
+{"name":"sint64 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTLT","val":"5"}}
+{"name":"sint64 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTLT","val":"11"}}
+{"name":"sint64 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTLT","val":"-1"}}
+{"name":"sint64 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTLT","val":"10"}}
+{"name":"sint64 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTLT"}}
+{"name":"sint64 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExLTGT","val":"11"}}
+{"name":"sint64 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExLTGT","val":"-1"}}
+{"name":"sint64 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExLTGT","val":"5"}}
+{"name":"sint64 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExLTGT","val":"10"}}
+{"name":"sint64 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExLTGT"}}
+{"name":"sint64 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTELTE","val":"200"}}
+{"name":"sint64 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTELTE","val":"256"}}
+{"name":"sint64 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTELTE","val":"128"}}
+{"name":"sint64 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTELTE","val":"300"}}
+{"name":"sint64 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64GTELTE","val":"100"}}
+{"name":"sint64 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExGTELTE","val":"300"}}
+{"name":"sint64 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExGTELTE","val":"100"}}
+{"name":"sint64 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExGTELTE","val":"256"}}
+{"name":"sint64 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExGTELTE","val":"128"}}
+{"name":"sint64 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64ExGTELTE","val":"200"}}
+{"name":"sint64 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SInt64Ignore"}}
+{"name":"fixed32 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32None","val":123}}
+{"name":"fixed32 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32Const","val":1}}
+{"name":"fixed32 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32Const","val":2}}
+{"name":"fixed32 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32In","val":3}}
+{"name":"fixed32 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32In","val":5}}
+{"name":"fixed32 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32NotIn","val":1}}
+{"name":"fixed32 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32NotIn"}}
+{"name":"fixed32 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LT","val":4}}
+{"name":"fixed32 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LT","val":5}}
+{"name":"fixed32 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LT","val":6}}
+{"name":"fixed32 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LTE","val":63}}
+{"name":"fixed32 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LTE","val":64}}
+{"name":"fixed32 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32LTE","val":65}}
+{"name":"fixed32 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GT","val":17}}
+{"name":"fixed32 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GT","val":16}}
+{"name":"fixed32 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GT","val":15}}
+{"name":"fixed32 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTE","val":9}}
+{"name":"fixed32 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTE","val":8}}
+{"name":"fixed32 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTE","val":7}}
+{"name":"fixed32 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTLT","val":7}}
+{"name":"fixed32 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTLT","val":11}}
+{"name":"fixed32 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTLT","val":1}}
+{"name":"fixed32 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTLT","val":10}}
+{"name":"fixed32 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTLT","val":5}}
+{"name":"fixed32 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExLTGT","val":11}}
+{"name":"fixed32 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExLTGT","val":4}}
+{"name":"fixed32 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExLTGT","val":7}}
+{"name":"fixed32 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExLTGT","val":10}}
+{"name":"fixed32 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExLTGT","val":5}}
+{"name":"fixed32 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTELTE","val":200}}
+{"name":"fixed32 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTELTE","val":256}}
+{"name":"fixed32 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTELTE","val":128}}
+{"name":"fixed32 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTELTE","val":300}}
+{"name":"fixed32 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32GTELTE","val":100}}
+{"name":"fixed32 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExGTELTE","val":300}}
+{"name":"fixed32 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExGTELTE","val":100}}
+{"name":"fixed32 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExGTELTE","val":256}}
+{"name":"fixed32 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExGTELTE","val":128}}
+{"name":"fixed32 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32ExGTELTE","val":200}}
+{"name":"fixed32 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed32Ignore"}}
+{"name":"fixed64 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64None","val":"123"}}
+{"name":"fixed64 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64Const","val":"1"}}
+{"name":"fixed64 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64Const","val":"2"}}
+{"name":"fixed64 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64In","val":"3"}}
+{"name":"fixed64 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64In","val":"5"}}
+{"name":"fixed64 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64NotIn","val":"1"}}
+{"name":"fixed64 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64NotIn"}}
+{"name":"fixed64 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LT","val":"4"}}
+{"name":"fixed64 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LT","val":"5"}}
+{"name":"fixed64 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LT","val":"6"}}
+{"name":"fixed64 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LTE","val":"63"}}
+{"name":"fixed64 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LTE","val":"64"}}
+{"name":"fixed64 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64LTE","val":"65"}}
+{"name":"fixed64 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GT","val":"17"}}
+{"name":"fixed64 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GT","val":"16"}}
+{"name":"fixed64 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GT","val":"15"}}
+{"name":"fixed64 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTE","val":"9"}}
+{"name":"fixed64 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTE","val":"8"}}
+{"name":"fixed64 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTE","val":"7"}}
+{"name":"fixed64 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTLT","val":"7"}}
+{"name":"fixed64 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTLT","val":"11"}}
+{"name":"fixed64 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTLT","val":"1"}}
+{"name":"fixed64 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTLT","val":"10"}}
+{"name":"fixed64 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTLT","val":"5"}}
+{"name":"fixed64 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExLTGT","val":"11"}}
+{"name":"fixed64 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExLTGT","val":"4"}}
+{"name":"fixed64 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExLTGT","val":"7"}}
+{"name":"fixed64 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExLTGT","val":"10"}}
+{"name":"fixed64 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExLTGT","val":"5"}}
+{"name":"fixed64 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTELTE","val":"200"}}
+{"name":"fixed64 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTELTE","val":"256"}}
+{"name":"fixed64 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTELTE","val":"128"}}
+{"name":"fixed64 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTELTE","val":"300"}}
+{"name":"fixed64 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64GTELTE","val":"100"}}
+{"name":"fixed64 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExGTELTE","val":"300"}}
+{"name":"fixed64 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExGTELTE","val":"100"}}
+{"name":"fixed64 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExGTELTE","val":"256"}}
+{"name":"fixed64 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExGTELTE","val":"128"}}
+{"name":"fixed64 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64ExGTELTE","val":"200"}}
+{"name":"fixed64 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Fixed64Ignore"}}
+{"name":"sfixed32 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32None","val":123}}
+{"name":"sfixed32 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32Const","val":1}}
+{"name":"sfixed32 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32Const","val":2}}
+{"name":"sfixed32 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32In","val":3}}
+{"name":"sfixed32 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32In","val":5}}
+{"name":"sfixed32 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32NotIn","val":1}}
+{"name":"sfixed32 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32NotIn"}}
+{"name":"sfixed32 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LT","val":-1}}
+{"name":"sfixed32 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LT"}}
+{"name":"sfixed32 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LT","val":1}}
+{"name":"sfixed32 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LTE","val":63}}
+{"name":"sfixed32 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LTE","val":64}}
+{"name":"sfixed32 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32LTE","val":65}}
+{"name":"sfixed32 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GT","val":17}}
+{"name":"sfixed32 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GT","val":16}}
+{"name":"sfixed32 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GT","val":15}}
+{"name":"sfixed32 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTE","val":9}}
+{"name":"sfixed32 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTE","val":8}}
+{"name":"sfixed32 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTE","val":7}}
+{"name":"sfixed32 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTLT","val":5}}
+{"name":"sfixed32 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTLT","val":11}}
+{"name":"sfixed32 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTLT","val":-1}}
+{"name":"sfixed32 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTLT","val":10}}
+{"name":"sfixed32 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTLT"}}
+{"name":"sfixed32 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExLTGT","val":11}}
+{"name":"sfixed32 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExLTGT","val":-1}}
+{"name":"sfixed32 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExLTGT","val":5}}
+{"name":"sfixed32 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExLTGT","val":10}}
+{"name":"sfixed32 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExLTGT"}}
+{"name":"sfixed32 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTELTE","val":200}}
+{"name":"sfixed32 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTELTE","val":256}}
+{"name":"sfixed32 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTELTE","val":128}}
+{"name":"sfixed32 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTELTE","val":300}}
+{"name":"sfixed32 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32GTELTE","val":100}}
+{"name":"sfixed32 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExGTELTE","val":300}}
+{"name":"sfixed32 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExGTELTE","val":100}}
+{"name":"sfixed32 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExGTELTE","val":256}}
+{"name":"sfixed32 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExGTELTE","val":128}}
+{"name":"sfixed32 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32ExGTELTE","val":200}}
+{"name":"sfixed32 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed32Ignore"}}
+{"name":"sfixed64 - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64None","val":"123"}}
+{"name":"sfixed64 - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64Const","val":"1"}}
+{"name":"sfixed64 - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64Const","val":"2"}}
+{"name":"sfixed64 - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64In","val":"3"}}
+{"name":"sfixed64 - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64In","val":"5"}}
+{"name":"sfixed64 - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64NotIn","val":"1"}}
+{"name":"sfixed64 - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64NotIn"}}
+{"name":"sfixed64 - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LT","val":"-1"}}
+{"name":"sfixed64 - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LT"}}
+{"name":"sfixed64 - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LT","val":"1"}}
+{"name":"sfixed64 - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LTE","val":"63"}}
+{"name":"sfixed64 - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LTE","val":"64"}}
+{"name":"sfixed64 - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64LTE","val":"65"}}
+{"name":"sfixed64 - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GT","val":"17"}}
+{"name":"sfixed64 - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GT","val":"16"}}
+{"name":"sfixed64 - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GT","val":"15"}}
+{"name":"sfixed64 - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTE","val":"9"}}
+{"name":"sfixed64 - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTE","val":"8"}}
+{"name":"sfixed64 - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTE","val":"7"}}
+{"name":"sfixed64 - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTLT","val":"5"}}
+{"name":"sfixed64 - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTLT","val":"11"}}
+{"name":"sfixed64 - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTLT","val":"-1"}}
+{"name":"sfixed64 - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTLT","val":"10"}}
+{"name":"sfixed64 - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTLT"}}
+{"name":"sfixed64 - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExLTGT","val":"11"}}
+{"name":"sfixed64 - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExLTGT","val":"-1"}}
+{"name":"sfixed64 - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExLTGT","val":"5"}}
+{"name":"sfixed64 - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExLTGT","val":"10"}}
+{"name":"sfixed64 - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExLTGT"}}
+{"name":"sfixed64 - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTELTE","val":"200"}}
+{"name":"sfixed64 - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTELTE","val":"256"}}
+{"name":"sfixed64 - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTELTE","val":"128"}}
+{"name":"sfixed64 - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTELTE","val":"300"}}
+{"name":"sfixed64 - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64GTELTE","val":"100"}}
+{"name":"sfixed64 - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExGTELTE","val":"300"}}
+{"name":"sfixed64 - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExGTELTE","val":"100"}}
+{"name":"sfixed64 - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExGTELTE","val":"256"}}
+{"name":"sfixed64 - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExGTELTE","val":"128"}}
+{"name":"sfixed64 - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64ExGTELTE","val":"200"}}
+{"name":"sfixed64 - ignore_empty gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.SFixed64Ignore"}}
+{"name":"bool - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BoolNone","val":true}}
+{"name":"bool - const (true) - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BoolConstTrue","val":true}}
+{"name":"bool - const (true) - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BoolConstTrue"}}
+{"name":"bool - const (false) - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BoolConstFalse"}}
+{"name":"bool - const (false) - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BoolConstFalse","val":true}}
+{"name":"string - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringNone","val":"quux"}}
+{"name":"string - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringConst","val":"foo"}}
+{"name":"string - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringConst","val":"bar"}}
+{"name":"string - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIn","val":"bar"}}
+{"name":"string - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIn","val":"quux"}}
+{"name":"string - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotIn","val":"quux"}}
+{"name":"string - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotIn","val":"fizz"}}
+{"name":"string - len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringLen","val":"baz"}}
+{"name":"string - len - valid (multibyte)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringLen","val":"你好吖"}}
+{"name":"string - len - invalid (lt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLen","val":"go"}}
+{"name":"string - len - invalid (gt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLen","val":"fizz"}}
+{"name":"string - len - invalid (multibyte)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLen","val":"你好"}}
+{"name":"string - min len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinLen","val":"protoc"}}
+{"name":"string - min len - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinLen","val":"baz"}}
+{"name":"string - min len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinLen","val":"go"}}
+{"name":"string - min len - invalid (multibyte)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinLen","val":"你好"}}
+{"name":"string - max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxLen","val":"foo"}}
+{"name":"string - max len - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxLen","val":"proto"}}
+{"name":"string - max len - valid (multibyte)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxLen","val":"你好你好"}}
+{"name":"string - max len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxLen","val":"1234567890"}}
+{"name":"string - min/max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"quux"}}
+{"name":"string - min/max len - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"foo"}}
+{"name":"string - min/max len - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"proto"}}
+{"name":"string - min/max len - valid (multibyte)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"你好你好"}}
+{"name":"string - min/max len - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"go"}}
+{"name":"string - min/max len - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxLen","val":"validate"}}
+{"name":"string - equal min/max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringEqualMinMaxLen","val":"proto"}}
+{"name":"string - equal min/max len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEqualMinMaxLen","val":"validate"}}
+{"name":"string - len bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringLenBytes","val":"pace"}}
+{"name":"string - len bytes - invalid (lt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLenBytes","val":"val"}}
+{"name":"string - len bytes - invalid (gt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLenBytes","val":"world"}}
+{"name":"string - len bytes - invalid (multibyte)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringLenBytes","val":"世界和平"}}
+{"name":"string - min bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinBytes","val":"proto"}}
+{"name":"string - min bytes - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinBytes","val":"quux"}}
+{"name":"string - min bytes - valid (multibyte)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinBytes","val":"你好"}}
+{"name":"string - min bytes - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinBytes"}}
+{"name":"string - max bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxBytes","val":"foo"}}
+{"name":"string - max bytes - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxBytes","val":"12345678"}}
+{"name":"string - max bytes - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxBytes","val":"123456789"}}
+{"name":"string - max bytes - invalid (multibyte)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMaxBytes","val":"你好你好你好"}}
+{"name":"string - min/max bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"protoc"}}
+{"name":"string - min/max bytes - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"quux"}}
+{"name":"string - min/max bytes - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"fizzbuzz"}}
+{"name":"string - min/max bytes - valid (multibyte)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"你好"}}
+{"name":"string - min/max bytes - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"foo"}}
+{"name":"string - min/max bytes - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringMinMaxBytes","val":"你好你好你"}}
+{"name":"string - equal min/max bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringEqualMinMaxBytes","val":"protoc"}}
+{"name":"string - equal min/max bytes - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEqualMinMaxBytes","val":"foo"}}
+{"name":"string - pattern - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringPattern","val":"Foo123"}}
+{"name":"string - pattern - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPattern","val":"!@#$%^&*()"}}
+{"name":"string - pattern - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPattern"}}
+{"name":"string - pattern - invalid (null)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPattern","val":"a\u0000"}}
+{"name":"string - pattern (escapes) - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringPatternEscapes","val":"* \\ x"}}
+{"name":"string - pattern (escapes) - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPatternEscapes","val":"invalid"}}
+{"name":"string - pattern (escapes) - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPatternEscapes"}}
+{"name":"string - prefix - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringPrefix","val":"foobar"}}
+{"name":"string - prefix - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringPrefix","val":"foo"}}
+{"name":"string - prefix - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPrefix","val":"bar"}}
+{"name":"string - prefix - invalid (case-sensitive)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringPrefix","val":"Foobar"}}
+{"name":"string - contains - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringContains","val":"candy bars"}}
+{"name":"string - contains - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringContains","val":"bar"}}
+{"name":"string - contains - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringContains","val":"candy bazs"}}
+{"name":"string - contains - invalid (case-sensitive)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringContains","val":"Candy Bars"}}
+{"name":"string - not contains - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotContains","val":"candy bazs"}}
+{"name":"string - not contains - valid (case-sensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotContains","val":"Candy Bars"}}
+{"name":"string - not contains - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotContains","val":"candy bars"}}
+{"name":"string - not contains - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringNotContains","val":"bar"}}
+{"name":"string - suffix - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringSuffix","val":"foobaz"}}
+{"name":"string - suffix - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringSuffix","val":"baz"}}
+{"name":"string - suffix - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringSuffix","val":"foobar"}}
+{"name":"string - suffix - invalid (case-sensitive)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringSuffix","val":"FooBaz"}}
+{"name":"string - email - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"foo@bar.com"}}
+{"name":"string - email - valid (name)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"John Smith <foo@bar.com>"}}
+{"name":"string - email - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"foobar"}}
+{"name":"string - email - invalid (local segment too long)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"x0123456789012345678901234567890123456789012345678901234567890123456789@example.com"}}
+{"name":"string - email - invalid (hostname too long)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"foo@x0123456789012345678901234567890123456789012345678901234567890123456789.com"}}
+{"name":"string - email - invalid (bad hostname)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail","val":"foo@-bar.com"}}
+{"name":"string - email - empty","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringEmail"}}
+{"name":"string - address - valid hostname","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"example.com"}}
+{"name":"string - address - valid hostname (uppercase)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"ASD.example.com"}}
+{"name":"string - address - valid hostname (hyphens)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"foo-bar.com"}}
+{"name":"string - address - valid hostname (trailing dot)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"example.com."}}
+{"name":"string - address - invalid hostname","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"!@#$%^&"}}
+{"name":"string - address - invalid hostname (underscore)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"foo_bar.com"}}
+{"name":"string - address - invalid hostname (too long)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"x0123456789012345678901234567890123456789012345678901234567890123456789.com"}}
+{"name":"string - address - invalid hostname (trailing hyphens)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"foo-bar-.com"}}
+{"name":"string - address - invalid hostname (leading hyphens)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"foo-bar.-com"}}
+{"name":"string - address - invalid hostname (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"asd..asd.com"}}
+{"name":"string - address - invalid hostname (IDNs)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"你好.com"}}
+{"name":"string - address - valid ip (v4)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"192.168.0.1"}}
+{"name":"string - address - valid ip (v6)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"3e::99"}}
+{"name":"string - address - invalid ip","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringAddress","val":"ff::fff::0b"}}
+{"name":"string - hostname - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"example.com"}}
+{"name":"string - hostname - valid (uppercase)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"ASD.example.com"}}
+{"name":"string - hostname - valid (hyphens)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"foo-bar.com"}}
+{"name":"string - hostname - valid (trailing dot)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"example.com."}}
+{"name":"string - hostname - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"!@#$%^&"}}
+{"name":"string - hostname - invalid (underscore)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"foo_bar.com"}}
+{"name":"string - hostname - invalid (too long)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"x0123456789012345678901234567890123456789012345678901234567890123456789.com"}}
+{"name":"string - hostname - invalid (trailing hyphens)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"foo-bar-.com"}}
+{"name":"string - hostname - invalid (leading hyphens)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"foo-bar.-com"}}
+{"name":"string - hostname - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"asd..asd.com"}}
+{"name":"string - hostname - invalid (IDNs)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHostname","val":"你好.com"}}
+{"name":"string - IP - valid (v4)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIP","val":"192.168.0.1"}}
+{"name":"string - IP - valid (v6)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIP","val":"3e::99"}}
+{"name":"string - IP - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIP","val":"foobar"}}
+{"name":"string - IPv4 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv4","val":"192.168.0.1"}}
+{"name":"string - IPv4 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv4","val":"foobar"}}
+{"name":"string - IPv4 - invalid (erroneous)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv4","val":"256.0.0.0"}}
+{"name":"string - IPv4 - invalid (v6)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv4","val":"3e::99"}}
+{"name":"string - IPv6 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv6","val":"2001:0db8:85a3:0000:0000:8a2e:0370:7334"}}
+{"name":"string - IPv6 - valid (collapsed)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv6","val":"2001:db8:85a3::8a2e:370:7334"}}
+{"name":"string - IPv6 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv6","val":"foobar"}}
+{"name":"string - IPv6 - invalid (v4)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv6","val":"192.168.0.1"}}
+{"name":"string - IPv6 - invalid (erroneous)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringIPv6","val":"ff::fff::0b"}}
+{"name":"string - URI - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringURI","val":"http://example.com/foo/bar?baz=quux"}}
+{"name":"string - URI - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringURI","val":"!@#$%^&*%$#"}}
+{"name":"string - URI - invalid (relative)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringURI","val":"/foo/bar?baz=quux"}}
+{"name":"string - URI - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringURIRef","val":"http://example.com/foo/bar?baz=quux"}}
+{"name":"string - URI - valid (relative)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringURIRef","val":"/foo/bar?baz=quux"}}
+{"name":"string - URI - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringURIRef","val":"!@#$%^&*%$#"}}
+{"name":"string - UUID - valid (nil)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"00000000-0000-0000-0000-000000000000"}}
+{"name":"string - UUID - valid (v1)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"b45c0c80-8880-11e9-a5b1-000000000000"}}
+{"name":"string - UUID - valid (v1 - case-insensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"B45C0C80-8880-11E9-A5B1-000000000000"}}
+{"name":"string - UUID - valid (v2)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"b45c0c80-8880-21e9-a5b1-000000000000"}}
+{"name":"string - UUID - valid (v2 - case-insensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"B45C0C80-8880-21E9-A5B1-000000000000"}}
+{"name":"string - UUID - valid (v3)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"a3bb189e-8bf9-3888-9912-ace4e6543002"}}
+{"name":"string - UUID - valid (v3 - case-insensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"A3BB189E-8BF9-3888-9912-ACE4E6543002"}}
+{"name":"string - UUID - valid (v4)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"8b208305-00e8-4460-a440-5e0dcd83bb0a"}}
+{"name":"string - UUID - valid (v4 - case-insensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"8B208305-00E8-4460-A440-5E0DCD83BB0A"}}
+{"name":"string - UUID - valid (v5)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"a6edc906-2f9f-5fb2-a373-efac406f0ef2"}}
+{"name":"string - UUID - valid (v5 - case-insensitive)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"A6EDC906-2F9F-5FB2-A373-EFAC406F0EF2"}}
+{"name":"string - UUID - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"foobar"}}
+{"name":"string - UUID - invalid (bad UUID)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUID","val":"ffffffff-ffff-ffff-ffff-fffffffffffff"}}
+{"name":"string - UUID - valid (ignore_empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringUUIDIgnore"}}
+{"name":"string - http header name - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"clustername"}}
+{"name":"string - http header name - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":":path"}}
+{"name":"string - http header name - valid (nums)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"cluster-123"}}
+{"name":"string - http header name - valid (special token)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"!+#&.%"}}
+{"name":"string - http header name - valid (period)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"CLUSTER.NAME"}}
+{"name":"string - http header name - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":":"}}
+{"name":"string - http header name - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":":path:"}}
+{"name":"string - http header name - invalid (space)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"cluster name"}}
+{"name":"string - http header name - invalid (return)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"example\r"}}
+{"name":"string - http header name - invalid (tab)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"example\t"}}
+{"name":"string - http header name - invalid (slash)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderName","val":"/test/long/url"}}
+{"name":"string - http header value - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"cluster.name.123"}}
+{"name":"string - http header value - valid (uppercase)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"/TEST/LONG/URL"}}
+{"name":"string - http header value - valid (spaces)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"cluster name"}}
+{"name":"string - http header value - valid (tab)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"example\t"}}
+{"name":"string - http header value - valid (special token)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"!#%&./+"}}
+{"name":"string - http header value - invalid (NUL)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"foo\u0000bar"}}
+{"name":"string - http header value - invalid (DEL)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":""}}
+{"name":"string - http header value - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringHttpHeaderValue","val":"example\r"}}
+{"name":"string - non-strict valid header - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"cluster.name.123"}}
+{"name":"string - non-strict valid header - valid (uppercase)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"/TEST/LONG/URL"}}
+{"name":"string - non-strict valid header - valid (spaces)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"cluster name"}}
+{"name":"string - non-strict valid header - valid (tab)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"example\t"}}
+{"name":"string - non-strict valid header - valid (DEL)","message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":""}}
+{"name":"string - non-strict valid header - invalid (NUL)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"foo\u0000bar"}}
+{"name":"string - non-strict valid header - invalid (CR)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"example\r"}}
+{"name":"string - non-strict valid header - invalid (NL)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.StringValidHeader","val":"exa\nmple"}}
+{"name":"bytes - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesNone","val":"cXV1eA=="}}
+{"name":"bytes - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesConst","val":"Zm9v"}}
+{"name":"bytes - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesConst","val":"YmFy"}}
+{"name":"bytes - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIn","val":"YmFy"}}
+{"name":"bytes - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIn","val":"cXV1eA=="}}
+{"name":"bytes - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesNotIn","val":"cXV1eA=="}}
+{"name":"bytes - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesNotIn","val":"Zml6eg=="}}
+{"name":"bytes - len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesLen","val":"YmF6"}}
+{"name":"bytes - len - invalid (lt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesLen","val":"Z28="}}
+{"name":"bytes - len - invalid (gt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesLen","val":"Zml6eg=="}}
+{"name":"bytes - min len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinLen","val":"Zml6eg=="}}
+{"name":"bytes - min len - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinLen","val":"YmF6"}}
+{"name":"bytes - min len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinLen","val":"Z28="}}
+{"name":"bytes - max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMaxLen","val":"Zm9v"}}
+{"name":"bytes - max len - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMaxLen","val":"cHJvdG8="}}
+{"name":"bytes - max len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMaxLen","val":"MTIzNDU2Nzg5MA=="}}
+{"name":"bytes - min/max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinMaxLen","val":"cXV1eA=="}}
+{"name":"bytes - min/max len - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinMaxLen","val":"Zm9v"}}
+{"name":"bytes - min/max len - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinMaxLen","val":"cHJvdG8="}}
+{"name":"bytes - min/max len - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinMaxLen","val":"Z28="}}
+{"name":"bytes - min/max len - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesMinMaxLen","val":"dmFsaWRhdGU="}}
+{"name":"bytes - equal min/max len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesEqualMinMaxLen","val":"cHJvdG8="}}
+{"name":"bytes - equal min/max len - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesEqualMinMaxLen","val":"dmFsaWRhdGU="}}
+{"name":"bytes - pattern - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPattern","val":"Rm9vMTIz"}}
+{"name":"bytes - pattern - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPattern","val":"5L2g5aW95L2g5aW9"}}
+{"name":"bytes - pattern - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPattern"}}
+{"name":"bytes - prefix - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPrefix","val":"mZ8I"}}
+{"name":"bytes - prefix - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPrefix","val":"mQ=="}}
+{"name":"bytes - prefix - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesPrefix","val":"YmFy"}}
+{"name":"bytes - contains - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesContains","val":"Y2FuZHkgYmFycw=="}}
+{"name":"bytes - contains - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesContains","val":"YmFy"}}
+{"name":"bytes - contains - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesContains","val":"Y2FuZHkgYmF6cw=="}}
+{"name":"bytes - suffix - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesSuffix","val":"YnV6eg=="}}
+{"name":"bytes - suffix - valid (only)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesSuffix","val":"YnV6eg=="}}
+{"name":"bytes - suffix - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesSuffix","val":"Zm9vYmFy"}}
+{"name":"bytes - suffix - invalid (case-sensitive)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesSuffix","val":"Rm9vQmF6"}}
+{"name":"bytes - IP - valid (v4)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIP","val":"wKgAAQ=="}}
+{"name":"bytes - IP - valid (v6)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIP","val":"IAENuIWjAAAAAIouA3BzNA=="}}
+{"name":"bytes - IP - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIP","val":"Zm9vYmFy"}}
+{"name":"bytes - IPv4 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv4","val":"wKgAAQ=="}}
+{"name":"bytes - IPv4 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv4","val":"Zm9vYmFy"}}
+{"name":"bytes - IPv4 - invalid (v6)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv4","val":"IAENuIWjAAAAAIouA3BzNA=="}}
+{"name":"bytes - IPv6 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv6","val":"IAENuIWjAAAAAIouA3BzNA=="}}
+{"name":"bytes - IPv6 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv6","val":"Zm9vYXI="}}
+{"name":"bytes - IPv6 - invalid (v4)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv6","val":"wKgAAQ=="}}
+{"name":"bytes - IPv6 - valid (ignore_empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.BytesIPv6Ignore"}}
+{"name":"enum - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumNone","val":"ONE"}}
+{"name":"enum - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumConst","val":"TWO"}}
+{"name":"enum - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumConst","val":"ONE"}}
+{"name":"enum alias - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasConst","val":"C"}}
+{"name":"enum alias - const - valid (alias)","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasConst","val":"C"}}
+{"name":"enum alias - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasConst"}}
+{"name":"enum - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumDefined"}}
+{"name":"enum - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumDefined","val":2147483647}}
+{"name":"enum alias - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasDefined","val":"B"}}
+{"name":"enum alias - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasDefined","val":2147483647}}
+{"name":"enum - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumIn","val":"TWO"}}
+{"name":"enum - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumIn","val":"ONE"}}
+{"name":"enum alias - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasIn"}}
+{"name":"enum alias - in - valid (alias)","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasIn"}}
+{"name":"enum alias - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasIn","val":"B"}}
+{"name":"enum - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumNotIn"}}
+{"name":"enum - not in - valid (undefined)","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumNotIn","val":2147483647}}
+{"name":"enum - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumNotIn","val":"ONE"}}
+{"name":"enum alias - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasNotIn"}}
+{"name":"enum alias - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasNotIn","val":"B"}}
+{"name":"enum alias - not in - invalid (alias)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumAliasNotIn","val":"B"}}
+{"name":"enum external - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.EnumExternal"}}
+{"name":"enum external - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.EnumExternal","val":2147483647}}
+{"name":"enum repeated - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumDefined","val":["ONE","TWO"]}}
+{"name":"enum repeated - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumDefined","val":["ONE",2147483647]}}
+{"name":"enum repeated (external) - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExternalEnumDefined","val":["VALUE"]}}
+{"name":"enum repeated (external) - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExternalEnumDefined","val":[2147483647]}}
+{"name":"enum repeated (another external) - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedYetAnotherExternalEnumDefined","val":["VALUE"]}}
+{"name":"enum map - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapEnumDefined","val":{"foo":"TWO"}}}
+{"name":"enum map - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapEnumDefined","val":{"foo":2147483647}}}
+{"name":"enum map (external) - defined_only - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapExternalEnumDefined","val":{"foo":"VALUE"}}}
+{"name":"enum map (external) - defined_only - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapExternalEnumDefined","val":{"foo":2147483647}}}
+{"name":"message - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageNone","val":{}}}
+{"name":"message - none - valid (unset)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageNone"}}
+{"name":"message - disabled - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageDisabled","val":"456"}}
+{"name":"message - disabled - valid (invalid field)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageDisabled"}}
+{"name":"message - ignored - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageIgnored","val":"456"}}
+{"name":"message - ignored - valid (invalid field)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageIgnored"}}
+{"name":"message - field - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.Message","val":{"const":"foo"}}}
+{"name":"message - field - valid (unset)","message":{"@type":"type.googleapis.com/tests.harness.cases.Message"}}
+{"name":"message - field - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Message","val":{}}}
+{"name":"message - field - invalid (transitive)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.Message","val":{"const":"foo","nested":{}}}}
+{"name":"message - skip - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageSkip","val":{}}}
+{"name":"message - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequired","val":{"const":"foo"}}}
+{"name":"message - required - valid (oneof)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequiredOneof","val":{"const":"foo"}}}
+{"name":"message - required - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequired"}}
+{"name":"message - required - invalid (oneof)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequiredOneof"}}
+{"name":"message - cross-package embed none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageCrossPackage","val":{"val":"1"}}}
+{"name":"message - cross-package embed none - valid (nil)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageCrossPackage"}}
+{"name":"message - cross-package embed none - valid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MessageCrossPackage","val":{}}}
+{"name":"message - cross-package embed none - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MessageCrossPackage","val":{"val":"-1"}}}
+{"name":"message - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequiredButOptional","val":{"const":"foo"}}}
+{"name":"message - required - valid (unset)","message":{"@type":"type.googleapis.com/tests.harness.cases.MessageRequiredButOptional"}}
+{"name":"repeated - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedNone","val":["1","2","3"]}}
+{"name":"repeated - embed none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedNone","val":[{"val":"1"}]}}
+{"name":"repeated - embed none - valid (nil)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedNone"}}
+{"name":"repeated - embed none - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedNone"}}
+{"name":"repeated - embed none - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedNone","val":[{"val":"-1"}]}}
+{"name":"repeated - cross-package embed none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedCrossPackageNone","val":[{"val":"1"}]}}
+{"name":"repeated - cross-package embed none - valid (nil)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedCrossPackageNone"}}
+{"name":"repeated - cross-package embed none - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedCrossPackageNone"}}
+{"name":"repeated - cross-package embed none - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedCrossPackageNone","val":[{"val":"-1"}]}}
+{"name":"repeated - min - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMin","val":[{"val":"1"},{"val":"2"},{"val":"3"}]}}
+{"name":"repeated - min - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMin","val":[{"val":"1"},{"val":"2"}]}}
+{"name":"repeated - min - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMin","val":[{"val":"1"}]}}
+{"name":"repeated - min - invalid (element)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMin","val":[{"val":"1"},{"val":"-1"}]}}
+{"name":"repeated - max - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMax","val":[1,2]}}
+{"name":"repeated - max - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMax","val":[1,2,3]}}
+{"name":"repeated - max - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMax","val":[1,2,3,4]}}
+{"name":"repeated - min/max - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinMax","val":[1,2,3]}}
+{"name":"repeated - min/max - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinMax","val":[1,2]}}
+{"name":"repeated - min/max - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinMax","val":[1,2,3,4]}}
+{"name":"repeated - min/max - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinMax"}}
+{"name":"repeated - min/max - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinMax","val":[1,2,3,4,5]}}
+{"name":"repeated - exact - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExact","val":[1,2,3]}}
+{"name":"repeated - exact - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExact","val":[1,2]}}
+{"name":"repeated - exact - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExact","val":[1,2,3,4]}}
+{"name":"repeated - unique - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedUnique","val":["foo","bar","baz"]}}
+{"name":"repeated - unique - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedUnique"}}
+{"name":"repeated - unique - valid (case sensitivity)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedUnique","val":["foo","Foo"]}}
+{"name":"repeated - unique - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedUnique","val":["foo","bar","foo","baz"]}}
+{"name":"repeated - items - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemRule","val":[1,2,3]}}
+{"name":"repeated - items - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemRule"}}
+{"name":"repeated - items - valid (pattern)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemPattern","val":["Alpha","Beta123"]}}
+{"name":"repeated - items - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemRule","val":[1,-2,3]}}
+{"name":"repeated - items - invalid (pattern)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemPattern","val":["Alpha","!@#$%^&*()"]}}
+{"name":"repeated - items - invalid (in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemIn","val":["baz"]}}
+{"name":"repeated - items - valid (in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemIn","val":["foo"]}}
+{"name":"repeated - items - invalid (not_in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemNotIn","val":["foo"]}}
+{"name":"repeated - items - valid (not_in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedItemNotIn","val":["baz"]}}
+{"name":"repeated - items - invalid (enum in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumIn","val":["Y"]}}
+{"name":"repeated - items - valid (enum in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumIn","val":["X"]}}
+{"name":"repeated - items - invalid (enum not_in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumNotIn","val":["X"]}}
+{"name":"repeated - items - valid (enum not_in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEnumNotIn","val":["Y"]}}
+{"name":"repeated - items - invalid (embedded enum in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbeddedEnumIn","val":["B"]}}
+{"name":"repeated - items - valid (embedded enum in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbeddedEnumIn","val":["A"]}}
+{"name":"repeated - items - invalid (embedded enum not_in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbeddedEnumNotIn","val":["A"]}}
+{"name":"repeated - items - valid (embedded enum not_in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbeddedEnumNotIn","val":["B"]}}
+{"name":"repeated - items - invalid (any in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedAnyIn","val":[{"@type":"type.googleapis.com/google.protobuf.Timestamp","value":"1970-01-01T00:00:00Z"}]}}
+{"name":"repeated - items - valid (any in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedAnyIn","val":[{"@type":"type.googleapis.com/google.protobuf.Duration","value":"0s"}]}}
+{"name":"repeated - items - invalid (any not_in)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedAnyNotIn","val":[{"@type":"type.googleapis.com/google.protobuf.Timestamp","value":"1970-01-01T00:00:00Z"}]}}
+{"name":"repeated - items - valid (any not_in)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedAnyNotIn","val":[{"@type":"type.googleapis.com/google.protobuf.Duration","value":"0s"}]}}
+{"name":"repeated - embed skip - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedSkip","val":[{"val":"1"}]}}
+{"name":"repeated - embed skip - valid (invalid element)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedEmbedSkip","val":[{"val":"-1"}]}}
+{"name":"repeated - min and items len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndItemLen","val":["aaa","bbb"]}}
+{"name":"repeated - min and items len - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndItemLen"}}
+{"name":"repeated - min and items len - invalid (len)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndItemLen","val":["x"]}}
+{"name":"repeated - min and max items len - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndMaxItemLen","val":["aaa","bbb"]}}
+{"name":"repeated - min and max items len - invalid (min_len)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndMaxItemLen"}}
+{"name":"repeated - min and max items len - invalid (max_len)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedMinAndMaxItemLen","val":["aaa","bbb","ccc","ddd"]}}
+{"name":"repeated - duration - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedDuration","val":["3s"]}}
+{"name":"repeated - duration - gte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedDuration"}}
+{"name":"repeated - duration - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedDuration","val":["0.001s"]}}
+{"name":"repeated - duration - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedDuration","val":["-1s"]}}
+{"name":"repeated - exact - valid (ignore_empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.RepeatedExactIgnore"}}
+{"name":"map - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapNone","val":{"123":true,"456":false}}}
+{"name":"map - min pairs - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMin","val":{"1":2,"3":4,"5":6}}}
+{"name":"map - min pairs - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMin","val":{"1":2,"3":4}}}
+{"name":"map - min pairs - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapMin","val":{"1":2}}}
+{"name":"map - max pairs - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMax","val":{"1":2,"3":4}}}
+{"name":"map - max pairs - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMax","val":{"1":2,"3":4,"5":6}}}
+{"name":"map - max pairs - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapMax","val":{"1":2,"3":4,"5":6,"7":8}}}
+{"name":"map - min/max - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMinMax","val":{"a":true,"b":false,"c":true}}}
+{"name":"map - min/max - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMinMax","val":{"a":true,"b":false}}}
+{"name":"map - min/max - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapMinMax","val":{"a":true,"b":false,"c":true,"d":false}}}
+{"name":"map - min/max - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapMinMax"}}
+{"name":"map - min/max - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapMinMax","val":{"a":true,"b":false,"c":true,"d":false,"e":true}}}
+{"name":"map - exact - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapExact","val":{"1":"a","2":"b","3":"c"}}}
+{"name":"map - exact - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapExact","val":{"1":"a","2":"b"}}}
+{"name":"map - exact - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapExact","val":{"1":"a","2":"b","3":"c","4":"d"}}}
+{"name":"map - no sparse - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapNoSparse","val":{"1":{},"2":{}}}}
+{"name":"map - no sparse - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapNoSparse"}}
+{"name":"map - keys - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapKeys","val":{"-2":"b","-1":"a"}}}
+{"name":"map - keys - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapKeys"}}
+{"name":"map - keys - valid (pattern)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapKeysPattern","val":{"A":"a"}}}
+{"name":"map - keys - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapKeys","val":{"1":"a"}}}
+{"name":"map - keys - invalid (pattern)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapKeysPattern","val":{"!@#$%^&*()":"b","A":"a"}}}
+{"name":"map - values - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapValues","val":{"a":"Alpha","b":"Beta"}}}
+{"name":"map - values - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapValues"}}
+{"name":"map - values - valid (pattern)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapValuesPattern","val":{"a":"A"}}}
+{"name":"map - values - invalid","failures":2,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapValues","val":{"a":"A","b":"B"}}}
+{"name":"map - values - invalid (pattern)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapValuesPattern","val":{"a":"A","b":"!@#$%^&*()"}}}
+{"name":"map - recursive - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MapRecursive","val":{"1":{"val":"abc"}}}}
+{"name":"map - recursive - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.MapRecursive","val":{"1":{}}}}
+{"name":"map - exact - valid (ignore_empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.MapExactIgnore"}}
+{"name":"map - multiple - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.MultipleMaps","first":{"1":"a","2":"b"},"second":{"-2":false,"-1":true}}}
+{"name":"oneof - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfNone","x":"foo"}}
+{"name":"oneof - none - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfNone"}}
+{"name":"oneof - field - valid (X)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","x":"foobar"}}
+{"name":"oneof - field - valid (Y)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","y":123}}
+{"name":"oneof - field - valid (Z)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","z":{"val":true}}}
+{"name":"oneof - field - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf"}}
+{"name":"oneof - field - invalid (X)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","x":"fizzbuzz"}}
+{"name":"oneof - field - invalid (Y)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","y":-1}}
+{"name":"oneof - filed - invalid (Z)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.OneOf","z":{}}}
+{"name":"oneof - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfRequired","x":""}}
+{"name":"oneof - require - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfRequired"}}
+{"name":"oneof - ignore_empty - valid (X)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfIgnoreEmpty","x":""}}
+{"name":"oneof - ignore_empty - valid (Y)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfIgnoreEmpty","y":""}}
+{"name":"oneof - ignore_empty - valid (Z)","message":{"@type":"type.googleapis.com/tests.harness.cases.OneOfIgnoreEmpty","z":0}}
+{"name":"wrapper - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperNone","val":123}}
+{"name":"wrapper - none - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperNone"}}
+{"name":"wrapper - float - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperFloat","val":1}}
+{"name":"wrapper - float - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperFloat"}}
+{"name":"wrapper - float - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperFloat","val":0}}
+{"name":"wrapper - double - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperDouble","val":1}}
+{"name":"wrapper - double - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperDouble"}}
+{"name":"wrapper - double - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperDouble","val":0}}
+{"name":"wrapper - int64 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt64","val":"1"}}
+{"name":"wrapper - int64 - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt64"}}
+{"name":"wrapper - int64 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt64","val":"0"}}
+{"name":"wrapper - int32 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt32","val":1}}
+{"name":"wrapper - int32 - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt32"}}
+{"name":"wrapper - int32 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperInt32","val":0}}
+{"name":"wrapper - uint64 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt64","val":"1"}}
+{"name":"wrapper - uint64 - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt64"}}
+{"name":"wrapper - uint64 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt64","val":"0"}}
+{"name":"wrapper - uint32 - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt32","val":1}}
+{"name":"wrapper - uint32 - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt32"}}
+{"name":"wrapper - uint32 - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperUInt32","val":0}}
+{"name":"wrapper - bool - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBool","val":true}}
+{"name":"wrapper - bool - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBool"}}
+{"name":"wrapper - bool - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBool","val":false}}
+{"name":"wrapper - string - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperString","val":"foobar"}}
+{"name":"wrapper - string - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperString"}}
+{"name":"wrapper - string - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperString","val":"fizzbuzz"}}
+{"name":"wrapper - bytes - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBytes","val":"Zm9v"}}
+{"name":"wrapper - bytes - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBytes"}}
+{"name":"wrapper - bytes - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperBytes","val":"eA=="}}
+{"name":"wrapper - required - string - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredString","val":"bar"}}
+{"name":"wrapper - required - string - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredString","val":"foo"}}
+{"name":"wrapper - required - string - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredString"}}
+{"name":"wrapper - required - string (empty) - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredEmptyString","val":""}}
+{"name":"wrapper - required - string (empty) - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredEmptyString","val":"foo"}}
+{"name":"wrapper - required - string (empty) - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredEmptyString"}}
+{"name":"wrapper - optional - string (uuid) - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperOptionalUuidString","val":"8b72987b-024a-43b3-b4cf-647a1f925c5d"}}
+{"name":"wrapper - optional - string (uuid) - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperOptionalUuidString"}}
+{"name":"wrapper - optional - string (uuid) - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperOptionalUuidString","val":"foo"}}
+{"name":"wrapper - required - float - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredFloat","val":1}}
+{"name":"wrapper - required - float - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredFloat","val":-5}}
+{"name":"wrapper - required - float - invalid (empty)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.WrapperRequiredFloat"}}
+{"name":"duration - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationNone","val":"123s"}}
+{"name":"duration - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationRequired","val":"0s"}}
+{"name":"duration - required - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationRequired"}}
+{"name":"duration - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationConst","val":"3s"}}
+{"name":"duration - const - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationConst"}}
+{"name":"duration - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationConst","val":"0.000000003s"}}
+{"name":"duration - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationIn","val":"1s"}}
+{"name":"duration - in - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationIn"}}
+{"name":"duration - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationIn","val":"0s"}}
+{"name":"duration - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationNotIn","val":"0.000000001s"}}
+{"name":"duration - not in - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationNotIn"}}
+{"name":"duration - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationNotIn","val":"0s"}}
+{"name":"duration - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLT","val":"-0.000000001s"}}
+{"name":"duration - lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLT"}}
+{"name":"duration - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLT","val":"0s"}}
+{"name":"duration - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLT","val":"1s"}}
+{"name":"duration - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLTE","val":"0s"}}
+{"name":"duration - lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLTE"}}
+{"name":"duration - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLTE","val":"1s"}}
+{"name":"duration - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationLTE","val":"1.000000001s"}}
+{"name":"duration - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGT","val":"1s"}}
+{"name":"duration - gt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGT"}}
+{"name":"duration - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGT","val":"0.000001s"}}
+{"name":"duration - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGT","val":"0s"}}
+{"name":"duration - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTE","val":"3s"}}
+{"name":"duration - gte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTE"}}
+{"name":"duration - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTE","val":"0.001s"}}
+{"name":"duration - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTE","val":"-1s"}}
+{"name":"duration - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT","val":"0.000001s"}}
+{"name":"duration - gt & lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT"}}
+{"name":"duration - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT","val":"1000s"}}
+{"name":"duration - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT","val":"-0.000001s"}}
+{"name":"duration - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT","val":"1s"}}
+{"name":"duration - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTLT","val":"0s"}}
+{"name":"duration - exclusive gt & lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT"}}
+{"name":"duration - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT","val":"2s"}}
+{"name":"duration - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT","val":"-0.000000001s"}}
+{"name":"duration - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT","val":"0.000001s"}}
+{"name":"duration - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT","val":"1s"}}
+{"name":"duration - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExLTGT","val":"0s"}}
+{"name":"duration - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE","val":"60.000000001s"}}
+{"name":"duration - gte & lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE"}}
+{"name":"duration - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE","val":"3600s"}}
+{"name":"duration - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE","val":"60s"}}
+{"name":"duration - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE","val":"3600.000000001s"}}
+{"name":"duration - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationGTELTE","val":"59s"}}
+{"name":"duration - gte & lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE"}}
+{"name":"duration - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE","val":"3601s"}}
+{"name":"duration - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE","val":"0s"}}
+{"name":"duration - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE","val":"3600s"}}
+{"name":"duration - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE","val":"60s"}}
+{"name":"duration - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationExGTELTE","val":"61s"}}
+{"name":"duration - fields with other fields - invalid other field","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.DurationFieldWithOtherFields","intVal":12}}
+{"name":"timestamp - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampNone","val":"1970-01-01T00:02:03Z"}}
+{"name":"timestamp - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampRequired","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - required - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampRequired"}}
+{"name":"timestamp - const - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampConst","val":"1970-01-01T00:00:03Z"}}
+{"name":"timestamp - const - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampConst"}}
+{"name":"timestamp - const - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampConst","val":"1970-01-01T00:00:00.000000003Z"}}
+{"name":"timestamp - lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLT","val":"1969-12-31T23:59:59Z"}}
+{"name":"timestamp - lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLT"}}
+{"name":"timestamp - lt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLT","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLT","val":"1970-01-01T00:00:01Z"}}
+{"name":"timestamp - lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTE","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTE"}}
+{"name":"timestamp - lte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTE","val":"1970-01-01T00:00:01Z"}}
+{"name":"timestamp - lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTE","val":"1970-01-01T00:00:01.000000001Z"}}
+{"name":"timestamp - gt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGT","val":"1970-01-01T00:00:01Z"}}
+{"name":"timestamp - gt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGT"}}
+{"name":"timestamp - gt - invalid (equal)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGT","val":"1970-01-01T00:00:00.000001Z"}}
+{"name":"timestamp - gt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGT","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - gte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTE","val":"1970-01-01T00:00:03Z"}}
+{"name":"timestamp - gte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTE"}}
+{"name":"timestamp - gte - valid (equal)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTE","val":"1970-01-01T00:00:00.001Z"}}
+{"name":"timestamp - gte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTE","val":"1969-12-31T23:59:59Z"}}
+{"name":"timestamp - gt & lt - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT","val":"1970-01-01T00:00:00.000001Z"}}
+{"name":"timestamp - gt & lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT"}}
+{"name":"timestamp - gt & lt - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT","val":"1970-01-01T00:16:40Z"}}
+{"name":"timestamp - gt & lt - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT","val":"1969-12-31T23:43:20Z"}}
+{"name":"timestamp - gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT","val":"1970-01-01T00:00:01Z"}}
+{"name":"timestamp - gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTLT","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - exclusive gt & lt - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT"}}
+{"name":"timestamp - exclusive gt & lt - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT","val":"1970-01-01T00:00:02Z"}}
+{"name":"timestamp - exclusive gt & lt - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT","val":"1969-12-31T23:59:59Z"}}
+{"name":"timestamp - exclusive gt & lt - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT","val":"1970-01-01T00:00:00.000001Z"}}
+{"name":"timestamp - exclusive gt & lt - invalid (max)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT","val":"1970-01-01T00:00:01Z"}}
+{"name":"timestamp - exclusive gt & lt - invalid (min)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExLTGT","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - gte & lte - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE","val":"1970-01-01T00:01:00.000000001Z"}}
+{"name":"timestamp - gte & lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE"}}
+{"name":"timestamp - gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE","val":"1970-01-01T01:00:00Z"}}
+{"name":"timestamp - gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE","val":"1970-01-01T00:01:00Z"}}
+{"name":"timestamp - gte & lte - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE","val":"1970-01-01T01:00:00.000000001Z"}}
+{"name":"timestamp - gte & lte - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTELTE","val":"1970-01-01T00:00:59Z"}}
+{"name":"timestamp - gte & lte - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE"}}
+{"name":"timestamp - exclusive gte & lte - valid (above)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE","val":"1970-01-01T01:00:01Z"}}
+{"name":"timestamp - exclusive gte & lte - valid (below)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - exclusive gte & lte - valid (max)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE","val":"1970-01-01T01:00:00Z"}}
+{"name":"timestamp - exclusive gte & lte - valid (min)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE","val":"1970-01-01T00:01:00Z"}}
+{"name":"timestamp - exclusive gte & lte - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampExGTELTE","val":"1970-01-01T00:01:01Z"}}
+{"name":"timestamp - lt now - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNow","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - lt now - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNow"}} 
+{"name":"timestamp - lt now - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNow","val":"2022-10-29T10:02:47Z"}}
+{"name":"timestamp - gt now - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNow","val":"2022-10-29T10:02:47Z"}}
+{"name":"timestamp - gt now - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNow"}}
+{"name":"timestamp - gt now - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNow","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - within - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampWithin","val":"2022-10-29T08:02:47.302817500Z"}}
+{"name":"timestamp - within - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampWithin"}}
+{"name":"timestamp - within - invalid (below)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampWithin","val":"1970-01-01T00:00:00Z"}}
+{"name":"timestamp - within - invalid (above)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampWithin","val":"2022-10-29T10:02:47Z"}}
+{"name":"timestamp - lt now within - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNowWithin","val":"2022-10-29T07:32:47Z"}}
+{"name":"timestamp - lt now within - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNowWithin"}}
+{"name":"timestamp - lt now within - invalid (lt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNowWithin","val":"2022-10-29T08:32:47Z"}}
+{"name":"timestamp - lt now within - invalid (within)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampLTNowWithin","val":"2022-10-29T06:02:47Z"}}
+{"name":"timestamp - gt now within - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNowWithin","val":"2022-10-29T08:32:47Z"}}
+{"name":"timestamp - gt now within - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNowWithin"}}
+{"name":"timestamp - gt now within - invalid (gt)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNowWithin","val":"2022-10-29T07:32:47Z"}}
+{"name":"timestamp - gt now within - invalid (within)","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.TimestampGTNowWithin","val":"2022-10-29T10:02:47Z"}}
+{"name":"any - none - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyNone","val":{}}}
+{"name":"any - required - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyRequired","val":{}}}
+{"name":"any - required - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.AnyRequired"}}
+{"name":"any - in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyIn","val":{"@type":"type.googleapis.com/google.protobuf.Duration","value":"0s"}}}
+{"name":"any - in - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyIn"}}
+{"name":"any - in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.AnyIn","val":{"@type":"type.googleapis.com/google.protobuf.Timestamp","value":"1970-01-01T00:00:00Z"}}}
+{"name":"any - not in - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyNotIn","val":{"@type":"type.googleapis.com/google.protobuf.Duration","value":"0s"}}}
+{"name":"any - not in - valid (empty)","message":{"@type":"type.googleapis.com/tests.harness.cases.AnyNotIn"}}
+{"name":"any - not in - invalid","failures":1,"message":{"@type":"type.googleapis.com/tests.harness.cases.AnyNotIn","val":{"@type":"type.googleapis.com/google.protobuf.Timestamp","value":"1970-01-01T00:00:00Z"}}}
+{"name":"kitchensink - field - valid","message":{"@type":"type.googleapis.com/tests.harness.cases.KitchenSinkMessage","val":{"const":"abcd","intConst":5,"floatVal":1,"durVal":"3s","tsVal":"1970-01-01T00:00:17Z","floatConst":7,"doubleIn":123,"enumConst":"ComplexTWO","anyVal":{"@type":"type.googleapis.com/google.protobuf.Duration","value":"0s"},"repTsVal":["1970-01-01T00:00:03Z"],"mapVal":{"-2":"b","-1":"a"},"bytesVal":"AJk=","x":"foobar"}}}
+{"name":"kitchensink - valid (unset)","message":{"@type":"type.googleapis.com/tests.harness.cases.KitchenSinkMessage"}}
+{"name":"kitchensink - field - invalid","failures":7,"message":{"@type":"type.googleapis.com/tests.harness.cases.KitchenSinkMessage","val":{}}}
+{"name":"kitchensink - field - embedded - invalid","failures":14,"message":{"@type":"type.googleapis.com/tests.harness.cases.KitchenSinkMessage","val":{"another":{}}}}
+{"name":"kitchensink - field - invalid (transitive)","failures":14,"message":{"@type":"type.googleapis.com/tests.harness.cases.KitchenSinkMessage","val":{"const":"abcd","nested":{},"boolConst":true}}}
