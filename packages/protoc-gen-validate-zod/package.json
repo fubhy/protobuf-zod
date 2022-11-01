@@ -33,20 +33,18 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@bufbuild/protoplugin": "^0.2.1"
+    "@bufbuild/protoplugin": "^0.2.1",
+    "@bufbuild/protobuf": "^0.2.1"
   },
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
+    "@bufbuild/protoc-gen-es": "^0.2.1",
     "@types/fs-extra": "^9.0.13",
+    "protobuf-zod": "workspace:*",
     "fs-extra": "^10.1.0",
     "ts-node": "^10.9.1",
     "vite-tsconfig-paths": "^3.5.2",
     "vitest": "^0.24.4",
     "zod": "^3.19.1"
-  },
-  "peerDependencies": {
-    "@bufbuild/protobuf": "^0.2.1",
-    "@bufbuild/protoc-gen-es": "^0.2.1",
-    "protobuf-zod": "workspace:*"
   }
 }
