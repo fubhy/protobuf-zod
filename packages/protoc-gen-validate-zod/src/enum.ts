@@ -2,7 +2,7 @@ import { DescEnum } from "@bufbuild/protobuf";
 import { makeJsDoc, Printable } from "@bufbuild/protoplugin/ecmascript";
 import { hasRulesFor } from "./rules.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 export function generateEnumSchema(f: GeneratedFile, enumeration: DescEnum) {
   f.print(makeJsDoc(enumeration));

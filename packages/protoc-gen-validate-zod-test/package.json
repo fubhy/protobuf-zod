@@ -1,5 +1,5 @@
 {
-  "name": "protoc-gen-validate-zod",
+  "name": "protoc-gen-validate-zod-test",
   "version": "0.0.1",
   "author": "Sebastian Lorenz <fubhy@fubhy.com>",
   "license": "Apache-2.0",
@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fubhy/protobuf-zod.git",
-    "directory": "packages/protoc-gen-validate-zod"
+    "directory": "packages/protoc-gen-validate-zod-test"
   },
   "publishConfig": {
     "access": "public",
@@ -15,17 +15,17 @@
   },
   "files": [
     "dist/**",
-    "bin/protoc-gen-validate-zod.js"
+    "bin/protoc-gen-validate-zod-test.js"
   ],
   "bin": {
-    "protoc-gen-validate-zod": "bin/protoc-gen-validate-zod.js"
+    "protoc-gen-validate-zod-test": "bin/protoc-gen-validate-zod-test.js"
   },
   "engineStrict": true,
   "engines": {
     "node": ">=16"
   },
   "scripts": {
-    "codegen": "buf generate https://github.com/bufbuild/protoc-gen-validate.git --path=tests/harness/cases && buf generate https://github.com/bufbuild/protoc-gen-validate.git#subdir=validate --template=buf.gen.validate.yaml",
+    "codegen": "buf generate",
     "build": "tsc -p tsconfig.build.json",
     "lint": "eslint \"{src,tests,bin}/**/*.ts\" --cache",
     "format": "pnpm lint --fix",
@@ -38,7 +38,6 @@
   },
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
-    "@bufbuild/protoc-gen-es": "^0.2.1",
     "protobuf-zod": "workspace:*",
     "ts-node": "^10.9.1",
     "vite-tsconfig-paths": "^3.5.2",

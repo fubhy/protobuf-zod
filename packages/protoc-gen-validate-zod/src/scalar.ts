@@ -2,7 +2,7 @@ import { ScalarType } from "@bufbuild/protobuf";
 import { literalString, Printable } from "@bufbuild/protoplugin/ecmascript";
 import { hasRulesFor, hasRulesForScalar } from "./rules.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: FieldRules): Printable[] {
   let typing: Printable[] = [];

@@ -4,7 +4,7 @@ import { generateEnumSchema } from "./enum.js";
 import { generateFieldSchema, generateOneOfSchema } from "./field.js";
 import { hasRulesFor } from "./rules.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 import { getWktSchema } from "./wkt.js";
 
 export function generateMessageSchema(f: GeneratedFile, message: DescMessage) {

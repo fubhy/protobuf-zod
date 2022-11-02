@@ -1,5 +1,5 @@
 import { ScalarType } from "@bufbuild/protobuf";
-import { FieldRules, MessageRules } from "./validate.js";
+import { FieldRules, MessageRules } from "./generated/validate_pb.js";
 
 const scalarToRule = {
   [ScalarType.STRING]: "string",

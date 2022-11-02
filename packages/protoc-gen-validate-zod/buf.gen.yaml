@@ -4,3 +4,14 @@ plugins:
     out: .
     opt:
       - target=ts
+  - name: validate-zod
+    path: ../protoc-gen-validate-zod/bin/protoc-gen-validate-zod.ts
+    out: .
+    opt:
+      - target=ts
+  - name: validate-zod-test-dev
+    path: ../protoc-gen-validate-zod-test/bin/protoc-gen-validate-zod-test.ts
+    out: .
+    opt:
+      - target=ts
+      - cases=tests/fixtures/cases.txt

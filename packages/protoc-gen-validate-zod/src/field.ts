@@ -12,7 +12,7 @@ import { getMessageSchema } from "./message.js";
 import { hasRulesFor } from "./rules.js";
 import { getScalarSchema } from "./scalar.js";
 import { GeneratedFile, makeJsDocWithRules } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 export function generateOneOfSchema(f: GeneratedFile, oneof: DescOneof, disabled: boolean) {
   try {

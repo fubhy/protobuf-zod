@@ -5,7 +5,7 @@ import { getMessageSchema } from "./message.js";
 import { hasRulesFor } from "./rules.js";
 import { getScalarSchema } from "./scalar.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 type DescFieldMap = DescField & {
   fieldKind: "map";

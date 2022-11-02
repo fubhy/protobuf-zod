@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true
+  },
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

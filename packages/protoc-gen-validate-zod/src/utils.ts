@@ -8,7 +8,7 @@ import {
   Schema,
 } from "@bufbuild/protoplugin/ecmascript";
 import { localName, createJsDocBlock, makeJsDoc } from "@bufbuild/protoplugin/ecmascript";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 type NumberOrBigint = number | bigint;
 

@@ -2,7 +2,7 @@ import { codegenInfo } from "@bufbuild/protobuf";
 import { getMapSchema } from "./map.js";
 import { getScalarSchema } from "./scalar.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./validate.js";
+import { FieldRules } from "./generated/validate_pb.js";
 
 // TODO: This should probably be exported from @bufbuild/protobuf
 export type DescWkt = NonNullable<ReturnType<typeof codegenInfo.reifyWkt>>;
