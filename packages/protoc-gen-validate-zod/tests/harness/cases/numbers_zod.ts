@@ -9,6 +9,9 @@ import {
   fixed32,
   fixed64,
   float,
+  floatEquals,
+  floatIsIn,
+  floatIsNotIn,
   int32,
   int64,
   isIn,
@@ -48,7 +51,7 @@ export const FloatConstSchema = z.object({
    * @generated from field: float val = 1;
    * @validate  {"float":{"const":1.2300000190734863}}
    */
-  val: float.and(z.literal(1.2300000190734863)),
+  val: float.refine(floatEquals(1.2300000190734863)),
 });
 
 /**
@@ -59,7 +62,7 @@ export const FloatInSchema = z.object({
    * @generated from field: float val = 1;
    * @validate  {"float":{"in":[4.559999942779541,7.889999866485596]}}
    */
-  val: float.refine(isIn([4.559999942779541, 7.889999866485596])),
+  val: float.refine(floatIsIn([4.559999942779541, 7.889999866485596])),
 });
 
 /**
@@ -70,7 +73,7 @@ export const FloatNotInSchema = z.object({
    * @generated from field: float val = 1;
    * @validate  {"float":{"notIn":[0]}}
    */
-  val: float.refine(isNotIn([0])),
+  val: float.refine(floatIsNotIn([0])),
 });
 
 /**

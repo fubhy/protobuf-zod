@@ -61,23 +61,23 @@ export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: Fi
         }
 
         if (rules.type.value.pattern !== undefined) {
-          // TODO: Implement
+          typing.push(f.validate.bytesMatches(rules.type.value.pattern));
         }
 
         if (rules.type.value.wellKnown.value) {
           switch (rules.type.value.wellKnown.case) {
             case "ip": {
-              // TODO: Implement
+              typing.push(f.validate.bytesIsIp());
               break;
             }
 
             case "ipv4": {
-              // TODO: Implement
+              typing.push(f.validate.bytesIsIp(4));
               break;
             }
 
             case "ipv6": {
-              // TODO: Implement
+              typing.push(f.validate.bytesIsIp(6));
               break;
             }
           }
@@ -290,15 +290,27 @@ export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: Fi
         }
 
         if (rules.type.value.in.length) {
-          typing.push(f.validate.isIn(rules.type.value.in));
+          if (scalar === ScalarType.FLOAT) {
+            typing.push(f.validate.floatIsIn(rules.type.value.in as number[]));
+          } else {
+            typing.push(f.validate.isIn(rules.type.value.in));
+          }
         }
 
         if (rules.type.value.notIn.length) {
-          typing.push(f.validate.isNotIn(rules.type.value.notIn));
+          if (scalar === ScalarType.FLOAT) {
+            typing.push(f.validate.floatIsNotIn(rules.type.value.notIn as number[]));
+          } else {
+            typing.push(f.validate.isNotIn(rules.type.value.notIn));
+          }
         }
 
         if (rules.type.value.const !== undefined) {
-          typing.push(f.validate.isConst(rules.type.value.const));
+          if (scalar === ScalarType.FLOAT) {
+            typing.push(f.validate.floatEquals(rules.type.value.const as number));
+          } else {
+            typing.push(f.validate.isConst(rules.type.value.const));
+          }
         }
 
         if (rules.type.value.ignoreEmpty) {

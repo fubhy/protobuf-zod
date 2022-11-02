@@ -115,6 +115,15 @@ function toBytes(value: Uint8Array | string) {
   return value;
 }
 
+const decoder = new TextDecoder();
+function bytesToUtf8(value: Uint8Array) {
+  return decoder.decode(value);
+}
+
+export function bytesMatches(pattern: RegExp) {
+  return (value: Uint8Array) => pattern.test(bytesToUtf8(value));
+}
+
 export function bytesEquals(outer: Uint8Array) {
   return (value: Uint8Array) => bytesEqualsInternal(outer, value);
 }
@@ -152,6 +161,43 @@ export function bytesIsIn(list: Uint8Array[]) {
 
 export function bytesIsNotIn(list: Uint8Array[]) {
   return (value: Uint8Array) => !list.some((inner) => bytesEqualsInternal(value, inner));
+}
+
+function bytesToIp(value: Uint8Array): string | undefined {
+  // IPv4
+  if (value.length === 4) {
+    const result: string[] = [];
+
+    for (const item of value) {
+      result.push(`${item}`);
+    }
+
+    return result.join(".");
+  }
+
+  // IPv6
+  if (value.length === 16) {
+    const view = new DataView(value.buffer);
+    const result: string[] = [];
+
+    for (let i = 0; i < value.length; i += 2) {
+      result.push(view.getUint16(i).toString(16));
+    }
+
+    return result
+      .join(":")
+      .replace(/(^|:)0(:0)*:0(:|$)/, "$1::$3")
+      .replace(/:{3,4}/, "::");
+  }
+
+  return undefined;
+}
+
+export function bytesIsIp(version?: 4 | 6) {
+  return (value: Uint8Array) => {
+    const ip = bytesToIp(value);
+    return ip !== undefined && isIP(ip, version);
+  };
 }
 
 function bytesEqualsInternal(a: Uint8Array, b: Uint8Array) {
@@ -223,6 +269,18 @@ export function numberInsideGteLte<TType extends NumberOrBigint>(gte: TType, lte
 
 export function numberOutsideGteLte<TType extends NumberOrBigint>(gte: TType, lte: TType) {
   return (value: OneOfNumberOrBigint<TType>) => value <= lte || value >= gte;
+}
+
+export function floatEquals(constant: number) {
+  return (value: number) => Math.fround(value) === constant;
+}
+
+export function floatIsNotIn(list: number[]) {
+  return (value: number) => !list.includes(Math.fround(value));
+}
+
+export function floatIsIn(list: number[]) {
+  return (value: number) => list.includes(Math.fround(value));
 }
 
 export function stringContains(subset: string) {

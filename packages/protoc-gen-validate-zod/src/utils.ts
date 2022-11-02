@@ -61,6 +61,17 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
     return ["[\n", items, indentation, "]"];
   };
 
+  // TODO: We might just want to throw an error if we encounter a regexp that is not valid in JavaScript.
+  const regexp = (pattern: string): Printable => {
+    try {
+      new RegExp(pattern);
+
+      return ["new RegExp(", literalString(pattern), ")"];
+    } catch {
+      return ["new RegExp(", literalString("invalid regular expression^"), ")"];
+    }
+  };
+
   const runtime = (name: RuntimeExportsKeys) => f.import(name, "protobuf-zod");
   const refine = <TExport extends RuntimeRefinementExports>(
     fn: TExport,
@@ -110,6 +121,7 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       [ScalarType.FIXED64]: runtime("fixed64"),
     },
     validate: {
+      bytesMatches: (pattern: string) => refine("bytesMatches", regexp(pattern)),
       bytesEquals: (value: Uint8Array) => refine("bytesEquals", value),
       bytesContains: (value: Uint8Array) => refine("bytesContains", value),
       bytesStartsWith: (value: Uint8Array) => refine("bytesStartsWith", value),
@@ -119,6 +131,8 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       bytesMinLength: (value: NumberOrBigint) => refine("bytesMinLength", Number(value)),
       bytesIsIn: (values: Uint8Array[]) => refine("bytesIsIn", array(values)),
       bytesIsNotIn: (values: Uint8Array[]) => refine("bytesIsNotIn", array(values)),
+      bytesIsIp: (version?: 4 | 6) => refine("bytesIsIp", version),
+      isConst: (value: Printable) => and(literal(value)),
       isUniqueList: () => refine("isUniqueList"),
       isIn: (values: Printable[]) => refine("isIn", array(values)),
       isNotIn: (values: Printable[]) => refine("isNotIn", array(values)),
@@ -132,16 +146,7 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       stringIsIp: (version?: 4 | 6) => refine("stringIsIp", version),
       stringIsHttpHeaderName: (strict = true) => refine("stringIsHttpHeaderName", strict),
       stringIsHttpHeaderValue: (strict = true) => refine("stringIsHttpHeaderValue", strict),
-      stringMatches: (pattern: string) => {
-        try {
-          new RegExp(pattern);
-
-          return [".regex(new RegExp(", literalString(pattern), "))"];
-        } catch {
-          return [".regex(new RegExp(", literalString("invalid regular expression^"), "))"];
-        }
-      },
-      isConst: (value: Printable) => and(literal(value)),
+      stringMatches: (pattern: string) => [".regex(", regexp(pattern), ")"],
       numberGt: (value: NumberOrBigint) => refine("numberGt", value),
       numberGte: (value: NumberOrBigint) => refine("numberGte", value),
       numberLt: (value: NumberOrBigint) => refine("numberLt", value),
@@ -155,6 +160,9 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       numberInsideGteLte: (gte: NumberOrBigint, lte: NumberOrBigint) => refine("numberInsideGteLte", args([gte, lte])),
       numberOutsideGteLte: (gte: NumberOrBigint, lte: NumberOrBigint) =>
         refine("numberOutsideGteLte", args([gte, lte])),
+      floatEquals: (value: number) => refine("floatEquals", value),
+      floatIsIn: (list: number[]) => refine("floatIsIn", array(list)),
+      floatIsNotIn: (list: number[]) => refine("floatIsNotIn", array(list)),
     },
   };
 }
