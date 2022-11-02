@@ -39,8 +39,10 @@
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
     "@bufbuild/protoc-gen-es": "^0.2.1",
+    "@vitest/ui": "^0.24.5",
     "protobuf-zod": "workspace:*",
     "ts-node": "^10.9.1",
+    "vite": "^3.2.2",
     "vite-tsconfig-paths": "^3.5.2",
     "vitest": "^0.24.4",
     "zod": "^3.19.1"
