@@ -17,7 +17,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7.14.1gig
+          version: 7.14.2gig
 
       - name: Set up node
         uses: actions/setup-node@v3
