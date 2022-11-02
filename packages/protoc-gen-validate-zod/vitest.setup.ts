@@ -58,8 +58,8 @@ expect.extend({
 declare global {
   namespace Vi {
     interface JestAssertion<T = any> extends jest.Matchers<void, T> {
-      toBeValid(typeName: string): void;
-      toBeInvalid(typeName: string, failureCount: number): void;
+      toBeValid(schema: z.ZodTypeAny): void;
+      toBeInvalid(schema: z.ZodTypeAny, failureCount: number): void;
     }
   }
 }

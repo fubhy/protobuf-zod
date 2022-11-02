@@ -3,7 +3,9 @@
   "include": ["**/*.ts"],
   "compilerOptions": {
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    // Necessary for lazy message schemas using `z.lazy`,
+    "noImplicitAny": false
   },
   "ts-node": {
     "transpileOnly": true
