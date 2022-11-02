@@ -86,7 +86,6 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
     array,
     runtime,
     oneof: (cases: Printable[]) => [runtime("oneof"), "(", array(cases), ")"],
-    regexp: (pattern: string) => [runtime("regexp"), "(", literalString(pattern), ")"],
     transform: (value: Printable) => [runtime("transform"), "(", value, ")"],
     reference: (desc: DescEnum | DescMessage) => {
       // NOTE: This should ideally use a registry based on `f.export`, etc. but that seems to not work reliably accross package boundaries.
@@ -125,6 +124,23 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       isNotIn: (values: Printable[]) => refine("isNotIn", array(values)),
       stringContains: (value: string) => refine("stringContains", literalString(value)),
       stringNotContains: (value: string) => refine("stringNotContains", literalString(value)),
+      stringIsEmail: () => refine("stringIsEmail"),
+      stringIsHostname: () => refine("stringIsHostname"),
+      stringIsAddress: () => refine("stringIsAddress"),
+      stringIsUrl: (absolute = true) => refine("stringIsUrl", absolute),
+      stringIsUuid: () => refine("stringIsUuid"),
+      stringIsIp: (version?: 4 | 6) => refine("stringIsIp", version),
+      stringIsHttpHeaderName: (strict = true) => refine("stringIsHttpHeaderName", strict),
+      stringIsHttpHeaderValue: (strict = true) => refine("stringIsHttpHeaderValue", strict),
+      stringMatches: (pattern: string) => {
+        try {
+          new RegExp(pattern);
+
+          return [".regex(new RegExp(", literalString(pattern), "))"];
+        } catch {
+          return [".regex(new RegExp(", literalString("invalid regular expression^"), "))"];
+        }
+      },
       isConst: (value: Printable) => and(literal(value)),
       numberGt: (value: NumberOrBigint) => refine("numberGt", value),
       numberGte: (value: NumberOrBigint) => refine("numberGte", value),

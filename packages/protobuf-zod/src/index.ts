@@ -1,4 +1,8 @@
 import { z } from "zod";
+import isEmail from "validator/es/lib/isEmail";
+import isIP from "validator/es/lib/isIP";
+import isURL from "validator/es/lib/isURL";
+import isUUID from "validator/es/lib/isUUID";
 
 function parseOrReport<TSchema extends z.ZodTypeAny>(
   value: unknown,
@@ -54,16 +58,6 @@ export function map<TKey extends z.ZodTypeAny, TValue extends z.ZodTypeAny>(key:
 
     return value;
   }, z.map(key, value));
-}
-
-const INVALID_REGEXP = new RegExp("invalid regular expression^");
-
-export function regexp(pattern: string) {
-  try {
-    return new RegExp(pattern);
-  } catch {
-    return INVALID_REGEXP;
-  }
 }
 
 export const UINT64_MIN = BigInt("0");
@@ -237,4 +231,103 @@ export function stringContains(subset: string) {
 
 export function stringNotContains(subset: string) {
   return (value: string) => !value.includes(subset);
+}
+
+function validateHostname(value: string) {
+  if (!value) {
+    return false;
+  }
+  if (value.length > 253) {
+    return false;
+  }
+
+  if (value.endsWith(".")) {
+    value = value.substring(0, value.length - 1);
+  }
+
+  for (const part of value.split(".")) {
+    if (part.length === 0 || part.length > 63) {
+      return false;
+    }
+
+    // Host names cannot begin or end with hyphens
+    if (part.startsWith("-") || part.endsWith("-")) {
+      return false;
+    }
+    for (const r of part) {
+      if ((r < "A" || r > "Z") && (r < "a" || r > "z") && (r < "0" || r > "9") && r !== "-") {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+function validateEmail(value: string) {
+  let address = value;
+  if (address.includes("<") && address.includes(">")) {
+    address = address.split("<")[1]!.split(">")[0]!;
+  }
+
+  if (!isEmail(address)) {
+    return false;
+  }
+
+  if (address.length > 254) {
+    return false;
+  }
+
+  const [username = "", hostname = ""] = address.split("@");
+  if (username.length > 64) {
+    return false;
+  }
+
+  return validateHostname(hostname);
+}
+
+export function stringIsEmail() {
+  return (value: string) => validateEmail(value);
+}
+
+export function stringIsHostname() {
+  return (value: string) => validateHostname(value);
+}
+
+export function stringIsAddress() {
+  return (value: string) => isIP(value) || validateHostname(value);
+}
+
+export function stringIsIp(version?: 4 | 6) {
+  return (value: string) => isIP(value, version);
+}
+
+export function stringIsUrl(absolute = true) {
+  return (value: string) => isURL(value, { require_host: absolute });
+}
+
+export function stringIsUuid() {
+  return (value: string) => isUUID(value);
+}
+
+export function stringIsHttpHeaderName(strict = true) {
+  return (value: string) => {
+    if (strict) {
+      return /^:?[0-9a-zA-Z!#$%&'*+-.^_|~\x60]+$/.test(value);
+    }
+
+    // eslint-disable-next-line no-control-regex
+    return /^[^\u0000\u000A\u000D]*$/.test(value);
+  };
+}
+
+export function stringIsHttpHeaderValue(strict = true) {
+  return (value: string) => {
+    if (strict) {
+      // eslint-disable-next-line no-control-regex
+      return /^[^\u0000-\u0008\u000A-\u001F\u007F]*$/.test(value);
+    }
+
+    // eslint-disable-next-line no-control-regex
+    return /^[^\u0000\u000A\u000D]*$/.test(value);
+  };
 }

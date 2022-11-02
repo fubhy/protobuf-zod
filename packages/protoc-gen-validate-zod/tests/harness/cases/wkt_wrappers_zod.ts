@@ -4,7 +4,18 @@
 /* @ts-nocheck */
 
 import { z } from "zod";
-import { bytes, bytesMinLength, double, float, int32, int64, numberGt, uint32, uint64 } from "protobuf-zod";
+import {
+  bytes,
+  bytesMinLength,
+  double,
+  float,
+  int32,
+  int64,
+  numberGt,
+  stringIsUuid,
+  uint32,
+  uint64,
+} from "protobuf-zod";
 import { protoInt64 } from "@bufbuild/protobuf";
 
 /**
@@ -146,7 +157,7 @@ export const WrapperOptionalUuidStringSchema = z.object({
    * @generated from field: google.protobuf.StringValue val = 1;
    * @validate  {"message":{"required":false},"string":{"uuid":true}}
    */
-  val: z.string().nullish(),
+  val: z.string().refine(stringIsUuid()).nullish(),
 });
 
 /**

@@ -11,8 +11,15 @@ import {
   isIn,
   isNotIn,
   oneof,
-  regexp,
   stringContains,
+  stringIsAddress,
+  stringIsEmail,
+  stringIsHostname,
+  stringIsHttpHeaderName,
+  stringIsHttpHeaderValue,
+  stringIsIp,
+  stringIsUrl,
+  stringIsUuid,
   stringNotContains,
 } from "protobuf-zod";
 
@@ -177,7 +184,7 @@ export const StringPatternSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"pattern":"(?i)^[a-z0-9]+$"}}
    */
-  val: z.string().regex(regexp("(?i)^[a-z0-9]+$")),
+  val: z.string().regex(new RegExp("invalid regular expression^")),
 });
 
 /**
@@ -188,7 +195,7 @@ export const StringPatternEscapesSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"pattern":"\\* \\\\ \\w"}}
    */
-  val: z.string().regex(regexp("\\* \\\\ \\w")),
+  val: z.string().regex(new RegExp("\\* \\\\ \\w")),
 });
 
 /**
@@ -243,7 +250,7 @@ export const StringEmailSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"email":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsEmail()),
 });
 
 /**
@@ -254,7 +261,7 @@ export const StringAddressSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"address":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsAddress()),
 });
 
 /**
@@ -265,7 +272,7 @@ export const StringHostnameSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"hostname":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsHostname()),
 });
 
 /**
@@ -276,7 +283,7 @@ export const StringIPSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"ip":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsIp()),
 });
 
 /**
@@ -287,7 +294,7 @@ export const StringIPv4Schema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"ipv4":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsIp(4)),
 });
 
 /**
@@ -298,7 +305,7 @@ export const StringIPv6Schema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"ipv6":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsIp(6)),
 });
 
 /**
@@ -309,7 +316,7 @@ export const StringURISchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"uri":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsUrl(true)),
 });
 
 /**
@@ -320,7 +327,7 @@ export const StringURIRefSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"uriRef":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsUrl(false)),
 });
 
 /**
@@ -331,7 +338,7 @@ export const StringUUIDSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"uuid":true}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsUuid()),
 });
 
 /**
@@ -342,7 +349,7 @@ export const StringHttpHeaderNameSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"wellKnownRegex":"HTTP_HEADER_NAME"}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsHttpHeaderName(true)),
 });
 
 /**
@@ -353,7 +360,7 @@ export const StringHttpHeaderValueSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"wellKnownRegex":"HTTP_HEADER_VALUE"}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsHttpHeaderValue(true)),
 });
 
 /**
@@ -364,7 +371,7 @@ export const StringValidHeaderSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"wellKnownRegex":"HTTP_HEADER_VALUE","strict":false}}
    */
-  val: z.string(),
+  val: z.string().refine(stringIsHttpHeaderValue(false)),
 });
 
 /**
@@ -375,7 +382,7 @@ export const StringUUIDIgnoreSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"uuid":true,"ignoreEmpty":true}}
    */
-  val: z.literal("").or(z.string()),
+  val: z.literal("").or(z.string().refine(stringIsUuid())),
 });
 
 /**

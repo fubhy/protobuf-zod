@@ -4,7 +4,7 @@
 /* @ts-nocheck */
 
 import { z } from "zod";
-import { double, float, int32, int64, map, numberGt, numberLt, regexp, sint64, uint32, uint64 } from "protobuf-zod";
+import { double, float, int32, int64, map, numberGt, numberLt, sint64, uint32, uint64 } from "protobuf-zod";
 import { protoInt64 } from "@bufbuild/protobuf";
 
 /**
@@ -107,7 +107,7 @@ export const MapKeysPatternSchema = z.object({
    * @generated from field: map<string, string> val = 1;
    * @validate  {"map":{"keys":{"string":{"pattern":"(?i)^[a-z0-9]+$"}}}}
    */
-  val: map(z.string().regex(regexp("(?i)^[a-z0-9]+$")), z.string()),
+  val: map(z.string().regex(new RegExp("invalid regular expression^")), z.string()),
 });
 
 /**
@@ -118,7 +118,7 @@ export const MapValuesPatternSchema = z.object({
    * @generated from field: map<string, string> val = 1;
    * @validate  {"map":{"values":{"string":{"pattern":"(?i)^[a-z0-9]+$"}}}}
    */
-  val: map(z.string(), z.string().regex(regexp("(?i)^[a-z0-9]+$"))),
+  val: map(z.string(), z.string().regex(new RegExp("invalid regular expression^"))),
 });
 
 /**

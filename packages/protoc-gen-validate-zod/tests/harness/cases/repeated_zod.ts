@@ -9,7 +9,7 @@ import {
   RepeatedEmbeddedEnumIn_AnotherInEnum,
   RepeatedEmbeddedEnumNotIn_AnotherNotInEnum,
 } from "./repeated_pb.js";
-import { double, float, int64, isIn, isNotIn, isUniqueList, numberGt, regexp, sfixed32, uint32 } from "protobuf-zod";
+import { double, float, int64, isIn, isNotIn, isUniqueList, numberGt, sfixed32, uint32 } from "protobuf-zod";
 import { protoInt64 } from "@bufbuild/protobuf";
 import { EmbedSchema as EmbedSchema$1 } from "./other_package/embed_zod.js";
 
@@ -143,7 +143,7 @@ export const RepeatedItemPatternSchema = z.object({
    * @generated from field: repeated string val = 1;
    * @validate  {"repeated":{"items":{"string":{"pattern":"(?i)^[a-z0-9]+$"}}}}
    */
-  val: z.string().regex(regexp("(?i)^[a-z0-9]+$")).array(),
+  val: z.string().regex(new RegExp("invalid regular expression^")).array(),
 });
 
 /**

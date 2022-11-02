@@ -34,12 +34,15 @@
   },
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
-    "vitest": "^0.24.4",
+    "@types/validator": "^13.7.10",
+    "validator": "^13.7.0",
     "vite-tsconfig-paths": "^3.5.2",
+    "vitest": "^0.24.4",
     "zod": "^3.19.1"
   },
   "peerDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
+    "validator": "^13.7.0",
     "zod": "^3.19.1"
   }
 }

@@ -2,7 +2,7 @@ import { ScalarType } from "@bufbuild/protobuf";
 import { literalString, Printable } from "@bufbuild/protoplugin/ecmascript";
 import { hasRulesFor, hasRulesForScalar } from "./rules.js";
 import { GeneratedFile } from "./utils.js";
-import { FieldRules } from "./generated/validate_pb.js";
+import { FieldRules, KnownRegex } from "./generated/validate_pb.js";
 
 export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: FieldRules): Printable[] {
   let typing: Printable[] = [];
@@ -116,7 +116,7 @@ export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: Fi
         }
 
         if (rules.type.value.pattern !== undefined) {
-          typing.push(".regex(", f.regexp(rules.type.value.pattern), ")");
+          typing.push(f.validate.stringMatches(rules.type.value.pattern));
         }
 
         if (rules.type.value.lenBytes !== undefined) {
@@ -139,10 +139,6 @@ export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: Fi
           typing.push(f.validate.stringNotContains(rules.type.value.notContains));
         }
 
-        if (rules.type.value.strict !== undefined) {
-          // TODO: Implement
-        }
-
         if (rules.type.value.in.length) {
           const values = rules.type.value.in.map((value) => literalString(value));
           typing.push(f.validate.isIn(values));
@@ -160,48 +156,64 @@ export function getScalarSchema(f: GeneratedFile, scalar: ScalarType, rules?: Fi
         if (rules.type.value.wellKnown.value) {
           switch (rules.type.value.wellKnown.case) {
             case "email": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsEmail());
               break;
             }
 
             case "hostname": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsHostname());
               break;
             }
 
             case "ip": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsIp());
               break;
             }
 
             case "ipv4": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsIp(4));
               break;
             }
 
             case "ipv6": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsIp(6));
               break;
             }
 
             case "uri": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsUrl());
               break;
             }
 
             case "uriRef": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsUrl(false));
               break;
             }
 
             case "address": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsAddress());
               break;
             }
 
             case "uuid": {
-              // TODO: Implement
+              typing.push(f.validate.stringIsUuid());
               break;
+            }
+
+            case "wellKnownRegex": {
+              const strict = rules.type.value.strict ?? true;
+
+              switch (rules.type.value.wellKnown.value) {
+                case KnownRegex.HTTP_HEADER_NAME: {
+                  typing.push(f.validate.stringIsHttpHeaderName(strict));
+                  break;
+                }
+
+                case KnownRegex.HTTP_HEADER_VALUE: {
+                  typing.push(f.validate.stringIsHttpHeaderValue(strict));
+                  break;
+                }
+              }
             }
           }
         }

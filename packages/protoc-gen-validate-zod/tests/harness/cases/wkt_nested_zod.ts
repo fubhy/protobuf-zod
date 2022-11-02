@@ -4,6 +4,7 @@
 /* @ts-nocheck */
 
 import { z } from "zod";
+import { stringIsUuid } from "protobuf-zod";
 
 /**
  * @generated from message tests.harness.cases.WktLevelOne.WktLevelTwo.WktLevelThree
@@ -13,7 +14,7 @@ export const WktLevelOne_WktLevelTwo_WktLevelThreeSchema = z.object({
    * @generated from field: string uuid = 1;
    * @validate  {"string":{"uuid":true}}
    */
-  uuid: z.string(),
+  uuid: z.string().refine(stringIsUuid()),
 });
 
 /**
