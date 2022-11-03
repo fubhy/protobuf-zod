@@ -15,3 +15,4 @@ plugins:
     opt:
       - target=ts
       - cases=packages/protoc-gen-validate-zod/tests/cases.txt
+      - descriptor=vendor/cases.bin

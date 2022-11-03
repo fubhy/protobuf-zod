@@ -7,7 +7,7 @@ export function createPlugin(version: string = "0.0.0") {
     version: `v${version}`,
     generateTs,
     parseOption: (key) => {
-      if (key !== "cases") {
+      if (key !== "cases" && key !== "descriptor") {
         throw new Error("Unknown option");
       }
     },
