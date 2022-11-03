@@ -3,9 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { double, float, int32, int64, map, numberGt, numberLt, sint64, uint32, uint64 } from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
+import {z} from "zod";
+import {double, float, int32, int64, map, numberGt, numberLt, sint64, uint32, uint64} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.MapNone
@@ -64,7 +64,8 @@ export const MapExactSchema = z.object({
 /**
  * @generated from message tests.harness.cases.MapNoSparse.Msg
  */
-export const MapNoSparse_MsgSchema = z.object({});
+export const MapNoSparse_MsgSchema = z.object({
+});
 
 /**
  * @generated from message tests.harness.cases.MapNoSparse
@@ -173,3 +174,4 @@ export const MultipleMapsSchema = z.object({
    */
   third: map(int32.refine(numberGt(0)), z.boolean()),
 });
+

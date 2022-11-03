@@ -3,35 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import {
-  double,
-  fixed32,
-  fixed64,
-  float,
-  floatEquals,
-  floatIsIn,
-  floatIsNotIn,
-  int32,
-  int64,
-  isIn,
-  isNotIn,
-  numberGt,
-  numberGte,
-  numberInsideGteLte,
-  numberInsideGtLt,
-  numberLt,
-  numberLte,
-  numberOutsideGteLte,
-  numberOutsideGtLt,
-  sfixed32,
-  sfixed64,
-  sint32,
-  sint64,
-  uint32,
-  uint64,
-} from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
+import {z} from "zod";
+import {double, fixed32, fixed64, float, floatEquals, floatIsIn, floatIsNotIn, int32, int64, isIn, isNotIn, numberGt, numberGte, numberInsideGteLte, numberInsideGtLt, numberLt, numberLte, numberOutsideGteLte, numberOutsideGtLt, sfixed32, sfixed64, sint32, sint64, uint32, uint64} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.FloatNone
@@ -62,7 +36,10 @@ export const FloatInSchema = z.object({
    * @generated from field: float val = 1;
    * @validate  {"float":{"in":[4.559999942779541,7.889999866485596]}}
    */
-  val: float.refine(floatIsIn([4.559999942779541, 7.889999866485596])),
+  val: float.refine(floatIsIn([
+    4.559999942779541,
+    7.889999866485596,
+  ])),
 });
 
 /**
@@ -73,7 +50,9 @@ export const FloatNotInSchema = z.object({
    * @generated from field: float val = 1;
    * @validate  {"float":{"notIn":[0]}}
    */
-  val: float.refine(floatIsNotIn([0])),
+  val: float.refine(floatIsNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -204,7 +183,10 @@ export const DoubleInSchema = z.object({
    * @generated from field: double val = 1;
    * @validate  {"double":{"in":[4.56,7.89]}}
    */
-  val: double.refine(isIn([4.56, 7.89])),
+  val: double.refine(isIn([
+    4.56,
+    7.89,
+  ])),
 });
 
 /**
@@ -215,7 +197,9 @@ export const DoubleNotInSchema = z.object({
    * @generated from field: double val = 1;
    * @validate  {"double":{"notIn":[0]}}
    */
-  val: double.refine(isNotIn([0])),
+  val: double.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -346,7 +330,10 @@ export const Int32InSchema = z.object({
    * @generated from field: int32 val = 1;
    * @validate  {"int32":{"in":[2,3]}}
    */
-  val: int32.refine(isIn([2, 3])),
+  val: int32.refine(isIn([
+    2,
+    3,
+  ])),
 });
 
 /**
@@ -357,7 +344,9 @@ export const Int32NotInSchema = z.object({
    * @generated from field: int32 val = 1;
    * @validate  {"int32":{"notIn":[0]}}
    */
-  val: int32.refine(isNotIn([0])),
+  val: int32.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -488,7 +477,10 @@ export const Int64InSchema = z.object({
    * @generated from field: int64 val = 1;
    * @validate  {"int64":{"in":["2","3"]}}
    */
-  val: int64.refine(isIn([protoInt64.parse("2"), protoInt64.parse("3")])),
+  val: int64.refine(isIn([
+    protoInt64.parse("2"),
+    protoInt64.parse("3"),
+  ])),
 });
 
 /**
@@ -499,7 +491,9 @@ export const Int64NotInSchema = z.object({
    * @generated from field: int64 val = 1;
    * @validate  {"int64":{"notIn":["0"]}}
    */
-  val: int64.refine(isNotIn([protoInt64.zero])),
+  val: int64.refine(isNotIn([
+    protoInt64.zero,
+  ])),
 });
 
 /**
@@ -598,9 +592,7 @@ export const Int64IgnoreSchema = z.object({
    * @generated from field: int64 val = 1;
    * @validate  {"int64":{"lte":"128","gte":"256","ignoreEmpty":true}}
    */
-  val: z
-    .literal(protoInt64.zero)
-    .or(int64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
+  val: z.literal(protoInt64.zero).or(int64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
 });
 
 /**
@@ -632,7 +624,10 @@ export const UInt32InSchema = z.object({
    * @generated from field: uint32 val = 1;
    * @validate  {"uint32":{"in":[2,3]}}
    */
-  val: uint32.refine(isIn([2, 3])),
+  val: uint32.refine(isIn([
+    2,
+    3,
+  ])),
 });
 
 /**
@@ -643,7 +638,9 @@ export const UInt32NotInSchema = z.object({
    * @generated from field: uint32 val = 1;
    * @validate  {"uint32":{"notIn":[0]}}
    */
-  val: uint32.refine(isNotIn([0])),
+  val: uint32.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -774,7 +771,10 @@ export const UInt64InSchema = z.object({
    * @generated from field: uint64 val = 1;
    * @validate  {"uint64":{"in":["2","3"]}}
    */
-  val: uint64.refine(isIn([protoInt64.parse("2"), protoInt64.parse("3")])),
+  val: uint64.refine(isIn([
+    protoInt64.parse("2"),
+    protoInt64.parse("3"),
+  ])),
 });
 
 /**
@@ -785,7 +785,9 @@ export const UInt64NotInSchema = z.object({
    * @generated from field: uint64 val = 1;
    * @validate  {"uint64":{"notIn":["0"]}}
    */
-  val: uint64.refine(isNotIn([protoInt64.zero])),
+  val: uint64.refine(isNotIn([
+    protoInt64.zero,
+  ])),
 });
 
 /**
@@ -884,9 +886,7 @@ export const UInt64IgnoreSchema = z.object({
    * @generated from field: uint64 val = 1;
    * @validate  {"uint64":{"lte":"128","gte":"256","ignoreEmpty":true}}
    */
-  val: z
-    .literal(protoInt64.zero)
-    .or(uint64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
+  val: z.literal(protoInt64.zero).or(uint64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
 });
 
 /**
@@ -918,7 +918,10 @@ export const SInt32InSchema = z.object({
    * @generated from field: sint32 val = 1;
    * @validate  {"sint32":{"in":[2,3]}}
    */
-  val: sint32.refine(isIn([2, 3])),
+  val: sint32.refine(isIn([
+    2,
+    3,
+  ])),
 });
 
 /**
@@ -929,7 +932,9 @@ export const SInt32NotInSchema = z.object({
    * @generated from field: sint32 val = 1;
    * @validate  {"sint32":{"notIn":[0]}}
    */
-  val: sint32.refine(isNotIn([0])),
+  val: sint32.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -1060,7 +1065,10 @@ export const SInt64InSchema = z.object({
    * @generated from field: sint64 val = 1;
    * @validate  {"sint64":{"in":["2","3"]}}
    */
-  val: sint64.refine(isIn([protoInt64.parse("2"), protoInt64.parse("3")])),
+  val: sint64.refine(isIn([
+    protoInt64.parse("2"),
+    protoInt64.parse("3"),
+  ])),
 });
 
 /**
@@ -1071,7 +1079,9 @@ export const SInt64NotInSchema = z.object({
    * @generated from field: sint64 val = 1;
    * @validate  {"sint64":{"notIn":["0"]}}
    */
-  val: sint64.refine(isNotIn([protoInt64.zero])),
+  val: sint64.refine(isNotIn([
+    protoInt64.zero,
+  ])),
 });
 
 /**
@@ -1170,9 +1180,7 @@ export const SInt64IgnoreSchema = z.object({
    * @generated from field: sint64 val = 1;
    * @validate  {"sint64":{"lte":"128","gte":"256","ignoreEmpty":true}}
    */
-  val: z
-    .literal(protoInt64.zero)
-    .or(sint64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
+  val: z.literal(protoInt64.zero).or(sint64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
 });
 
 /**
@@ -1204,7 +1212,10 @@ export const Fixed32InSchema = z.object({
    * @generated from field: fixed32 val = 1;
    * @validate  {"fixed32":{"in":[2,3]}}
    */
-  val: fixed32.refine(isIn([2, 3])),
+  val: fixed32.refine(isIn([
+    2,
+    3,
+  ])),
 });
 
 /**
@@ -1215,7 +1226,9 @@ export const Fixed32NotInSchema = z.object({
    * @generated from field: fixed32 val = 1;
    * @validate  {"fixed32":{"notIn":[0]}}
    */
-  val: fixed32.refine(isNotIn([0])),
+  val: fixed32.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -1346,7 +1359,10 @@ export const Fixed64InSchema = z.object({
    * @generated from field: fixed64 val = 1;
    * @validate  {"fixed64":{"in":["2","3"]}}
    */
-  val: fixed64.refine(isIn([protoInt64.parse("2"), protoInt64.parse("3")])),
+  val: fixed64.refine(isIn([
+    protoInt64.parse("2"),
+    protoInt64.parse("3"),
+  ])),
 });
 
 /**
@@ -1357,7 +1373,9 @@ export const Fixed64NotInSchema = z.object({
    * @generated from field: fixed64 val = 1;
    * @validate  {"fixed64":{"notIn":["0"]}}
    */
-  val: fixed64.refine(isNotIn([protoInt64.zero])),
+  val: fixed64.refine(isNotIn([
+    protoInt64.zero,
+  ])),
 });
 
 /**
@@ -1456,9 +1474,7 @@ export const Fixed64IgnoreSchema = z.object({
    * @generated from field: fixed64 val = 1;
    * @validate  {"fixed64":{"lte":"128","gte":"256","ignoreEmpty":true}}
    */
-  val: z
-    .literal(protoInt64.zero)
-    .or(fixed64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
+  val: z.literal(protoInt64.zero).or(fixed64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
 });
 
 /**
@@ -1490,7 +1506,10 @@ export const SFixed32InSchema = z.object({
    * @generated from field: sfixed32 val = 1;
    * @validate  {"sfixed32":{"in":[2,3]}}
    */
-  val: sfixed32.refine(isIn([2, 3])),
+  val: sfixed32.refine(isIn([
+    2,
+    3,
+  ])),
 });
 
 /**
@@ -1501,7 +1520,9 @@ export const SFixed32NotInSchema = z.object({
    * @generated from field: sfixed32 val = 1;
    * @validate  {"sfixed32":{"notIn":[0]}}
    */
-  val: sfixed32.refine(isNotIn([0])),
+  val: sfixed32.refine(isNotIn([
+    0,
+  ])),
 });
 
 /**
@@ -1632,7 +1653,10 @@ export const SFixed64InSchema = z.object({
    * @generated from field: sfixed64 val = 1;
    * @validate  {"sfixed64":{"in":["2","3"]}}
    */
-  val: sfixed64.refine(isIn([protoInt64.parse("2"), protoInt64.parse("3")])),
+  val: sfixed64.refine(isIn([
+    protoInt64.parse("2"),
+    protoInt64.parse("3"),
+  ])),
 });
 
 /**
@@ -1643,7 +1667,9 @@ export const SFixed64NotInSchema = z.object({
    * @generated from field: sfixed64 val = 1;
    * @validate  {"sfixed64":{"notIn":["0"]}}
    */
-  val: sfixed64.refine(isNotIn([protoInt64.zero])),
+  val: sfixed64.refine(isNotIn([
+    protoInt64.zero,
+  ])),
 });
 
 /**
@@ -1742,9 +1768,7 @@ export const SFixed64IgnoreSchema = z.object({
    * @generated from field: sfixed64 val = 1;
    * @validate  {"sfixed64":{"lte":"128","gte":"256","ignoreEmpty":true}}
    */
-  val: z
-    .literal(protoInt64.zero)
-    .or(sfixed64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
+  val: z.literal(protoInt64.zero).or(sfixed64.refine(numberOutsideGteLte(protoInt64.parse("256"), protoInt64.parse("128")))),
 });
 
 /**
@@ -1757,3 +1781,4 @@ export const Int64LTEOptionalSchema = z.object({
    */
   val: int64.refine(numberLte(protoInt64.parse("64"))).nullish(),
 });
+

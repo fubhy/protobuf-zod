@@ -3,10 +3,10 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { Embed_Enumerated } from "./embed_pb.js";
-import { int64, numberGt } from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
+import {z} from "zod";
+import {Embed_Enumerated} from "./embed_pb.js";
+import {int64, numberGt} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from enum tests.harness.cases.yet_another_package.Embed.Enumerated
@@ -25,3 +25,4 @@ export const EmbedSchema = z.object({
    */
   val: int64.refine(numberGt(protoInt64.zero)),
 });
+

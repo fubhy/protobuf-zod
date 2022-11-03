@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Duration, Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Duration, Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.DurationNone
@@ -45,10 +38,7 @@ export class DurationNone extends Message<DurationNone> {
     return new DurationNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationNone | PlainMessage<DurationNone> | undefined,
-    b: DurationNone | PlainMessage<DurationNone> | undefined
-  ): boolean {
+  static equals(a: DurationNone | PlainMessage<DurationNone> | undefined, b: DurationNone | PlainMessage<DurationNone> | undefined): boolean {
     return proto3.util.equals(DurationNone, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class DurationRequired extends Message<DurationRequired> {
     return new DurationRequired().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationRequired | PlainMessage<DurationRequired> | undefined,
-    b: DurationRequired | PlainMessage<DurationRequired> | undefined
-  ): boolean {
+  static equals(a: DurationRequired | PlainMessage<DurationRequired> | undefined, b: DurationRequired | PlainMessage<DurationRequired> | undefined): boolean {
     return proto3.util.equals(DurationRequired, a, b);
   }
 }
@@ -128,10 +115,7 @@ export class DurationConst extends Message<DurationConst> {
     return new DurationConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationConst | PlainMessage<DurationConst> | undefined,
-    b: DurationConst | PlainMessage<DurationConst> | undefined
-  ): boolean {
+  static equals(a: DurationConst | PlainMessage<DurationConst> | undefined, b: DurationConst | PlainMessage<DurationConst> | undefined): boolean {
     return proto3.util.equals(DurationConst, a, b);
   }
 }
@@ -168,10 +152,7 @@ export class DurationIn extends Message<DurationIn> {
     return new DurationIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationIn | PlainMessage<DurationIn> | undefined,
-    b: DurationIn | PlainMessage<DurationIn> | undefined
-  ): boolean {
+  static equals(a: DurationIn | PlainMessage<DurationIn> | undefined, b: DurationIn | PlainMessage<DurationIn> | undefined): boolean {
     return proto3.util.equals(DurationIn, a, b);
   }
 }
@@ -208,10 +189,7 @@ export class DurationNotIn extends Message<DurationNotIn> {
     return new DurationNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationNotIn | PlainMessage<DurationNotIn> | undefined,
-    b: DurationNotIn | PlainMessage<DurationNotIn> | undefined
-  ): boolean {
+  static equals(a: DurationNotIn | PlainMessage<DurationNotIn> | undefined, b: DurationNotIn | PlainMessage<DurationNotIn> | undefined): boolean {
     return proto3.util.equals(DurationNotIn, a, b);
   }
 }
@@ -248,10 +226,7 @@ export class DurationLT extends Message<DurationLT> {
     return new DurationLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationLT | PlainMessage<DurationLT> | undefined,
-    b: DurationLT | PlainMessage<DurationLT> | undefined
-  ): boolean {
+  static equals(a: DurationLT | PlainMessage<DurationLT> | undefined, b: DurationLT | PlainMessage<DurationLT> | undefined): boolean {
     return proto3.util.equals(DurationLT, a, b);
   }
 }
@@ -288,10 +263,7 @@ export class DurationLTE extends Message<DurationLTE> {
     return new DurationLTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationLTE | PlainMessage<DurationLTE> | undefined,
-    b: DurationLTE | PlainMessage<DurationLTE> | undefined
-  ): boolean {
+  static equals(a: DurationLTE | PlainMessage<DurationLTE> | undefined, b: DurationLTE | PlainMessage<DurationLTE> | undefined): boolean {
     return proto3.util.equals(DurationLTE, a, b);
   }
 }
@@ -328,10 +300,7 @@ export class DurationGT extends Message<DurationGT> {
     return new DurationGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationGT | PlainMessage<DurationGT> | undefined,
-    b: DurationGT | PlainMessage<DurationGT> | undefined
-  ): boolean {
+  static equals(a: DurationGT | PlainMessage<DurationGT> | undefined, b: DurationGT | PlainMessage<DurationGT> | undefined): boolean {
     return proto3.util.equals(DurationGT, a, b);
   }
 }
@@ -368,10 +337,7 @@ export class DurationGTE extends Message<DurationGTE> {
     return new DurationGTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationGTE | PlainMessage<DurationGTE> | undefined,
-    b: DurationGTE | PlainMessage<DurationGTE> | undefined
-  ): boolean {
+  static equals(a: DurationGTE | PlainMessage<DurationGTE> | undefined, b: DurationGTE | PlainMessage<DurationGTE> | undefined): boolean {
     return proto3.util.equals(DurationGTE, a, b);
   }
 }
@@ -408,10 +374,7 @@ export class DurationGTLT extends Message<DurationGTLT> {
     return new DurationGTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationGTLT | PlainMessage<DurationGTLT> | undefined,
-    b: DurationGTLT | PlainMessage<DurationGTLT> | undefined
-  ): boolean {
+  static equals(a: DurationGTLT | PlainMessage<DurationGTLT> | undefined, b: DurationGTLT | PlainMessage<DurationGTLT> | undefined): boolean {
     return proto3.util.equals(DurationGTLT, a, b);
   }
 }
@@ -448,10 +411,7 @@ export class DurationExLTGT extends Message<DurationExLTGT> {
     return new DurationExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationExLTGT | PlainMessage<DurationExLTGT> | undefined,
-    b: DurationExLTGT | PlainMessage<DurationExLTGT> | undefined
-  ): boolean {
+  static equals(a: DurationExLTGT | PlainMessage<DurationExLTGT> | undefined, b: DurationExLTGT | PlainMessage<DurationExLTGT> | undefined): boolean {
     return proto3.util.equals(DurationExLTGT, a, b);
   }
 }
@@ -488,10 +448,7 @@ export class DurationGTELTE extends Message<DurationGTELTE> {
     return new DurationGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationGTELTE | PlainMessage<DurationGTELTE> | undefined,
-    b: DurationGTELTE | PlainMessage<DurationGTELTE> | undefined
-  ): boolean {
+  static equals(a: DurationGTELTE | PlainMessage<DurationGTELTE> | undefined, b: DurationGTELTE | PlainMessage<DurationGTELTE> | undefined): boolean {
     return proto3.util.equals(DurationGTELTE, a, b);
   }
 }
@@ -528,10 +485,7 @@ export class DurationExGTELTE extends Message<DurationExGTELTE> {
     return new DurationExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationExGTELTE | PlainMessage<DurationExGTELTE> | undefined,
-    b: DurationExGTELTE | PlainMessage<DurationExGTELTE> | undefined
-  ): boolean {
+  static equals(a: DurationExGTELTE | PlainMessage<DurationExGTELTE> | undefined, b: DurationExGTELTE | PlainMessage<DurationExGTELTE> | undefined): boolean {
     return proto3.util.equals(DurationExGTELTE, a, b);
   }
 }
@@ -577,10 +531,8 @@ export class DurationFieldWithOtherFields extends Message<DurationFieldWithOther
     return new DurationFieldWithOtherFields().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationFieldWithOtherFields | PlainMessage<DurationFieldWithOtherFields> | undefined,
-    b: DurationFieldWithOtherFields | PlainMessage<DurationFieldWithOtherFields> | undefined
-  ): boolean {
+  static equals(a: DurationFieldWithOtherFields | PlainMessage<DurationFieldWithOtherFields> | undefined, b: DurationFieldWithOtherFields | PlainMessage<DurationFieldWithOtherFields> | undefined): boolean {
     return proto3.util.equals(DurationFieldWithOtherFields, a, b);
   }
 }
+

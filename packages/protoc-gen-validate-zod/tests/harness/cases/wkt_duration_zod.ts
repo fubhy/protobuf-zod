@@ -3,8 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { int32, numberGt } from "protobuf-zod";
+import {z} from "zod";
+import {int32, numberGt} from "protobuf-zod";
 
 /**
  * @generated from message tests.harness.cases.DurationNone
@@ -169,3 +169,4 @@ export const DurationFieldWithOtherFieldsSchema = z.object({
    */
   intVal: int32.refine(numberGt(16)),
 });
+

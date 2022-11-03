@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.BoolNone
@@ -45,10 +38,7 @@ export class BoolNone extends Message<BoolNone> {
     return new BoolNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: BoolNone | PlainMessage<BoolNone> | undefined,
-    b: BoolNone | PlainMessage<BoolNone> | undefined
-  ): boolean {
+  static equals(a: BoolNone | PlainMessage<BoolNone> | undefined, b: BoolNone | PlainMessage<BoolNone> | undefined): boolean {
     return proto3.util.equals(BoolNone, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class BoolConstTrue extends Message<BoolConstTrue> {
     return new BoolConstTrue().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: BoolConstTrue | PlainMessage<BoolConstTrue> | undefined,
-    b: BoolConstTrue | PlainMessage<BoolConstTrue> | undefined
-  ): boolean {
+  static equals(a: BoolConstTrue | PlainMessage<BoolConstTrue> | undefined, b: BoolConstTrue | PlainMessage<BoolConstTrue> | undefined): boolean {
     return proto3.util.equals(BoolConstTrue, a, b);
   }
 }
@@ -125,10 +112,8 @@ export class BoolConstFalse extends Message<BoolConstFalse> {
     return new BoolConstFalse().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: BoolConstFalse | PlainMessage<BoolConstFalse> | undefined,
-    b: BoolConstFalse | PlainMessage<BoolConstFalse> | undefined
-  ): boolean {
+  static equals(a: BoolConstFalse | PlainMessage<BoolConstFalse> | undefined, b: BoolConstFalse | PlainMessage<BoolConstFalse> | undefined): boolean {
     return proto3.util.equals(BoolConstFalse, a, b);
   }
 }
+

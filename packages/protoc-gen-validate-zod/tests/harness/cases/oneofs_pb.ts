@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.TestOneOfMsg
@@ -45,10 +38,7 @@ export class TestOneOfMsg extends Message<TestOneOfMsg> {
     return new TestOneOfMsg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TestOneOfMsg | PlainMessage<TestOneOfMsg> | undefined,
-    b: TestOneOfMsg | PlainMessage<TestOneOfMsg> | undefined
-  ): boolean {
+  static equals(a: TestOneOfMsg | PlainMessage<TestOneOfMsg> | undefined, b: TestOneOfMsg | PlainMessage<TestOneOfMsg> | undefined): boolean {
     return proto3.util.equals(TestOneOfMsg, a, b);
   }
 }
@@ -60,22 +50,19 @@ export class OneOfNone extends Message<OneOfNone> {
   /**
    * @generated from oneof tests.harness.cases.OneOfNone.o
    */
-  o:
-    | {
-        /**
-         * @generated from field: string x = 1;
-         */
-        value: string;
-        case: "x";
-      }
-    | {
-        /**
-         * @generated from field: int32 y = 2;
-         */
-        value: number;
-        case: "y";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  o: {
+    /**
+     * @generated from field: string x = 1;
+     */
+    value: string;
+    case: "x";
+  } | {
+    /**
+     * @generated from field: int32 y = 2;
+     */
+    value: number;
+    case: "y";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<OneOfNone>) {
     super();
@@ -101,10 +88,7 @@ export class OneOfNone extends Message<OneOfNone> {
     return new OneOfNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: OneOfNone | PlainMessage<OneOfNone> | undefined,
-    b: OneOfNone | PlainMessage<OneOfNone> | undefined
-  ): boolean {
+  static equals(a: OneOfNone | PlainMessage<OneOfNone> | undefined, b: OneOfNone | PlainMessage<OneOfNone> | undefined): boolean {
     return proto3.util.equals(OneOfNone, a, b);
   }
 }
@@ -116,29 +100,25 @@ export class OneOf extends Message<OneOf> {
   /**
    * @generated from oneof tests.harness.cases.OneOf.o
    */
-  o:
-    | {
-        /**
-         * @generated from field: string x = 1;
-         */
-        value: string;
-        case: "x";
-      }
-    | {
-        /**
-         * @generated from field: int32 y = 2;
-         */
-        value: number;
-        case: "y";
-      }
-    | {
-        /**
-         * @generated from field: tests.harness.cases.TestOneOfMsg z = 3;
-         */
-        value: TestOneOfMsg;
-        case: "z";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  o: {
+    /**
+     * @generated from field: string x = 1;
+     */
+    value: string;
+    case: "x";
+  } | {
+    /**
+     * @generated from field: int32 y = 2;
+     */
+    value: number;
+    case: "y";
+  } | {
+    /**
+     * @generated from field: tests.harness.cases.TestOneOfMsg z = 3;
+     */
+    value: TestOneOfMsg;
+    case: "z";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<OneOf>) {
     super();
@@ -177,36 +157,31 @@ export class OneOfRequired extends Message<OneOfRequired> {
   /**
    * @generated from oneof tests.harness.cases.OneOfRequired.o
    */
-  o:
-    | {
-        /**
-         * @generated from field: string x = 1;
-         */
-        value: string;
-        case: "x";
-      }
-    | {
-        /**
-         * @generated from field: int32 y = 2;
-         */
-        value: number;
-        case: "y";
-      }
-    | {
-        /**
-         * @generated from field: int32 name_with_underscores = 3;
-         */
-        value: number;
-        case: "nameWithUnderscores";
-      }
-    | {
-        /**
-         * @generated from field: int32 under_and_1_number = 4;
-         */
-        value: number;
-        case: "underAnd1Number";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  o: {
+    /**
+     * @generated from field: string x = 1;
+     */
+    value: string;
+    case: "x";
+  } | {
+    /**
+     * @generated from field: int32 y = 2;
+     */
+    value: number;
+    case: "y";
+  } | {
+    /**
+     * @generated from field: int32 name_with_underscores = 3;
+     */
+    value: number;
+    case: "nameWithUnderscores";
+  } | {
+    /**
+     * @generated from field: int32 under_and_1_number = 4;
+     */
+    value: number;
+    case: "underAnd1Number";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<OneOfRequired>) {
     super();
@@ -234,10 +209,7 @@ export class OneOfRequired extends Message<OneOfRequired> {
     return new OneOfRequired().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: OneOfRequired | PlainMessage<OneOfRequired> | undefined,
-    b: OneOfRequired | PlainMessage<OneOfRequired> | undefined
-  ): boolean {
+  static equals(a: OneOfRequired | PlainMessage<OneOfRequired> | undefined, b: OneOfRequired | PlainMessage<OneOfRequired> | undefined): boolean {
     return proto3.util.equals(OneOfRequired, a, b);
   }
 }
@@ -249,29 +221,25 @@ export class OneOfIgnoreEmpty extends Message<OneOfIgnoreEmpty> {
   /**
    * @generated from oneof tests.harness.cases.OneOfIgnoreEmpty.o
    */
-  o:
-    | {
-        /**
-         * @generated from field: string x = 1;
-         */
-        value: string;
-        case: "x";
-      }
-    | {
-        /**
-         * @generated from field: bytes y = 2;
-         */
-        value: Uint8Array;
-        case: "y";
-      }
-    | {
-        /**
-         * @generated from field: int32 z = 3;
-         */
-        value: number;
-        case: "z";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  o: {
+    /**
+     * @generated from field: string x = 1;
+     */
+    value: string;
+    case: "x";
+  } | {
+    /**
+     * @generated from field: bytes y = 2;
+     */
+    value: Uint8Array;
+    case: "y";
+  } | {
+    /**
+     * @generated from field: int32 z = 3;
+     */
+    value: number;
+    case: "z";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<OneOfIgnoreEmpty>) {
     super();
@@ -298,10 +266,8 @@ export class OneOfIgnoreEmpty extends Message<OneOfIgnoreEmpty> {
     return new OneOfIgnoreEmpty().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: OneOfIgnoreEmpty | PlainMessage<OneOfIgnoreEmpty> | undefined,
-    b: OneOfIgnoreEmpty | PlainMessage<OneOfIgnoreEmpty> | undefined
-  ): boolean {
+  static equals(a: OneOfIgnoreEmpty | PlainMessage<OneOfIgnoreEmpty> | undefined, b: OneOfIgnoreEmpty | PlainMessage<OneOfIgnoreEmpty> | undefined): boolean {
     return proto3.util.equals(OneOfIgnoreEmpty, a, b);
   }
 }
+

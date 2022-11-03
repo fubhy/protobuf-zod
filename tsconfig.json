@@ -1,11 +1,11 @@
 {
   "extends": "./tsconfig.base.json",
-  "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "protoc-gen-validate-zod": ["./packages/protoc-gen-validate-zod/src"],
-      "protobuf-zod": ["./packages/protobuf-zod/src"]
+      "protobuf-zod": ["./packages/protobuf-zod/src"],
+      "protobuf-zod-vitest": ["./packages/protobuf-zod-vitest/src"],
+      "protobuf-zod-vitest/types": ["./packages/protobuf-zod-vitest/src/types"]
     }
   }
 }

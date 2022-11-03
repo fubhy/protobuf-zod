@@ -3,17 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import {
-  bytes,
-  bytesLength,
-  bytesMaxLength,
-  bytesMinLength,
-  int32,
-  numberGt,
-  numberOutsideGteLte,
-  oneof,
-} from "protobuf-zod";
+import {z} from "zod";
+import {bytes, bytesLength, bytesMaxLength, bytesMinLength, int32, numberGt, numberOutsideGteLte, oneof} from "protobuf-zod";
 
 /**
  * @generated from message tests.harness.cases.TestOneOfMsg
@@ -170,3 +161,4 @@ export const OneOfIgnoreEmptySchema = z.object({
     }),
   ]).nullish(),
 });
+

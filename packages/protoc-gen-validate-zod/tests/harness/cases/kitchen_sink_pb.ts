@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Any, Duration, FloatValue, Message, proto3, Timestamp } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Any, Duration, FloatValue, Message, proto3, Timestamp} from "@bufbuild/protobuf";
 
 /**
  * @generated from enum tests.harness.cases.ComplexTestEnum
@@ -121,22 +114,19 @@ export class ComplexTestMsg extends Message<ComplexTestMsg> {
   /**
    * @generated from oneof tests.harness.cases.ComplexTestMsg.o
    */
-  o:
-    | {
-        /**
-         * @generated from field: string x = 16;
-         */
-        value: string;
-        case: "x";
-      }
-    | {
-        /**
-         * @generated from field: int32 y = 17;
-         */
-        value: number;
-        case: "y";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  o: {
+    /**
+     * @generated from field: string x = 16;
+     */
+    value: string;
+    case: "x";
+  } | {
+    /**
+     * @generated from field: int32 y = 17;
+     */
+    value: number;
+    case: "y";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<ComplexTestMsg>) {
     super();
@@ -159,13 +149,7 @@ export class ComplexTestMsg extends Message<ComplexTestMsg> {
     { no: 11, name: "enum_const", kind: "enum", T: proto3.getEnumType(ComplexTestEnum) },
     { no: 12, name: "any_val", kind: "message", T: Any },
     { no: 13, name: "rep_ts_val", kind: "message", T: Timestamp, repeated: true },
-    {
-      no: 14,
-      name: "map_val",
-      kind: "map",
-      K: 17 /* ScalarType.SINT32 */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 14, name: "map_val", kind: "map", K: 17 /* ScalarType.SINT32 */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
     { no: 15, name: "bytes_val", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 16, name: "x", kind: "scalar", T: 9 /* ScalarType.STRING */, oneof: "o" },
     { no: 17, name: "y", kind: "scalar", T: 5 /* ScalarType.INT32 */, oneof: "o" },
@@ -183,10 +167,7 @@ export class ComplexTestMsg extends Message<ComplexTestMsg> {
     return new ComplexTestMsg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: ComplexTestMsg | PlainMessage<ComplexTestMsg> | undefined,
-    b: ComplexTestMsg | PlainMessage<ComplexTestMsg> | undefined
-  ): boolean {
+  static equals(a: ComplexTestMsg | PlainMessage<ComplexTestMsg> | undefined, b: ComplexTestMsg | PlainMessage<ComplexTestMsg> | undefined): boolean {
     return proto3.util.equals(ComplexTestMsg, a, b);
   }
 }
@@ -223,10 +204,8 @@ export class KitchenSinkMessage extends Message<KitchenSinkMessage> {
     return new KitchenSinkMessage().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: KitchenSinkMessage | PlainMessage<KitchenSinkMessage> | undefined,
-    b: KitchenSinkMessage | PlainMessage<KitchenSinkMessage> | undefined
-  ): boolean {
+  static equals(a: KitchenSinkMessage | PlainMessage<KitchenSinkMessage> | undefined, b: KitchenSinkMessage | PlainMessage<KitchenSinkMessage> | undefined): boolean {
     return proto3.util.equals(KitchenSinkMessage, a, b);
   }
 }
+

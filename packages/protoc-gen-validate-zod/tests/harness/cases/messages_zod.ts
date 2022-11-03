@@ -3,9 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { uint64 } from "protobuf-zod";
-import { EmbedSchema } from "./other_package/embed_zod.js";
+import {z} from "zod";
+import {uint64} from "protobuf-zod";
+import {EmbedSchema} from "./other_package/embed_zod.js";
 
 /**
  * @generated from message tests.harness.cases.TestMsg
@@ -25,7 +25,8 @@ export const TestMsgSchema = z.object({
 /**
  * @generated from message tests.harness.cases.MessageNone.NoneMsg
  */
-export const MessageNone_NoneMsgSchema = z.object({});
+export const MessageNone_NoneMsgSchema = z.object({
+});
 
 /**
  * @generated from message tests.harness.cases.MessageNone
@@ -132,4 +133,6 @@ export const MessageRequiredOneofSchema = z.object({
 /**
  * @generated from message tests.harness.cases.MessageWith3dInside
  */
-export const MessageWith3dInsideSchema = z.object({});
+export const MessageWith3dInsideSchema = z.object({
+});
+

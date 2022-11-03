@@ -3,15 +3,11 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import {
-  AnEnum,
-  RepeatedEmbeddedEnumIn_AnotherInEnum,
-  RepeatedEmbeddedEnumNotIn_AnotherNotInEnum,
-} from "./repeated_pb.js";
-import { double, float, int64, isIn, isNotIn, isUniqueList, numberGt, sfixed32, uint32 } from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
-import { EmbedSchema as EmbedSchema$1 } from "./other_package/embed_zod.js";
+import {z} from "zod";
+import {AnEnum, RepeatedEmbeddedEnumIn_AnotherInEnum, RepeatedEmbeddedEnumNotIn_AnotherNotInEnum} from "./repeated_pb.js";
+import {double, float, int64, isIn, isNotIn, isUniqueList, numberGt, sfixed32, uint32} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
+import {EmbedSchema as EmbedSchema$1} from "./other_package/embed_zod.js";
 
 /**
  * @generated from enum tests.harness.cases.AnEnum
@@ -46,10 +42,7 @@ export const RepeatedEmbedNoneSchema = z.object({
   /**
    * @generated from field: repeated tests.harness.cases.Embed val = 1;
    */
-  val: z
-    .lazy(() => EmbedSchema)
-    .nullish()
-    .array(),
+  val: z.lazy(() => EmbedSchema).nullish().array(),
 });
 
 /**
@@ -59,10 +52,7 @@ export const RepeatedEmbedCrossPackageNoneSchema = z.object({
   /**
    * @generated from field: repeated tests.harness.cases.other_package.Embed val = 1;
    */
-  val: z
-    .lazy(() => EmbedSchema$1)
-    .nullish()
-    .array(),
+  val: z.lazy(() => EmbedSchema$1).nullish().array(),
 });
 
 /**
@@ -73,11 +63,7 @@ export const RepeatedMinSchema = z.object({
    * @generated from field: repeated tests.harness.cases.Embed val = 1;
    * @validate  {"repeated":{"minItems":"2"}}
    */
-  val: z
-    .lazy(() => EmbedSchema)
-    .nullish()
-    .array()
-    .min(2),
+  val: z.lazy(() => EmbedSchema).nullish().array().min(2),
 });
 
 /**
@@ -165,10 +151,10 @@ export const RepeatedItemInSchema = z.object({
    * @generated from field: repeated string val = 1;
    * @validate  {"repeated":{"items":{"string":{"in":["foo","bar"]}}}}
    */
-  val: z
-    .string()
-    .refine(isIn(["foo", "bar"]))
-    .array(),
+  val: z.string().refine(isIn([
+    "foo",
+    "bar",
+  ])).array(),
 });
 
 /**
@@ -179,10 +165,10 @@ export const RepeatedItemNotInSchema = z.object({
    * @generated from field: repeated string val = 1;
    * @validate  {"repeated":{"items":{"string":{"notIn":["foo","bar"]}}}}
    */
-  val: z
-    .string()
-    .refine(isNotIn(["foo", "bar"]))
-    .array(),
+  val: z.string().refine(isNotIn([
+    "foo",
+    "bar",
+  ])).array(),
 });
 
 /**
@@ -193,10 +179,9 @@ export const RepeatedEnumInSchema = z.object({
    * @generated from field: repeated tests.harness.cases.AnEnum val = 1;
    * @validate  {"repeated":{"items":{"enum":{"in":[0]}}}}
    */
-  val: z
-    .lazy(() => AnEnumSchema)
-    .refine(isIn([0]))
-    .array(),
+  val: z.lazy(() => AnEnumSchema).refine(isIn([
+    0,
+  ])).array(),
 });
 
 /**
@@ -207,10 +192,9 @@ export const RepeatedEnumNotInSchema = z.object({
    * @generated from field: repeated tests.harness.cases.AnEnum val = 1;
    * @validate  {"repeated":{"items":{"enum":{"notIn":[0]}}}}
    */
-  val: z
-    .lazy(() => AnEnumSchema)
-    .refine(isNotIn([0]))
-    .array(),
+  val: z.lazy(() => AnEnumSchema).refine(isNotIn([
+    0,
+  ])).array(),
 });
 
 /**
@@ -226,18 +210,15 @@ export const RepeatedEmbeddedEnumInSchema = z.object({
    * @generated from field: repeated tests.harness.cases.RepeatedEmbeddedEnumIn.AnotherInEnum val = 1;
    * @validate  {"repeated":{"items":{"enum":{"in":[0]}}}}
    */
-  val: z
-    .lazy(() => RepeatedEmbeddedEnumIn_AnotherInEnumSchema)
-    .refine(isIn([0]))
-    .array(),
+  val: z.lazy(() => RepeatedEmbeddedEnumIn_AnotherInEnumSchema).refine(isIn([
+    0,
+  ])).array(),
 });
 
 /**
  * @generated from enum tests.harness.cases.RepeatedEmbeddedEnumNotIn.AnotherNotInEnum
  */
-export const RepeatedEmbeddedEnumNotIn_AnotherNotInEnumSchema = z.nativeEnum(
-  RepeatedEmbeddedEnumNotIn_AnotherNotInEnum
-);
+export const RepeatedEmbeddedEnumNotIn_AnotherNotInEnumSchema = z.nativeEnum(RepeatedEmbeddedEnumNotIn_AnotherNotInEnum);
 
 /**
  * @generated from message tests.harness.cases.RepeatedEmbeddedEnumNotIn
@@ -247,10 +228,9 @@ export const RepeatedEmbeddedEnumNotInSchema = z.object({
    * @generated from field: repeated tests.harness.cases.RepeatedEmbeddedEnumNotIn.AnotherNotInEnum val = 1;
    * @validate  {"repeated":{"items":{"enum":{"notIn":[0]}}}}
    */
-  val: z
-    .lazy(() => RepeatedEmbeddedEnumNotIn_AnotherNotInEnumSchema)
-    .refine(isNotIn([0]))
-    .array(),
+  val: z.lazy(() => RepeatedEmbeddedEnumNotIn_AnotherNotInEnumSchema).refine(isNotIn([
+    0,
+  ])).array(),
 });
 
 /**
@@ -318,3 +298,4 @@ export const RepeatedExactIgnoreSchema = z.object({
    */
   val: uint32.array().max(3).min(3),
 });
+

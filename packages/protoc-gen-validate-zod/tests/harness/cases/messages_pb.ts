@@ -3,16 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message as Message$1, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { Embed } from "./other_package/embed_pb.js";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message as Message$1, proto3, protoInt64} from "@bufbuild/protobuf";
+import {Embed} from "./other_package/embed_pb.js";
 
 /**
  * @generated from message tests.harness.cases.TestMsg
@@ -52,10 +45,7 @@ export class TestMsg extends Message$1<TestMsg> {
     return new TestMsg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TestMsg | PlainMessage<TestMsg> | undefined,
-    b: TestMsg | PlainMessage<TestMsg> | undefined
-  ): boolean {
+  static equals(a: TestMsg | PlainMessage<TestMsg> | undefined, b: TestMsg | PlainMessage<TestMsg> | undefined): boolean {
     return proto3.util.equals(TestMsg, a, b);
   }
 }
@@ -92,10 +82,7 @@ export class MessageNone extends Message$1<MessageNone> {
     return new MessageNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageNone | PlainMessage<MessageNone> | undefined,
-    b: MessageNone | PlainMessage<MessageNone> | undefined
-  ): boolean {
+  static equals(a: MessageNone | PlainMessage<MessageNone> | undefined, b: MessageNone | PlainMessage<MessageNone> | undefined): boolean {
     return proto3.util.equals(MessageNone, a, b);
   }
 }
@@ -111,7 +98,8 @@ export class MessageNone_NoneMsg extends Message$1<MessageNone_NoneMsg> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MessageNone.NoneMsg";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => []);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MessageNone_NoneMsg {
     return new MessageNone_NoneMsg().fromBinary(bytes, options);
@@ -125,10 +113,7 @@ export class MessageNone_NoneMsg extends Message$1<MessageNone_NoneMsg> {
     return new MessageNone_NoneMsg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageNone_NoneMsg | PlainMessage<MessageNone_NoneMsg> | undefined,
-    b: MessageNone_NoneMsg | PlainMessage<MessageNone_NoneMsg> | undefined
-  ): boolean {
+  static equals(a: MessageNone_NoneMsg | PlainMessage<MessageNone_NoneMsg> | undefined, b: MessageNone_NoneMsg | PlainMessage<MessageNone_NoneMsg> | undefined): boolean {
     return proto3.util.equals(MessageNone_NoneMsg, a, b);
   }
 }
@@ -165,10 +150,7 @@ export class MessageDisabled extends Message$1<MessageDisabled> {
     return new MessageDisabled().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageDisabled | PlainMessage<MessageDisabled> | undefined,
-    b: MessageDisabled | PlainMessage<MessageDisabled> | undefined
-  ): boolean {
+  static equals(a: MessageDisabled | PlainMessage<MessageDisabled> | undefined, b: MessageDisabled | PlainMessage<MessageDisabled> | undefined): boolean {
     return proto3.util.equals(MessageDisabled, a, b);
   }
 }
@@ -205,10 +187,7 @@ export class MessageIgnored extends Message$1<MessageIgnored> {
     return new MessageIgnored().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageIgnored | PlainMessage<MessageIgnored> | undefined,
-    b: MessageIgnored | PlainMessage<MessageIgnored> | undefined
-  ): boolean {
+  static equals(a: MessageIgnored | PlainMessage<MessageIgnored> | undefined, b: MessageIgnored | PlainMessage<MessageIgnored> | undefined): boolean {
     return proto3.util.equals(MessageIgnored, a, b);
   }
 }
@@ -245,10 +224,7 @@ export class Message extends Message$1<Message> {
     return new Message().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Message | PlainMessage<Message> | undefined,
-    b: Message | PlainMessage<Message> | undefined
-  ): boolean {
+  static equals(a: Message | PlainMessage<Message> | undefined, b: Message | PlainMessage<Message> | undefined): boolean {
     return proto3.util.equals(Message, a, b);
   }
 }
@@ -285,10 +261,7 @@ export class MessageCrossPackage extends Message$1<MessageCrossPackage> {
     return new MessageCrossPackage().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageCrossPackage | PlainMessage<MessageCrossPackage> | undefined,
-    b: MessageCrossPackage | PlainMessage<MessageCrossPackage> | undefined
-  ): boolean {
+  static equals(a: MessageCrossPackage | PlainMessage<MessageCrossPackage> | undefined, b: MessageCrossPackage | PlainMessage<MessageCrossPackage> | undefined): boolean {
     return proto3.util.equals(MessageCrossPackage, a, b);
   }
 }
@@ -325,10 +298,7 @@ export class MessageSkip extends Message$1<MessageSkip> {
     return new MessageSkip().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageSkip | PlainMessage<MessageSkip> | undefined,
-    b: MessageSkip | PlainMessage<MessageSkip> | undefined
-  ): boolean {
+  static equals(a: MessageSkip | PlainMessage<MessageSkip> | undefined, b: MessageSkip | PlainMessage<MessageSkip> | undefined): boolean {
     return proto3.util.equals(MessageSkip, a, b);
   }
 }
@@ -365,10 +335,7 @@ export class MessageRequired extends Message$1<MessageRequired> {
     return new MessageRequired().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageRequired | PlainMessage<MessageRequired> | undefined,
-    b: MessageRequired | PlainMessage<MessageRequired> | undefined
-  ): boolean {
+  static equals(a: MessageRequired | PlainMessage<MessageRequired> | undefined, b: MessageRequired | PlainMessage<MessageRequired> | undefined): boolean {
     return proto3.util.equals(MessageRequired, a, b);
   }
 }
@@ -405,10 +372,7 @@ export class MessageRequiredButOptional extends Message$1<MessageRequiredButOpti
     return new MessageRequiredButOptional().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageRequiredButOptional | PlainMessage<MessageRequiredButOptional> | undefined,
-    b: MessageRequiredButOptional | PlainMessage<MessageRequiredButOptional> | undefined
-  ): boolean {
+  static equals(a: MessageRequiredButOptional | PlainMessage<MessageRequiredButOptional> | undefined, b: MessageRequiredButOptional | PlainMessage<MessageRequiredButOptional> | undefined): boolean {
     return proto3.util.equals(MessageRequiredButOptional, a, b);
   }
 }
@@ -420,15 +384,13 @@ export class MessageRequiredOneof extends Message$1<MessageRequiredOneof> {
   /**
    * @generated from oneof tests.harness.cases.MessageRequiredOneof.one
    */
-  one:
-    | {
-        /**
-         * @generated from field: tests.harness.cases.TestMsg val = 1;
-         */
-        value: TestMsg;
-        case: "val";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  one: {
+    /**
+     * @generated from field: tests.harness.cases.TestMsg val = 1;
+     */
+    value: TestMsg;
+    case: "val";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<MessageRequiredOneof>) {
     super();
@@ -453,10 +415,7 @@ export class MessageRequiredOneof extends Message$1<MessageRequiredOneof> {
     return new MessageRequiredOneof().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageRequiredOneof | PlainMessage<MessageRequiredOneof> | undefined,
-    b: MessageRequiredOneof | PlainMessage<MessageRequiredOneof> | undefined
-  ): boolean {
+  static equals(a: MessageRequiredOneof | PlainMessage<MessageRequiredOneof> | undefined, b: MessageRequiredOneof | PlainMessage<MessageRequiredOneof> | undefined): boolean {
     return proto3.util.equals(MessageRequiredOneof, a, b);
   }
 }
@@ -472,7 +431,8 @@ export class MessageWith3dInside extends Message$1<MessageWith3dInside> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MessageWith3dInside";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => []);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MessageWith3dInside {
     return new MessageWith3dInside().fromBinary(bytes, options);
@@ -486,10 +446,8 @@ export class MessageWith3dInside extends Message$1<MessageWith3dInside> {
     return new MessageWith3dInside().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageWith3dInside | PlainMessage<MessageWith3dInside> | undefined,
-    b: MessageWith3dInside | PlainMessage<MessageWith3dInside> | undefined
-  ): boolean {
+  static equals(a: MessageWith3dInside | PlainMessage<MessageWith3dInside> | undefined, b: MessageWith3dInside | PlainMessage<MessageWith3dInside> | undefined): boolean {
     return proto3.util.equals(MessageWith3dInside, a, b);
   }
 }
+

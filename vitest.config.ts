@@ -2,8 +2,8 @@ import { defineConfig } from "vitest/config";
 import paths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  plugins: [paths({ root: "../../" })],
+  plugins: [paths()],
   test: {
-    passWithNoTests: true,
+    setupFiles: ["./vitest.setup.ts"],
   },
 });

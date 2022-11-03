@@ -25,12 +25,10 @@
     "node": ">=16"
   },
   "scripts": {
-    "codegen": "buf generate https://github.com/bufbuild/protoc-gen-validate.git --path=tests/harness/cases && buf generate https://github.com/bufbuild/protoc-gen-validate.git#subdir=validate --template=buf.gen.validate.yaml",
     "build": "tsc -p tsconfig.build.json",
     "lint": "eslint \"{src,tests,bin}/**/*.ts\" --cache",
     "format": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@bufbuild/protobuf": "^0.2.1",
@@ -39,12 +37,7 @@
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
     "@bufbuild/protoc-gen-es": "^0.2.1",
-    "@vitest/ui": "^0.24.5",
     "protobuf-zod": "workspace:*",
-    "ts-node": "^10.9.1",
-    "vite": "^3.2.2",
-    "vite-tsconfig-paths": "^3.5.2",
-    "vitest": "^0.24.4",
     "zod": "^3.19.1"
   }
 }

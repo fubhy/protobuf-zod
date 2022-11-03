@@ -3,7 +3,7 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
+import {z} from "zod";
 
 /**
  * @generated from message tests.harness.cases.TimestampNone
@@ -179,3 +179,4 @@ export const TimestampGTNowWithinSchema = z.object({
    */
   val: z.any().nullish(),
 });
+

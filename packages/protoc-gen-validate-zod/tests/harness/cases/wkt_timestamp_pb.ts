@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3, Timestamp } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3, Timestamp} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.TimestampNone
@@ -45,10 +38,7 @@ export class TimestampNone extends Message<TimestampNone> {
     return new TimestampNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampNone | PlainMessage<TimestampNone> | undefined,
-    b: TimestampNone | PlainMessage<TimestampNone> | undefined
-  ): boolean {
+  static equals(a: TimestampNone | PlainMessage<TimestampNone> | undefined, b: TimestampNone | PlainMessage<TimestampNone> | undefined): boolean {
     return proto3.util.equals(TimestampNone, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class TimestampRequired extends Message<TimestampRequired> {
     return new TimestampRequired().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampRequired | PlainMessage<TimestampRequired> | undefined,
-    b: TimestampRequired | PlainMessage<TimestampRequired> | undefined
-  ): boolean {
+  static equals(a: TimestampRequired | PlainMessage<TimestampRequired> | undefined, b: TimestampRequired | PlainMessage<TimestampRequired> | undefined): boolean {
     return proto3.util.equals(TimestampRequired, a, b);
   }
 }
@@ -125,10 +112,7 @@ export class TimestampConst extends Message<TimestampConst> {
     return new TimestampConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampConst | PlainMessage<TimestampConst> | undefined,
-    b: TimestampConst | PlainMessage<TimestampConst> | undefined
-  ): boolean {
+  static equals(a: TimestampConst | PlainMessage<TimestampConst> | undefined, b: TimestampConst | PlainMessage<TimestampConst> | undefined): boolean {
     return proto3.util.equals(TimestampConst, a, b);
   }
 }
@@ -165,10 +149,7 @@ export class TimestampLT extends Message<TimestampLT> {
     return new TimestampLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampLT | PlainMessage<TimestampLT> | undefined,
-    b: TimestampLT | PlainMessage<TimestampLT> | undefined
-  ): boolean {
+  static equals(a: TimestampLT | PlainMessage<TimestampLT> | undefined, b: TimestampLT | PlainMessage<TimestampLT> | undefined): boolean {
     return proto3.util.equals(TimestampLT, a, b);
   }
 }
@@ -205,10 +186,7 @@ export class TimestampLTE extends Message<TimestampLTE> {
     return new TimestampLTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampLTE | PlainMessage<TimestampLTE> | undefined,
-    b: TimestampLTE | PlainMessage<TimestampLTE> | undefined
-  ): boolean {
+  static equals(a: TimestampLTE | PlainMessage<TimestampLTE> | undefined, b: TimestampLTE | PlainMessage<TimestampLTE> | undefined): boolean {
     return proto3.util.equals(TimestampLTE, a, b);
   }
 }
@@ -245,10 +223,7 @@ export class TimestampGT extends Message<TimestampGT> {
     return new TimestampGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGT | PlainMessage<TimestampGT> | undefined,
-    b: TimestampGT | PlainMessage<TimestampGT> | undefined
-  ): boolean {
+  static equals(a: TimestampGT | PlainMessage<TimestampGT> | undefined, b: TimestampGT | PlainMessage<TimestampGT> | undefined): boolean {
     return proto3.util.equals(TimestampGT, a, b);
   }
 }
@@ -285,10 +260,7 @@ export class TimestampGTE extends Message<TimestampGTE> {
     return new TimestampGTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGTE | PlainMessage<TimestampGTE> | undefined,
-    b: TimestampGTE | PlainMessage<TimestampGTE> | undefined
-  ): boolean {
+  static equals(a: TimestampGTE | PlainMessage<TimestampGTE> | undefined, b: TimestampGTE | PlainMessage<TimestampGTE> | undefined): boolean {
     return proto3.util.equals(TimestampGTE, a, b);
   }
 }
@@ -325,10 +297,7 @@ export class TimestampGTLT extends Message<TimestampGTLT> {
     return new TimestampGTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGTLT | PlainMessage<TimestampGTLT> | undefined,
-    b: TimestampGTLT | PlainMessage<TimestampGTLT> | undefined
-  ): boolean {
+  static equals(a: TimestampGTLT | PlainMessage<TimestampGTLT> | undefined, b: TimestampGTLT | PlainMessage<TimestampGTLT> | undefined): boolean {
     return proto3.util.equals(TimestampGTLT, a, b);
   }
 }
@@ -365,10 +334,7 @@ export class TimestampExLTGT extends Message<TimestampExLTGT> {
     return new TimestampExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampExLTGT | PlainMessage<TimestampExLTGT> | undefined,
-    b: TimestampExLTGT | PlainMessage<TimestampExLTGT> | undefined
-  ): boolean {
+  static equals(a: TimestampExLTGT | PlainMessage<TimestampExLTGT> | undefined, b: TimestampExLTGT | PlainMessage<TimestampExLTGT> | undefined): boolean {
     return proto3.util.equals(TimestampExLTGT, a, b);
   }
 }
@@ -405,10 +371,7 @@ export class TimestampGTELTE extends Message<TimestampGTELTE> {
     return new TimestampGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGTELTE | PlainMessage<TimestampGTELTE> | undefined,
-    b: TimestampGTELTE | PlainMessage<TimestampGTELTE> | undefined
-  ): boolean {
+  static equals(a: TimestampGTELTE | PlainMessage<TimestampGTELTE> | undefined, b: TimestampGTELTE | PlainMessage<TimestampGTELTE> | undefined): boolean {
     return proto3.util.equals(TimestampGTELTE, a, b);
   }
 }
@@ -445,10 +408,7 @@ export class TimestampExGTELTE extends Message<TimestampExGTELTE> {
     return new TimestampExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampExGTELTE | PlainMessage<TimestampExGTELTE> | undefined,
-    b: TimestampExGTELTE | PlainMessage<TimestampExGTELTE> | undefined
-  ): boolean {
+  static equals(a: TimestampExGTELTE | PlainMessage<TimestampExGTELTE> | undefined, b: TimestampExGTELTE | PlainMessage<TimestampExGTELTE> | undefined): boolean {
     return proto3.util.equals(TimestampExGTELTE, a, b);
   }
 }
@@ -485,10 +445,7 @@ export class TimestampLTNow extends Message<TimestampLTNow> {
     return new TimestampLTNow().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampLTNow | PlainMessage<TimestampLTNow> | undefined,
-    b: TimestampLTNow | PlainMessage<TimestampLTNow> | undefined
-  ): boolean {
+  static equals(a: TimestampLTNow | PlainMessage<TimestampLTNow> | undefined, b: TimestampLTNow | PlainMessage<TimestampLTNow> | undefined): boolean {
     return proto3.util.equals(TimestampLTNow, a, b);
   }
 }
@@ -525,10 +482,7 @@ export class TimestampGTNow extends Message<TimestampGTNow> {
     return new TimestampGTNow().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGTNow | PlainMessage<TimestampGTNow> | undefined,
-    b: TimestampGTNow | PlainMessage<TimestampGTNow> | undefined
-  ): boolean {
+  static equals(a: TimestampGTNow | PlainMessage<TimestampGTNow> | undefined, b: TimestampGTNow | PlainMessage<TimestampGTNow> | undefined): boolean {
     return proto3.util.equals(TimestampGTNow, a, b);
   }
 }
@@ -565,10 +519,7 @@ export class TimestampWithin extends Message<TimestampWithin> {
     return new TimestampWithin().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampWithin | PlainMessage<TimestampWithin> | undefined,
-    b: TimestampWithin | PlainMessage<TimestampWithin> | undefined
-  ): boolean {
+  static equals(a: TimestampWithin | PlainMessage<TimestampWithin> | undefined, b: TimestampWithin | PlainMessage<TimestampWithin> | undefined): boolean {
     return proto3.util.equals(TimestampWithin, a, b);
   }
 }
@@ -605,10 +556,7 @@ export class TimestampLTNowWithin extends Message<TimestampLTNowWithin> {
     return new TimestampLTNowWithin().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampLTNowWithin | PlainMessage<TimestampLTNowWithin> | undefined,
-    b: TimestampLTNowWithin | PlainMessage<TimestampLTNowWithin> | undefined
-  ): boolean {
+  static equals(a: TimestampLTNowWithin | PlainMessage<TimestampLTNowWithin> | undefined, b: TimestampLTNowWithin | PlainMessage<TimestampLTNowWithin> | undefined): boolean {
     return proto3.util.equals(TimestampLTNowWithin, a, b);
   }
 }
@@ -645,10 +593,8 @@ export class TimestampGTNowWithin extends Message<TimestampGTNowWithin> {
     return new TimestampGTNowWithin().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampGTNowWithin | PlainMessage<TimestampGTNowWithin> | undefined,
-    b: TimestampGTNowWithin | PlainMessage<TimestampGTNowWithin> | undefined
-  ): boolean {
+  static equals(a: TimestampGTNowWithin | PlainMessage<TimestampGTNowWithin> | undefined, b: TimestampGTNowWithin | PlainMessage<TimestampGTNowWithin> | undefined): boolean {
     return proto3.util.equals(TimestampGTNowWithin, a, b);
   }
 }
+

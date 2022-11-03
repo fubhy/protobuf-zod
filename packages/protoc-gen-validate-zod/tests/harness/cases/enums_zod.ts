@@ -3,11 +3,11 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { TestEnum, TestEnumAlias } from "./enums_pb.js";
-import { isIn, isNotIn, map, oneof } from "protobuf-zod";
-import { Embed_DoubleEmbed_DoubleEnumeratedSchema, Embed_EnumeratedSchema } from "./other_package/embed_zod.js";
-import { Embed_EnumeratedSchema as Embed_EnumeratedSchema$1 } from "./yet_another_package/embed_zod.js";
+import {z} from "zod";
+import {TestEnum, TestEnumAlias} from "./enums_pb.js";
+import {isIn, isNotIn, map, oneof} from "protobuf-zod";
+import {Embed_DoubleEmbed_DoubleEnumeratedSchema, Embed_EnumeratedSchema} from "./other_package/embed_zod.js";
+import {Embed_EnumeratedSchema as Embed_EnumeratedSchema$1} from "./yet_another_package/embed_zod.js";
 
 /**
  * @generated from enum tests.harness.cases.TestEnum
@@ -81,7 +81,10 @@ export const EnumInSchema = z.object({
    * @generated from field: tests.harness.cases.TestEnum val = 1;
    * @validate  {"enum":{"in":[0,2]}}
    */
-  val: z.lazy(() => TestEnumSchema).refine(isIn([0, 2])),
+  val: z.lazy(() => TestEnumSchema).refine(isIn([
+    0,
+    2,
+  ])),
 });
 
 /**
@@ -92,7 +95,10 @@ export const EnumAliasInSchema = z.object({
    * @generated from field: tests.harness.cases.TestEnumAlias val = 1;
    * @validate  {"enum":{"in":[0,2]}}
    */
-  val: z.lazy(() => TestEnumAliasSchema).refine(isIn([0, 2])),
+  val: z.lazy(() => TestEnumAliasSchema).refine(isIn([
+    0,
+    2,
+  ])),
 });
 
 /**
@@ -103,7 +109,9 @@ export const EnumNotInSchema = z.object({
    * @generated from field: tests.harness.cases.TestEnum val = 1;
    * @validate  {"enum":{"notIn":[1]}}
    */
-  val: z.lazy(() => TestEnumSchema).refine(isNotIn([1])),
+  val: z.lazy(() => TestEnumSchema).refine(isNotIn([
+    1,
+  ])),
 });
 
 /**
@@ -114,7 +122,9 @@ export const EnumAliasNotInSchema = z.object({
    * @generated from field: tests.harness.cases.TestEnumAlias val = 1;
    * @validate  {"enum":{"notIn":[1]}}
    */
-  val: z.lazy(() => TestEnumAliasSchema).refine(isNotIn([1])),
+  val: z.lazy(() => TestEnumAliasSchema).refine(isNotIn([
+    1,
+  ])),
 });
 
 /**
@@ -180,10 +190,7 @@ export const MapEnumDefinedSchema = z.object({
    * @generated from field: map<string, tests.harness.cases.TestEnum> val = 1;
    * @validate  {"map":{"values":{"enum":{"definedOnly":true}}}}
    */
-  val: map(
-    z.string(),
-    z.lazy(() => TestEnumSchema)
-  ),
+  val: map(z.string(), z.lazy(() => TestEnumSchema)),
 });
 
 /**
@@ -194,10 +201,7 @@ export const MapExternalEnumDefinedSchema = z.object({
    * @generated from field: map<string, tests.harness.cases.other_package.Embed.Enumerated> val = 1;
    * @validate  {"map":{"values":{"enum":{"definedOnly":true}}}}
    */
-  val: map(
-    z.string(),
-    z.lazy(() => Embed_EnumeratedSchema)
-  ),
+  val: map(z.string(), z.lazy(() => Embed_EnumeratedSchema)),
 });
 
 /**
@@ -235,7 +239,10 @@ export const EnumInsideOneOfSchema = z.object({
        * @validate  {"enum":{"definedOnly":true,"notIn":[0]}}
        */
       case: z.literal("val2"),
-      value: z.lazy(() => TestEnumSchema).refine(isNotIn([0])),
+      value: z.lazy(() => TestEnumSchema).refine(isNotIn([
+    0,
+  ])),
     }),
   ]).nullish(),
 });
+

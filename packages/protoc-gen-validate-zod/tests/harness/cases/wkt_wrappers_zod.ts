@@ -3,20 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import {
-  bytes,
-  bytesMinLength,
-  double,
-  float,
-  int32,
-  int64,
-  numberGt,
-  stringIsUuid,
-  uint32,
-  uint64,
-} from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
+import {z} from "zod";
+import {bytes, bytesMinLength, double, float, int32, int64, numberGt, stringIsUuid, uint32, uint64} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.WrapperNone
@@ -170,3 +159,4 @@ export const WrapperRequiredFloatSchema = z.object({
    */
   val: float.refine(numberGt(0)),
 });
+

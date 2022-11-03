@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.WktLevelOne
@@ -45,10 +38,7 @@ export class WktLevelOne extends Message<WktLevelOne> {
     return new WktLevelOne().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WktLevelOne | PlainMessage<WktLevelOne> | undefined,
-    b: WktLevelOne | PlainMessage<WktLevelOne> | undefined
-  ): boolean {
+  static equals(a: WktLevelOne | PlainMessage<WktLevelOne> | undefined, b: WktLevelOne | PlainMessage<WktLevelOne> | undefined): boolean {
     return proto3.util.equals(WktLevelOne, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class WktLevelOne_WktLevelTwo extends Message<WktLevelOne_WktLevelTwo> {
     return new WktLevelOne_WktLevelTwo().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WktLevelOne_WktLevelTwo | PlainMessage<WktLevelOne_WktLevelTwo> | undefined,
-    b: WktLevelOne_WktLevelTwo | PlainMessage<WktLevelOne_WktLevelTwo> | undefined
-  ): boolean {
+  static equals(a: WktLevelOne_WktLevelTwo | PlainMessage<WktLevelOne_WktLevelTwo> | undefined, b: WktLevelOne_WktLevelTwo | PlainMessage<WktLevelOne_WktLevelTwo> | undefined): boolean {
     return proto3.util.equals(WktLevelOne_WktLevelTwo, a, b);
   }
 }
@@ -125,10 +112,8 @@ export class WktLevelOne_WktLevelTwo_WktLevelThree extends Message<WktLevelOne_W
     return new WktLevelOne_WktLevelTwo_WktLevelThree().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WktLevelOne_WktLevelTwo_WktLevelThree | PlainMessage<WktLevelOne_WktLevelTwo_WktLevelThree> | undefined,
-    b: WktLevelOne_WktLevelTwo_WktLevelThree | PlainMessage<WktLevelOne_WktLevelTwo_WktLevelThree> | undefined
-  ): boolean {
+  static equals(a: WktLevelOne_WktLevelTwo_WktLevelThree | PlainMessage<WktLevelOne_WktLevelTwo_WktLevelThree> | undefined, b: WktLevelOne_WktLevelTwo_WktLevelThree | PlainMessage<WktLevelOne_WktLevelTwo_WktLevelThree> | undefined): boolean {
     return proto3.util.equals(WktLevelOne_WktLevelTwo_WktLevelThree, a, b);
   }
 }
+

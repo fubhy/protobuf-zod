@@ -25,12 +25,10 @@
     "node": ">=16"
   },
   "scripts": {
-    "codegen": "buf generate",
     "build": "tsc -p tsconfig.build.json",
     "lint": "eslint \"{src,tests,bin}/**/*.ts\" --cache",
     "format": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@bufbuild/protobuf": "^0.2.1",
@@ -39,9 +37,6 @@
   "devDependencies": {
     "@bufbuild/protobuf": "^0.2.1",
     "protobuf-zod": "workspace:*",
-    "ts-node": "^10.9.1",
-    "vite-tsconfig-paths": "^3.5.2",
-    "vitest": "^0.24.4",
     "zod": "^3.19.1"
   }
 }

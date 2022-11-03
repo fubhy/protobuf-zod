@@ -3,8 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { stringIsUuid } from "protobuf-zod";
+import {z} from "zod";
+import {stringIsUuid} from "protobuf-zod";
 
 /**
  * @generated from message tests.harness.cases.WktLevelOne.WktLevelTwo.WktLevelThree
@@ -38,3 +38,4 @@ export const WktLevelOneSchema = z.object({
    */
   two: z.lazy(() => WktLevelOne_WktLevelTwoSchema),
 });
+

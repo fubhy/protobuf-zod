@@ -3,9 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { ComplexTestEnum } from "./kitchen_sink_pb.js";
-import { bytes, bytesEquals, double, float, int32, isIn, map, numberGt, numberLt, oneof, sint32 } from "protobuf-zod";
+import {z} from "zod";
+import {ComplexTestEnum} from "./kitchen_sink_pb.js";
+import {bytes, bytesEquals, double, float, int32, isIn, map, numberGt, numberLt, oneof, sint32} from "protobuf-zod";
 
 /**
  * @generated from enum tests.harness.cases.ComplexTestEnum
@@ -63,7 +63,10 @@ export const ComplexTestMsgSchema = z.object({
    * @generated from field: double double_in = 10;
    * @validate  {"double":{"in":[456.789,123]}}
    */
-  doubleIn: double.refine(isIn([456.789, 123])),
+  doubleIn: double.refine(isIn([
+    456.789,
+    123,
+  ])),
   /**
    * @generated from field: tests.harness.cases.ComplexTestEnum enum_const = 11;
    * @validate  {"enum":{"const":2}}
@@ -119,3 +122,4 @@ export const KitchenSinkMessageSchema = z.object({
    */
   val: z.lazy(() => ComplexTestMsgSchema).nullish(),
 });
+

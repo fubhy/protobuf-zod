@@ -8,7 +8,7 @@ import {
   proto3,
   Value,
 } from "@bufbuild/protobuf";
-import { TestCase } from "./generated/tests/harness/harness_pb.js";
+import { TestCase } from "./generated/tests/harness/v1/harness_pb.js";
 import fs from "node:fs";
 
 export interface TestCaseJson {

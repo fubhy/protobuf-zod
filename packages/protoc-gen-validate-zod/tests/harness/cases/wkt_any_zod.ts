@@ -3,7 +3,7 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
+import {z} from "zod";
 
 /**
  * @generated from message tests.harness.cases.AnyNone
@@ -47,3 +47,4 @@ export const AnyNotInSchema = z.object({
    */
   val: z.any().nullish(),
 });
+

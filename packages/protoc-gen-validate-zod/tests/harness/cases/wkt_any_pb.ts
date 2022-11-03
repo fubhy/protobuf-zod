@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Any, Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Any, Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.AnyNone
@@ -29,7 +22,9 @@ export class AnyNone extends Message<AnyNone> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.AnyNone";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [{ no: 1, name: "val", kind: "message", T: Any }]);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "val", kind: "message", T: Any },
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyNone {
     return new AnyNone().fromBinary(bytes, options);
@@ -43,10 +38,7 @@ export class AnyNone extends Message<AnyNone> {
     return new AnyNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: AnyNone | PlainMessage<AnyNone> | undefined,
-    b: AnyNone | PlainMessage<AnyNone> | undefined
-  ): boolean {
+  static equals(a: AnyNone | PlainMessage<AnyNone> | undefined, b: AnyNone | PlainMessage<AnyNone> | undefined): boolean {
     return proto3.util.equals(AnyNone, a, b);
   }
 }
@@ -67,7 +59,9 @@ export class AnyRequired extends Message<AnyRequired> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.AnyRequired";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [{ no: 1, name: "val", kind: "message", T: Any }]);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "val", kind: "message", T: Any },
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyRequired {
     return new AnyRequired().fromBinary(bytes, options);
@@ -81,10 +75,7 @@ export class AnyRequired extends Message<AnyRequired> {
     return new AnyRequired().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: AnyRequired | PlainMessage<AnyRequired> | undefined,
-    b: AnyRequired | PlainMessage<AnyRequired> | undefined
-  ): boolean {
+  static equals(a: AnyRequired | PlainMessage<AnyRequired> | undefined, b: AnyRequired | PlainMessage<AnyRequired> | undefined): boolean {
     return proto3.util.equals(AnyRequired, a, b);
   }
 }
@@ -105,7 +96,9 @@ export class AnyIn extends Message<AnyIn> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.AnyIn";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [{ no: 1, name: "val", kind: "message", T: Any }]);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "val", kind: "message", T: Any },
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyIn {
     return new AnyIn().fromBinary(bytes, options);
@@ -140,7 +133,9 @@ export class AnyNotIn extends Message<AnyNotIn> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.AnyNotIn";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => [{ no: 1, name: "val", kind: "message", T: Any }]);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "val", kind: "message", T: Any },
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyNotIn {
     return new AnyNotIn().fromBinary(bytes, options);
@@ -154,10 +149,8 @@ export class AnyNotIn extends Message<AnyNotIn> {
     return new AnyNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: AnyNotIn | PlainMessage<AnyNotIn> | undefined,
-    b: AnyNotIn | PlainMessage<AnyNotIn> | undefined
-  ): boolean {
+  static equals(a: AnyNotIn | PlainMessage<AnyNotIn> | undefined, b: AnyNotIn | PlainMessage<AnyNotIn> | undefined): boolean {
     return proto3.util.equals(AnyNotIn, a, b);
   }
 }
+

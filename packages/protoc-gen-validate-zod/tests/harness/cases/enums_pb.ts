@@ -3,17 +3,10 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
-import { Embed_DoubleEmbed_DoubleEnumerated, Embed_Enumerated } from "./other_package/embed_pb.js";
-import { Embed_Enumerated as Embed_Enumerated$1 } from "./yet_another_package/embed_pb.js";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
+import {Embed_DoubleEmbed_DoubleEnumerated, Embed_Enumerated} from "./other_package/embed_pb.js";
+import {Embed_Enumerated as Embed_Enumerated$1} from "./yet_another_package/embed_pb.js";
 
 /**
  * @generated from enum tests.harness.cases.TestEnum
@@ -117,10 +110,7 @@ export class EnumNone extends Message<EnumNone> {
     return new EnumNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumNone | PlainMessage<EnumNone> | undefined,
-    b: EnumNone | PlainMessage<EnumNone> | undefined
-  ): boolean {
+  static equals(a: EnumNone | PlainMessage<EnumNone> | undefined, b: EnumNone | PlainMessage<EnumNone> | undefined): boolean {
     return proto3.util.equals(EnumNone, a, b);
   }
 }
@@ -157,10 +147,7 @@ export class EnumConst extends Message<EnumConst> {
     return new EnumConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumConst | PlainMessage<EnumConst> | undefined,
-    b: EnumConst | PlainMessage<EnumConst> | undefined
-  ): boolean {
+  static equals(a: EnumConst | PlainMessage<EnumConst> | undefined, b: EnumConst | PlainMessage<EnumConst> | undefined): boolean {
     return proto3.util.equals(EnumConst, a, b);
   }
 }
@@ -197,10 +184,7 @@ export class EnumAliasConst extends Message<EnumAliasConst> {
     return new EnumAliasConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumAliasConst | PlainMessage<EnumAliasConst> | undefined,
-    b: EnumAliasConst | PlainMessage<EnumAliasConst> | undefined
-  ): boolean {
+  static equals(a: EnumAliasConst | PlainMessage<EnumAliasConst> | undefined, b: EnumAliasConst | PlainMessage<EnumAliasConst> | undefined): boolean {
     return proto3.util.equals(EnumAliasConst, a, b);
   }
 }
@@ -237,10 +221,7 @@ export class EnumDefined extends Message<EnumDefined> {
     return new EnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumDefined | PlainMessage<EnumDefined> | undefined,
-    b: EnumDefined | PlainMessage<EnumDefined> | undefined
-  ): boolean {
+  static equals(a: EnumDefined | PlainMessage<EnumDefined> | undefined, b: EnumDefined | PlainMessage<EnumDefined> | undefined): boolean {
     return proto3.util.equals(EnumDefined, a, b);
   }
 }
@@ -277,10 +258,7 @@ export class EnumAliasDefined extends Message<EnumAliasDefined> {
     return new EnumAliasDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumAliasDefined | PlainMessage<EnumAliasDefined> | undefined,
-    b: EnumAliasDefined | PlainMessage<EnumAliasDefined> | undefined
-  ): boolean {
+  static equals(a: EnumAliasDefined | PlainMessage<EnumAliasDefined> | undefined, b: EnumAliasDefined | PlainMessage<EnumAliasDefined> | undefined): boolean {
     return proto3.util.equals(EnumAliasDefined, a, b);
   }
 }
@@ -354,10 +332,7 @@ export class EnumAliasIn extends Message<EnumAliasIn> {
     return new EnumAliasIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumAliasIn | PlainMessage<EnumAliasIn> | undefined,
-    b: EnumAliasIn | PlainMessage<EnumAliasIn> | undefined
-  ): boolean {
+  static equals(a: EnumAliasIn | PlainMessage<EnumAliasIn> | undefined, b: EnumAliasIn | PlainMessage<EnumAliasIn> | undefined): boolean {
     return proto3.util.equals(EnumAliasIn, a, b);
   }
 }
@@ -394,10 +369,7 @@ export class EnumNotIn extends Message<EnumNotIn> {
     return new EnumNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumNotIn | PlainMessage<EnumNotIn> | undefined,
-    b: EnumNotIn | PlainMessage<EnumNotIn> | undefined
-  ): boolean {
+  static equals(a: EnumNotIn | PlainMessage<EnumNotIn> | undefined, b: EnumNotIn | PlainMessage<EnumNotIn> | undefined): boolean {
     return proto3.util.equals(EnumNotIn, a, b);
   }
 }
@@ -434,10 +406,7 @@ export class EnumAliasNotIn extends Message<EnumAliasNotIn> {
     return new EnumAliasNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumAliasNotIn | PlainMessage<EnumAliasNotIn> | undefined,
-    b: EnumAliasNotIn | PlainMessage<EnumAliasNotIn> | undefined
-  ): boolean {
+  static equals(a: EnumAliasNotIn | PlainMessage<EnumAliasNotIn> | undefined, b: EnumAliasNotIn | PlainMessage<EnumAliasNotIn> | undefined): boolean {
     return proto3.util.equals(EnumAliasNotIn, a, b);
   }
 }
@@ -474,10 +443,7 @@ export class EnumExternal extends Message<EnumExternal> {
     return new EnumExternal().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumExternal | PlainMessage<EnumExternal> | undefined,
-    b: EnumExternal | PlainMessage<EnumExternal> | undefined
-  ): boolean {
+  static equals(a: EnumExternal | PlainMessage<EnumExternal> | undefined, b: EnumExternal | PlainMessage<EnumExternal> | undefined): boolean {
     return proto3.util.equals(EnumExternal, a, b);
   }
 }
@@ -514,10 +480,7 @@ export class EnumExternal2 extends Message<EnumExternal2> {
     return new EnumExternal2().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumExternal2 | PlainMessage<EnumExternal2> | undefined,
-    b: EnumExternal2 | PlainMessage<EnumExternal2> | undefined
-  ): boolean {
+  static equals(a: EnumExternal2 | PlainMessage<EnumExternal2> | undefined, b: EnumExternal2 | PlainMessage<EnumExternal2> | undefined): boolean {
     return proto3.util.equals(EnumExternal2, a, b);
   }
 }
@@ -554,10 +517,7 @@ export class RepeatedEnumDefined extends Message<RepeatedEnumDefined> {
     return new RepeatedEnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEnumDefined | PlainMessage<RepeatedEnumDefined> | undefined,
-    b: RepeatedEnumDefined | PlainMessage<RepeatedEnumDefined> | undefined
-  ): boolean {
+  static equals(a: RepeatedEnumDefined | PlainMessage<RepeatedEnumDefined> | undefined, b: RepeatedEnumDefined | PlainMessage<RepeatedEnumDefined> | undefined): boolean {
     return proto3.util.equals(RepeatedEnumDefined, a, b);
   }
 }
@@ -594,10 +554,7 @@ export class RepeatedExternalEnumDefined extends Message<RepeatedExternalEnumDef
     return new RepeatedExternalEnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedExternalEnumDefined | PlainMessage<RepeatedExternalEnumDefined> | undefined,
-    b: RepeatedExternalEnumDefined | PlainMessage<RepeatedExternalEnumDefined> | undefined
-  ): boolean {
+  static equals(a: RepeatedExternalEnumDefined | PlainMessage<RepeatedExternalEnumDefined> | undefined, b: RepeatedExternalEnumDefined | PlainMessage<RepeatedExternalEnumDefined> | undefined): boolean {
     return proto3.util.equals(RepeatedExternalEnumDefined, a, b);
   }
 }
@@ -634,10 +591,7 @@ export class RepeatedYetAnotherExternalEnumDefined extends Message<RepeatedYetAn
     return new RepeatedYetAnotherExternalEnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedYetAnotherExternalEnumDefined | PlainMessage<RepeatedYetAnotherExternalEnumDefined> | undefined,
-    b: RepeatedYetAnotherExternalEnumDefined | PlainMessage<RepeatedYetAnotherExternalEnumDefined> | undefined
-  ): boolean {
+  static equals(a: RepeatedYetAnotherExternalEnumDefined | PlainMessage<RepeatedYetAnotherExternalEnumDefined> | undefined, b: RepeatedYetAnotherExternalEnumDefined | PlainMessage<RepeatedYetAnotherExternalEnumDefined> | undefined): boolean {
     return proto3.util.equals(RepeatedYetAnotherExternalEnumDefined, a, b);
   }
 }
@@ -659,13 +613,7 @@ export class MapEnumDefined extends Message<MapEnumDefined> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapEnumDefined";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "enum", T: proto3.getEnumType(TestEnum) },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "enum", T: proto3.getEnumType(TestEnum)} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapEnumDefined {
@@ -680,10 +628,7 @@ export class MapEnumDefined extends Message<MapEnumDefined> {
     return new MapEnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapEnumDefined | PlainMessage<MapEnumDefined> | undefined,
-    b: MapEnumDefined | PlainMessage<MapEnumDefined> | undefined
-  ): boolean {
+  static equals(a: MapEnumDefined | PlainMessage<MapEnumDefined> | undefined, b: MapEnumDefined | PlainMessage<MapEnumDefined> | undefined): boolean {
     return proto3.util.equals(MapEnumDefined, a, b);
   }
 }
@@ -705,13 +650,7 @@ export class MapExternalEnumDefined extends Message<MapExternalEnumDefined> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapExternalEnumDefined";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "enum", T: proto3.getEnumType(Embed_Enumerated) },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "enum", T: proto3.getEnumType(Embed_Enumerated)} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapExternalEnumDefined {
@@ -726,10 +665,7 @@ export class MapExternalEnumDefined extends Message<MapExternalEnumDefined> {
     return new MapExternalEnumDefined().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapExternalEnumDefined | PlainMessage<MapExternalEnumDefined> | undefined,
-    b: MapExternalEnumDefined | PlainMessage<MapExternalEnumDefined> | undefined
-  ): boolean {
+  static equals(a: MapExternalEnumDefined | PlainMessage<MapExternalEnumDefined> | undefined, b: MapExternalEnumDefined | PlainMessage<MapExternalEnumDefined> | undefined): boolean {
     return proto3.util.equals(MapExternalEnumDefined, a, b);
   }
 }
@@ -741,28 +677,24 @@ export class EnumInsideOneOf extends Message<EnumInsideOneOf> {
   /**
    * @generated from oneof tests.harness.cases.EnumInsideOneOf.foo
    */
-  foo:
-    | {
-        /**
-         * @generated from field: tests.harness.cases.TestEnum val = 1;
-         */
-        value: TestEnum;
-        case: "val";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  foo: {
+    /**
+     * @generated from field: tests.harness.cases.TestEnum val = 1;
+     */
+    value: TestEnum;
+    case: "val";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   /**
    * @generated from oneof tests.harness.cases.EnumInsideOneOf.bar
    */
-  bar:
-    | {
-        /**
-         * @generated from field: tests.harness.cases.TestEnum val2 = 2;
-         */
-        value: TestEnum;
-        case: "val2";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  bar: {
+    /**
+     * @generated from field: tests.harness.cases.TestEnum val2 = 2;
+     */
+    value: TestEnum;
+    case: "val2";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<EnumInsideOneOf>) {
     super();
@@ -788,10 +720,8 @@ export class EnumInsideOneOf extends Message<EnumInsideOneOf> {
     return new EnumInsideOneOf().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumInsideOneOf | PlainMessage<EnumInsideOneOf> | undefined,
-    b: EnumInsideOneOf | PlainMessage<EnumInsideOneOf> | undefined
-  ): boolean {
+  static equals(a: EnumInsideOneOf | PlainMessage<EnumInsideOneOf> | undefined, b: EnumInsideOneOf | PlainMessage<EnumInsideOneOf> | undefined): boolean {
     return proto3.util.equals(EnumInsideOneOf, a, b);
   }
 }
+

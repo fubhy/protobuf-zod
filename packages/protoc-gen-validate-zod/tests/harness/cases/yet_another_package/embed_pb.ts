@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3, protoInt64} from "@bufbuild/protobuf";
 
 /**
  * Validate message embedding across packages.
@@ -65,3 +58,4 @@ export enum Embed_Enumerated {
 proto3.util.setEnumType(Embed_Enumerated, "tests.harness.cases.yet_another_package.Embed.Enumerated", [
   { no: 0, name: "VALUE" },
 ]);
+

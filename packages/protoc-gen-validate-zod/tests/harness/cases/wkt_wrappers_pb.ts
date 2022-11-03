@@ -3,27 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import {
-  BoolValue,
-  BytesValue,
-  DoubleValue,
-  FloatValue,
-  Int32Value,
-  Int64Value,
-  Message,
-  proto3,
-  StringValue,
-  UInt32Value,
-  UInt64Value,
-} from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {BoolValue, BytesValue, DoubleValue, FloatValue, Int32Value, Int64Value, Message, proto3, StringValue, UInt32Value, UInt64Value} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.WrapperNone
@@ -57,10 +38,7 @@ export class WrapperNone extends Message<WrapperNone> {
     return new WrapperNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperNone | PlainMessage<WrapperNone> | undefined,
-    b: WrapperNone | PlainMessage<WrapperNone> | undefined
-  ): boolean {
+  static equals(a: WrapperNone | PlainMessage<WrapperNone> | undefined, b: WrapperNone | PlainMessage<WrapperNone> | undefined): boolean {
     return proto3.util.equals(WrapperNone, a, b);
   }
 }
@@ -97,10 +75,7 @@ export class WrapperFloat extends Message<WrapperFloat> {
     return new WrapperFloat().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperFloat | PlainMessage<WrapperFloat> | undefined,
-    b: WrapperFloat | PlainMessage<WrapperFloat> | undefined
-  ): boolean {
+  static equals(a: WrapperFloat | PlainMessage<WrapperFloat> | undefined, b: WrapperFloat | PlainMessage<WrapperFloat> | undefined): boolean {
     return proto3.util.equals(WrapperFloat, a, b);
   }
 }
@@ -137,10 +112,7 @@ export class WrapperDouble extends Message<WrapperDouble> {
     return new WrapperDouble().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperDouble | PlainMessage<WrapperDouble> | undefined,
-    b: WrapperDouble | PlainMessage<WrapperDouble> | undefined
-  ): boolean {
+  static equals(a: WrapperDouble | PlainMessage<WrapperDouble> | undefined, b: WrapperDouble | PlainMessage<WrapperDouble> | undefined): boolean {
     return proto3.util.equals(WrapperDouble, a, b);
   }
 }
@@ -177,10 +149,7 @@ export class WrapperInt64 extends Message<WrapperInt64> {
     return new WrapperInt64().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperInt64 | PlainMessage<WrapperInt64> | undefined,
-    b: WrapperInt64 | PlainMessage<WrapperInt64> | undefined
-  ): boolean {
+  static equals(a: WrapperInt64 | PlainMessage<WrapperInt64> | undefined, b: WrapperInt64 | PlainMessage<WrapperInt64> | undefined): boolean {
     return proto3.util.equals(WrapperInt64, a, b);
   }
 }
@@ -217,10 +186,7 @@ export class WrapperInt32 extends Message<WrapperInt32> {
     return new WrapperInt32().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperInt32 | PlainMessage<WrapperInt32> | undefined,
-    b: WrapperInt32 | PlainMessage<WrapperInt32> | undefined
-  ): boolean {
+  static equals(a: WrapperInt32 | PlainMessage<WrapperInt32> | undefined, b: WrapperInt32 | PlainMessage<WrapperInt32> | undefined): boolean {
     return proto3.util.equals(WrapperInt32, a, b);
   }
 }
@@ -257,10 +223,7 @@ export class WrapperUInt64 extends Message<WrapperUInt64> {
     return new WrapperUInt64().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperUInt64 | PlainMessage<WrapperUInt64> | undefined,
-    b: WrapperUInt64 | PlainMessage<WrapperUInt64> | undefined
-  ): boolean {
+  static equals(a: WrapperUInt64 | PlainMessage<WrapperUInt64> | undefined, b: WrapperUInt64 | PlainMessage<WrapperUInt64> | undefined): boolean {
     return proto3.util.equals(WrapperUInt64, a, b);
   }
 }
@@ -297,10 +260,7 @@ export class WrapperUInt32 extends Message<WrapperUInt32> {
     return new WrapperUInt32().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperUInt32 | PlainMessage<WrapperUInt32> | undefined,
-    b: WrapperUInt32 | PlainMessage<WrapperUInt32> | undefined
-  ): boolean {
+  static equals(a: WrapperUInt32 | PlainMessage<WrapperUInt32> | undefined, b: WrapperUInt32 | PlainMessage<WrapperUInt32> | undefined): boolean {
     return proto3.util.equals(WrapperUInt32, a, b);
   }
 }
@@ -337,10 +297,7 @@ export class WrapperBool extends Message<WrapperBool> {
     return new WrapperBool().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperBool | PlainMessage<WrapperBool> | undefined,
-    b: WrapperBool | PlainMessage<WrapperBool> | undefined
-  ): boolean {
+  static equals(a: WrapperBool | PlainMessage<WrapperBool> | undefined, b: WrapperBool | PlainMessage<WrapperBool> | undefined): boolean {
     return proto3.util.equals(WrapperBool, a, b);
   }
 }
@@ -377,10 +334,7 @@ export class WrapperString extends Message<WrapperString> {
     return new WrapperString().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperString | PlainMessage<WrapperString> | undefined,
-    b: WrapperString | PlainMessage<WrapperString> | undefined
-  ): boolean {
+  static equals(a: WrapperString | PlainMessage<WrapperString> | undefined, b: WrapperString | PlainMessage<WrapperString> | undefined): boolean {
     return proto3.util.equals(WrapperString, a, b);
   }
 }
@@ -417,10 +371,7 @@ export class WrapperBytes extends Message<WrapperBytes> {
     return new WrapperBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperBytes | PlainMessage<WrapperBytes> | undefined,
-    b: WrapperBytes | PlainMessage<WrapperBytes> | undefined
-  ): boolean {
+  static equals(a: WrapperBytes | PlainMessage<WrapperBytes> | undefined, b: WrapperBytes | PlainMessage<WrapperBytes> | undefined): boolean {
     return proto3.util.equals(WrapperBytes, a, b);
   }
 }
@@ -457,10 +408,7 @@ export class WrapperRequiredString extends Message<WrapperRequiredString> {
     return new WrapperRequiredString().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperRequiredString | PlainMessage<WrapperRequiredString> | undefined,
-    b: WrapperRequiredString | PlainMessage<WrapperRequiredString> | undefined
-  ): boolean {
+  static equals(a: WrapperRequiredString | PlainMessage<WrapperRequiredString> | undefined, b: WrapperRequiredString | PlainMessage<WrapperRequiredString> | undefined): boolean {
     return proto3.util.equals(WrapperRequiredString, a, b);
   }
 }
@@ -497,10 +445,7 @@ export class WrapperRequiredEmptyString extends Message<WrapperRequiredEmptyStri
     return new WrapperRequiredEmptyString().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperRequiredEmptyString | PlainMessage<WrapperRequiredEmptyString> | undefined,
-    b: WrapperRequiredEmptyString | PlainMessage<WrapperRequiredEmptyString> | undefined
-  ): boolean {
+  static equals(a: WrapperRequiredEmptyString | PlainMessage<WrapperRequiredEmptyString> | undefined, b: WrapperRequiredEmptyString | PlainMessage<WrapperRequiredEmptyString> | undefined): boolean {
     return proto3.util.equals(WrapperRequiredEmptyString, a, b);
   }
 }
@@ -537,10 +482,7 @@ export class WrapperOptionalUuidString extends Message<WrapperOptionalUuidString
     return new WrapperOptionalUuidString().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperOptionalUuidString | PlainMessage<WrapperOptionalUuidString> | undefined,
-    b: WrapperOptionalUuidString | PlainMessage<WrapperOptionalUuidString> | undefined
-  ): boolean {
+  static equals(a: WrapperOptionalUuidString | PlainMessage<WrapperOptionalUuidString> | undefined, b: WrapperOptionalUuidString | PlainMessage<WrapperOptionalUuidString> | undefined): boolean {
     return proto3.util.equals(WrapperOptionalUuidString, a, b);
   }
 }
@@ -577,10 +519,8 @@ export class WrapperRequiredFloat extends Message<WrapperRequiredFloat> {
     return new WrapperRequiredFloat().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: WrapperRequiredFloat | PlainMessage<WrapperRequiredFloat> | undefined,
-    b: WrapperRequiredFloat | PlainMessage<WrapperRequiredFloat> | undefined
-  ): boolean {
+  static equals(a: WrapperRequiredFloat | PlainMessage<WrapperRequiredFloat> | undefined, b: WrapperRequiredFloat | PlainMessage<WrapperRequiredFloat> | undefined): boolean {
     return proto3.util.equals(WrapperRequiredFloat, a, b);
   }
 }
+

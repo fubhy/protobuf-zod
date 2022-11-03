@@ -3,10 +3,10 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import { Embed_DoubleEmbed_DoubleEnumerated, Embed_Enumerated } from "./embed_pb.js";
-import { int64, numberGt } from "protobuf-zod";
-import { protoInt64 } from "@bufbuild/protobuf";
+import {z} from "zod";
+import {Embed_DoubleEmbed_DoubleEnumerated, Embed_Enumerated} from "./embed_pb.js";
+import {int64, numberGt} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from enum tests.harness.cases.other_package.Embed.Enumerated
@@ -21,7 +21,8 @@ export const Embed_DoubleEmbed_DoubleEnumeratedSchema = z.nativeEnum(Embed_Doubl
 /**
  * @generated from message tests.harness.cases.other_package.Embed.DoubleEmbed
  */
-export const Embed_DoubleEmbedSchema = z.object({});
+export const Embed_DoubleEmbedSchema = z.object({
+});
 
 /**
  * Validate message embedding across packages.
@@ -35,3 +36,4 @@ export const EmbedSchema = z.object({
    */
   val: int64.refine(numberGt(protoInt64.zero)),
 });
+

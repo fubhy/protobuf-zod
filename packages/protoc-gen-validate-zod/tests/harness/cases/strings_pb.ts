@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.StringNone
@@ -45,10 +38,7 @@ export class StringNone extends Message<StringNone> {
     return new StringNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringNone | PlainMessage<StringNone> | undefined,
-    b: StringNone | PlainMessage<StringNone> | undefined
-  ): boolean {
+  static equals(a: StringNone | PlainMessage<StringNone> | undefined, b: StringNone | PlainMessage<StringNone> | undefined): boolean {
     return proto3.util.equals(StringNone, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class StringConst extends Message<StringConst> {
     return new StringConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringConst | PlainMessage<StringConst> | undefined,
-    b: StringConst | PlainMessage<StringConst> | undefined
-  ): boolean {
+  static equals(a: StringConst | PlainMessage<StringConst> | undefined, b: StringConst | PlainMessage<StringConst> | undefined): boolean {
     return proto3.util.equals(StringConst, a, b);
   }
 }
@@ -125,10 +112,7 @@ export class StringIn extends Message<StringIn> {
     return new StringIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringIn | PlainMessage<StringIn> | undefined,
-    b: StringIn | PlainMessage<StringIn> | undefined
-  ): boolean {
+  static equals(a: StringIn | PlainMessage<StringIn> | undefined, b: StringIn | PlainMessage<StringIn> | undefined): boolean {
     return proto3.util.equals(StringIn, a, b);
   }
 }
@@ -165,10 +149,7 @@ export class StringNotIn extends Message<StringNotIn> {
     return new StringNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringNotIn | PlainMessage<StringNotIn> | undefined,
-    b: StringNotIn | PlainMessage<StringNotIn> | undefined
-  ): boolean {
+  static equals(a: StringNotIn | PlainMessage<StringNotIn> | undefined, b: StringNotIn | PlainMessage<StringNotIn> | undefined): boolean {
     return proto3.util.equals(StringNotIn, a, b);
   }
 }
@@ -205,10 +186,7 @@ export class StringLen extends Message<StringLen> {
     return new StringLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringLen | PlainMessage<StringLen> | undefined,
-    b: StringLen | PlainMessage<StringLen> | undefined
-  ): boolean {
+  static equals(a: StringLen | PlainMessage<StringLen> | undefined, b: StringLen | PlainMessage<StringLen> | undefined): boolean {
     return proto3.util.equals(StringLen, a, b);
   }
 }
@@ -245,10 +223,7 @@ export class StringMinLen extends Message<StringMinLen> {
     return new StringMinLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMinLen | PlainMessage<StringMinLen> | undefined,
-    b: StringMinLen | PlainMessage<StringMinLen> | undefined
-  ): boolean {
+  static equals(a: StringMinLen | PlainMessage<StringMinLen> | undefined, b: StringMinLen | PlainMessage<StringMinLen> | undefined): boolean {
     return proto3.util.equals(StringMinLen, a, b);
   }
 }
@@ -285,10 +260,7 @@ export class StringMaxLen extends Message<StringMaxLen> {
     return new StringMaxLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMaxLen | PlainMessage<StringMaxLen> | undefined,
-    b: StringMaxLen | PlainMessage<StringMaxLen> | undefined
-  ): boolean {
+  static equals(a: StringMaxLen | PlainMessage<StringMaxLen> | undefined, b: StringMaxLen | PlainMessage<StringMaxLen> | undefined): boolean {
     return proto3.util.equals(StringMaxLen, a, b);
   }
 }
@@ -325,10 +297,7 @@ export class StringMinMaxLen extends Message<StringMinMaxLen> {
     return new StringMinMaxLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMinMaxLen | PlainMessage<StringMinMaxLen> | undefined,
-    b: StringMinMaxLen | PlainMessage<StringMinMaxLen> | undefined
-  ): boolean {
+  static equals(a: StringMinMaxLen | PlainMessage<StringMinMaxLen> | undefined, b: StringMinMaxLen | PlainMessage<StringMinMaxLen> | undefined): boolean {
     return proto3.util.equals(StringMinMaxLen, a, b);
   }
 }
@@ -365,10 +334,7 @@ export class StringEqualMinMaxLen extends Message<StringEqualMinMaxLen> {
     return new StringEqualMinMaxLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringEqualMinMaxLen | PlainMessage<StringEqualMinMaxLen> | undefined,
-    b: StringEqualMinMaxLen | PlainMessage<StringEqualMinMaxLen> | undefined
-  ): boolean {
+  static equals(a: StringEqualMinMaxLen | PlainMessage<StringEqualMinMaxLen> | undefined, b: StringEqualMinMaxLen | PlainMessage<StringEqualMinMaxLen> | undefined): boolean {
     return proto3.util.equals(StringEqualMinMaxLen, a, b);
   }
 }
@@ -405,10 +371,7 @@ export class StringLenBytes extends Message<StringLenBytes> {
     return new StringLenBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringLenBytes | PlainMessage<StringLenBytes> | undefined,
-    b: StringLenBytes | PlainMessage<StringLenBytes> | undefined
-  ): boolean {
+  static equals(a: StringLenBytes | PlainMessage<StringLenBytes> | undefined, b: StringLenBytes | PlainMessage<StringLenBytes> | undefined): boolean {
     return proto3.util.equals(StringLenBytes, a, b);
   }
 }
@@ -445,10 +408,7 @@ export class StringMinBytes extends Message<StringMinBytes> {
     return new StringMinBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMinBytes | PlainMessage<StringMinBytes> | undefined,
-    b: StringMinBytes | PlainMessage<StringMinBytes> | undefined
-  ): boolean {
+  static equals(a: StringMinBytes | PlainMessage<StringMinBytes> | undefined, b: StringMinBytes | PlainMessage<StringMinBytes> | undefined): boolean {
     return proto3.util.equals(StringMinBytes, a, b);
   }
 }
@@ -485,10 +445,7 @@ export class StringMaxBytes extends Message<StringMaxBytes> {
     return new StringMaxBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMaxBytes | PlainMessage<StringMaxBytes> | undefined,
-    b: StringMaxBytes | PlainMessage<StringMaxBytes> | undefined
-  ): boolean {
+  static equals(a: StringMaxBytes | PlainMessage<StringMaxBytes> | undefined, b: StringMaxBytes | PlainMessage<StringMaxBytes> | undefined): boolean {
     return proto3.util.equals(StringMaxBytes, a, b);
   }
 }
@@ -525,10 +482,7 @@ export class StringMinMaxBytes extends Message<StringMinMaxBytes> {
     return new StringMinMaxBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringMinMaxBytes | PlainMessage<StringMinMaxBytes> | undefined,
-    b: StringMinMaxBytes | PlainMessage<StringMinMaxBytes> | undefined
-  ): boolean {
+  static equals(a: StringMinMaxBytes | PlainMessage<StringMinMaxBytes> | undefined, b: StringMinMaxBytes | PlainMessage<StringMinMaxBytes> | undefined): boolean {
     return proto3.util.equals(StringMinMaxBytes, a, b);
   }
 }
@@ -565,10 +519,7 @@ export class StringEqualMinMaxBytes extends Message<StringEqualMinMaxBytes> {
     return new StringEqualMinMaxBytes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringEqualMinMaxBytes | PlainMessage<StringEqualMinMaxBytes> | undefined,
-    b: StringEqualMinMaxBytes | PlainMessage<StringEqualMinMaxBytes> | undefined
-  ): boolean {
+  static equals(a: StringEqualMinMaxBytes | PlainMessage<StringEqualMinMaxBytes> | undefined, b: StringEqualMinMaxBytes | PlainMessage<StringEqualMinMaxBytes> | undefined): boolean {
     return proto3.util.equals(StringEqualMinMaxBytes, a, b);
   }
 }
@@ -605,10 +556,7 @@ export class StringPattern extends Message<StringPattern> {
     return new StringPattern().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringPattern | PlainMessage<StringPattern> | undefined,
-    b: StringPattern | PlainMessage<StringPattern> | undefined
-  ): boolean {
+  static equals(a: StringPattern | PlainMessage<StringPattern> | undefined, b: StringPattern | PlainMessage<StringPattern> | undefined): boolean {
     return proto3.util.equals(StringPattern, a, b);
   }
 }
@@ -645,10 +593,7 @@ export class StringPatternEscapes extends Message<StringPatternEscapes> {
     return new StringPatternEscapes().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringPatternEscapes | PlainMessage<StringPatternEscapes> | undefined,
-    b: StringPatternEscapes | PlainMessage<StringPatternEscapes> | undefined
-  ): boolean {
+  static equals(a: StringPatternEscapes | PlainMessage<StringPatternEscapes> | undefined, b: StringPatternEscapes | PlainMessage<StringPatternEscapes> | undefined): boolean {
     return proto3.util.equals(StringPatternEscapes, a, b);
   }
 }
@@ -685,10 +630,7 @@ export class StringPrefix extends Message<StringPrefix> {
     return new StringPrefix().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringPrefix | PlainMessage<StringPrefix> | undefined,
-    b: StringPrefix | PlainMessage<StringPrefix> | undefined
-  ): boolean {
+  static equals(a: StringPrefix | PlainMessage<StringPrefix> | undefined, b: StringPrefix | PlainMessage<StringPrefix> | undefined): boolean {
     return proto3.util.equals(StringPrefix, a, b);
   }
 }
@@ -725,10 +667,7 @@ export class StringContains extends Message<StringContains> {
     return new StringContains().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringContains | PlainMessage<StringContains> | undefined,
-    b: StringContains | PlainMessage<StringContains> | undefined
-  ): boolean {
+  static equals(a: StringContains | PlainMessage<StringContains> | undefined, b: StringContains | PlainMessage<StringContains> | undefined): boolean {
     return proto3.util.equals(StringContains, a, b);
   }
 }
@@ -765,10 +704,7 @@ export class StringNotContains extends Message<StringNotContains> {
     return new StringNotContains().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringNotContains | PlainMessage<StringNotContains> | undefined,
-    b: StringNotContains | PlainMessage<StringNotContains> | undefined
-  ): boolean {
+  static equals(a: StringNotContains | PlainMessage<StringNotContains> | undefined, b: StringNotContains | PlainMessage<StringNotContains> | undefined): boolean {
     return proto3.util.equals(StringNotContains, a, b);
   }
 }
@@ -805,10 +741,7 @@ export class StringSuffix extends Message<StringSuffix> {
     return new StringSuffix().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringSuffix | PlainMessage<StringSuffix> | undefined,
-    b: StringSuffix | PlainMessage<StringSuffix> | undefined
-  ): boolean {
+  static equals(a: StringSuffix | PlainMessage<StringSuffix> | undefined, b: StringSuffix | PlainMessage<StringSuffix> | undefined): boolean {
     return proto3.util.equals(StringSuffix, a, b);
   }
 }
@@ -845,10 +778,7 @@ export class StringEmail extends Message<StringEmail> {
     return new StringEmail().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringEmail | PlainMessage<StringEmail> | undefined,
-    b: StringEmail | PlainMessage<StringEmail> | undefined
-  ): boolean {
+  static equals(a: StringEmail | PlainMessage<StringEmail> | undefined, b: StringEmail | PlainMessage<StringEmail> | undefined): boolean {
     return proto3.util.equals(StringEmail, a, b);
   }
 }
@@ -885,10 +815,7 @@ export class StringAddress extends Message<StringAddress> {
     return new StringAddress().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringAddress | PlainMessage<StringAddress> | undefined,
-    b: StringAddress | PlainMessage<StringAddress> | undefined
-  ): boolean {
+  static equals(a: StringAddress | PlainMessage<StringAddress> | undefined, b: StringAddress | PlainMessage<StringAddress> | undefined): boolean {
     return proto3.util.equals(StringAddress, a, b);
   }
 }
@@ -925,10 +852,7 @@ export class StringHostname extends Message<StringHostname> {
     return new StringHostname().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringHostname | PlainMessage<StringHostname> | undefined,
-    b: StringHostname | PlainMessage<StringHostname> | undefined
-  ): boolean {
+  static equals(a: StringHostname | PlainMessage<StringHostname> | undefined, b: StringHostname | PlainMessage<StringHostname> | undefined): boolean {
     return proto3.util.equals(StringHostname, a, b);
   }
 }
@@ -965,10 +889,7 @@ export class StringIP extends Message<StringIP> {
     return new StringIP().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringIP | PlainMessage<StringIP> | undefined,
-    b: StringIP | PlainMessage<StringIP> | undefined
-  ): boolean {
+  static equals(a: StringIP | PlainMessage<StringIP> | undefined, b: StringIP | PlainMessage<StringIP> | undefined): boolean {
     return proto3.util.equals(StringIP, a, b);
   }
 }
@@ -1005,10 +926,7 @@ export class StringIPv4 extends Message<StringIPv4> {
     return new StringIPv4().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringIPv4 | PlainMessage<StringIPv4> | undefined,
-    b: StringIPv4 | PlainMessage<StringIPv4> | undefined
-  ): boolean {
+  static equals(a: StringIPv4 | PlainMessage<StringIPv4> | undefined, b: StringIPv4 | PlainMessage<StringIPv4> | undefined): boolean {
     return proto3.util.equals(StringIPv4, a, b);
   }
 }
@@ -1045,10 +963,7 @@ export class StringIPv6 extends Message<StringIPv6> {
     return new StringIPv6().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringIPv6 | PlainMessage<StringIPv6> | undefined,
-    b: StringIPv6 | PlainMessage<StringIPv6> | undefined
-  ): boolean {
+  static equals(a: StringIPv6 | PlainMessage<StringIPv6> | undefined, b: StringIPv6 | PlainMessage<StringIPv6> | undefined): boolean {
     return proto3.util.equals(StringIPv6, a, b);
   }
 }
@@ -1085,10 +1000,7 @@ export class StringURI extends Message<StringURI> {
     return new StringURI().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringURI | PlainMessage<StringURI> | undefined,
-    b: StringURI | PlainMessage<StringURI> | undefined
-  ): boolean {
+  static equals(a: StringURI | PlainMessage<StringURI> | undefined, b: StringURI | PlainMessage<StringURI> | undefined): boolean {
     return proto3.util.equals(StringURI, a, b);
   }
 }
@@ -1125,10 +1037,7 @@ export class StringURIRef extends Message<StringURIRef> {
     return new StringURIRef().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringURIRef | PlainMessage<StringURIRef> | undefined,
-    b: StringURIRef | PlainMessage<StringURIRef> | undefined
-  ): boolean {
+  static equals(a: StringURIRef | PlainMessage<StringURIRef> | undefined, b: StringURIRef | PlainMessage<StringURIRef> | undefined): boolean {
     return proto3.util.equals(StringURIRef, a, b);
   }
 }
@@ -1165,10 +1074,7 @@ export class StringUUID extends Message<StringUUID> {
     return new StringUUID().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringUUID | PlainMessage<StringUUID> | undefined,
-    b: StringUUID | PlainMessage<StringUUID> | undefined
-  ): boolean {
+  static equals(a: StringUUID | PlainMessage<StringUUID> | undefined, b: StringUUID | PlainMessage<StringUUID> | undefined): boolean {
     return proto3.util.equals(StringUUID, a, b);
   }
 }
@@ -1205,10 +1111,7 @@ export class StringHttpHeaderName extends Message<StringHttpHeaderName> {
     return new StringHttpHeaderName().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringHttpHeaderName | PlainMessage<StringHttpHeaderName> | undefined,
-    b: StringHttpHeaderName | PlainMessage<StringHttpHeaderName> | undefined
-  ): boolean {
+  static equals(a: StringHttpHeaderName | PlainMessage<StringHttpHeaderName> | undefined, b: StringHttpHeaderName | PlainMessage<StringHttpHeaderName> | undefined): boolean {
     return proto3.util.equals(StringHttpHeaderName, a, b);
   }
 }
@@ -1245,10 +1148,7 @@ export class StringHttpHeaderValue extends Message<StringHttpHeaderValue> {
     return new StringHttpHeaderValue().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringHttpHeaderValue | PlainMessage<StringHttpHeaderValue> | undefined,
-    b: StringHttpHeaderValue | PlainMessage<StringHttpHeaderValue> | undefined
-  ): boolean {
+  static equals(a: StringHttpHeaderValue | PlainMessage<StringHttpHeaderValue> | undefined, b: StringHttpHeaderValue | PlainMessage<StringHttpHeaderValue> | undefined): boolean {
     return proto3.util.equals(StringHttpHeaderValue, a, b);
   }
 }
@@ -1285,10 +1185,7 @@ export class StringValidHeader extends Message<StringValidHeader> {
     return new StringValidHeader().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringValidHeader | PlainMessage<StringValidHeader> | undefined,
-    b: StringValidHeader | PlainMessage<StringValidHeader> | undefined
-  ): boolean {
+  static equals(a: StringValidHeader | PlainMessage<StringValidHeader> | undefined, b: StringValidHeader | PlainMessage<StringValidHeader> | undefined): boolean {
     return proto3.util.equals(StringValidHeader, a, b);
   }
 }
@@ -1325,10 +1222,7 @@ export class StringUUIDIgnore extends Message<StringUUIDIgnore> {
     return new StringUUIDIgnore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringUUIDIgnore | PlainMessage<StringUUIDIgnore> | undefined,
-    b: StringUUIDIgnore | PlainMessage<StringUUIDIgnore> | undefined
-  ): boolean {
+  static equals(a: StringUUIDIgnore | PlainMessage<StringUUIDIgnore> | undefined, b: StringUUIDIgnore | PlainMessage<StringUUIDIgnore> | undefined): boolean {
     return proto3.util.equals(StringUUIDIgnore, a, b);
   }
 }
@@ -1340,15 +1234,13 @@ export class StringInOneOf extends Message<StringInOneOf> {
   /**
    * @generated from oneof tests.harness.cases.StringInOneOf.foo
    */
-  foo:
-    | {
-        /**
-         * @generated from field: string bar = 1;
-         */
-        value: string;
-        case: "bar";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  foo: {
+    /**
+     * @generated from field: string bar = 1;
+     */
+    value: string;
+    case: "bar";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<StringInOneOf>) {
     super();
@@ -1373,10 +1265,8 @@ export class StringInOneOf extends Message<StringInOneOf> {
     return new StringInOneOf().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringInOneOf | PlainMessage<StringInOneOf> | undefined,
-    b: StringInOneOf | PlainMessage<StringInOneOf> | undefined
-  ): boolean {
+  static equals(a: StringInOneOf | PlainMessage<StringInOneOf> | undefined, b: StringInOneOf | PlainMessage<StringInOneOf> | undefined): boolean {
     return proto3.util.equals(StringInOneOf, a, b);
   }
 }
+

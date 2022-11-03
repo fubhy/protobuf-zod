@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3, protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.FloatNone
@@ -45,10 +38,7 @@ export class FloatNone extends Message<FloatNone> {
     return new FloatNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatNone | PlainMessage<FloatNone> | undefined,
-    b: FloatNone | PlainMessage<FloatNone> | undefined
-  ): boolean {
+  static equals(a: FloatNone | PlainMessage<FloatNone> | undefined, b: FloatNone | PlainMessage<FloatNone> | undefined): boolean {
     return proto3.util.equals(FloatNone, a, b);
   }
 }
@@ -85,10 +75,7 @@ export class FloatConst extends Message<FloatConst> {
     return new FloatConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatConst | PlainMessage<FloatConst> | undefined,
-    b: FloatConst | PlainMessage<FloatConst> | undefined
-  ): boolean {
+  static equals(a: FloatConst | PlainMessage<FloatConst> | undefined, b: FloatConst | PlainMessage<FloatConst> | undefined): boolean {
     return proto3.util.equals(FloatConst, a, b);
   }
 }
@@ -125,10 +112,7 @@ export class FloatIn extends Message<FloatIn> {
     return new FloatIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatIn | PlainMessage<FloatIn> | undefined,
-    b: FloatIn | PlainMessage<FloatIn> | undefined
-  ): boolean {
+  static equals(a: FloatIn | PlainMessage<FloatIn> | undefined, b: FloatIn | PlainMessage<FloatIn> | undefined): boolean {
     return proto3.util.equals(FloatIn, a, b);
   }
 }
@@ -165,10 +149,7 @@ export class FloatNotIn extends Message<FloatNotIn> {
     return new FloatNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatNotIn | PlainMessage<FloatNotIn> | undefined,
-    b: FloatNotIn | PlainMessage<FloatNotIn> | undefined
-  ): boolean {
+  static equals(a: FloatNotIn | PlainMessage<FloatNotIn> | undefined, b: FloatNotIn | PlainMessage<FloatNotIn> | undefined): boolean {
     return proto3.util.equals(FloatNotIn, a, b);
   }
 }
@@ -205,10 +186,7 @@ export class FloatLT extends Message<FloatLT> {
     return new FloatLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatLT | PlainMessage<FloatLT> | undefined,
-    b: FloatLT | PlainMessage<FloatLT> | undefined
-  ): boolean {
+  static equals(a: FloatLT | PlainMessage<FloatLT> | undefined, b: FloatLT | PlainMessage<FloatLT> | undefined): boolean {
     return proto3.util.equals(FloatLT, a, b);
   }
 }
@@ -245,10 +223,7 @@ export class FloatLTE extends Message<FloatLTE> {
     return new FloatLTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatLTE | PlainMessage<FloatLTE> | undefined,
-    b: FloatLTE | PlainMessage<FloatLTE> | undefined
-  ): boolean {
+  static equals(a: FloatLTE | PlainMessage<FloatLTE> | undefined, b: FloatLTE | PlainMessage<FloatLTE> | undefined): boolean {
     return proto3.util.equals(FloatLTE, a, b);
   }
 }
@@ -285,10 +260,7 @@ export class FloatGT extends Message<FloatGT> {
     return new FloatGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatGT | PlainMessage<FloatGT> | undefined,
-    b: FloatGT | PlainMessage<FloatGT> | undefined
-  ): boolean {
+  static equals(a: FloatGT | PlainMessage<FloatGT> | undefined, b: FloatGT | PlainMessage<FloatGT> | undefined): boolean {
     return proto3.util.equals(FloatGT, a, b);
   }
 }
@@ -325,10 +297,7 @@ export class FloatGTE extends Message<FloatGTE> {
     return new FloatGTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatGTE | PlainMessage<FloatGTE> | undefined,
-    b: FloatGTE | PlainMessage<FloatGTE> | undefined
-  ): boolean {
+  static equals(a: FloatGTE | PlainMessage<FloatGTE> | undefined, b: FloatGTE | PlainMessage<FloatGTE> | undefined): boolean {
     return proto3.util.equals(FloatGTE, a, b);
   }
 }
@@ -365,10 +334,7 @@ export class FloatGTLT extends Message<FloatGTLT> {
     return new FloatGTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatGTLT | PlainMessage<FloatGTLT> | undefined,
-    b: FloatGTLT | PlainMessage<FloatGTLT> | undefined
-  ): boolean {
+  static equals(a: FloatGTLT | PlainMessage<FloatGTLT> | undefined, b: FloatGTLT | PlainMessage<FloatGTLT> | undefined): boolean {
     return proto3.util.equals(FloatGTLT, a, b);
   }
 }
@@ -405,10 +371,7 @@ export class FloatExLTGT extends Message<FloatExLTGT> {
     return new FloatExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatExLTGT | PlainMessage<FloatExLTGT> | undefined,
-    b: FloatExLTGT | PlainMessage<FloatExLTGT> | undefined
-  ): boolean {
+  static equals(a: FloatExLTGT | PlainMessage<FloatExLTGT> | undefined, b: FloatExLTGT | PlainMessage<FloatExLTGT> | undefined): boolean {
     return proto3.util.equals(FloatExLTGT, a, b);
   }
 }
@@ -445,10 +408,7 @@ export class FloatGTELTE extends Message<FloatGTELTE> {
     return new FloatGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatGTELTE | PlainMessage<FloatGTELTE> | undefined,
-    b: FloatGTELTE | PlainMessage<FloatGTELTE> | undefined
-  ): boolean {
+  static equals(a: FloatGTELTE | PlainMessage<FloatGTELTE> | undefined, b: FloatGTELTE | PlainMessage<FloatGTELTE> | undefined): boolean {
     return proto3.util.equals(FloatGTELTE, a, b);
   }
 }
@@ -485,10 +445,7 @@ export class FloatExGTELTE extends Message<FloatExGTELTE> {
     return new FloatExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatExGTELTE | PlainMessage<FloatExGTELTE> | undefined,
-    b: FloatExGTELTE | PlainMessage<FloatExGTELTE> | undefined
-  ): boolean {
+  static equals(a: FloatExGTELTE | PlainMessage<FloatExGTELTE> | undefined, b: FloatExGTELTE | PlainMessage<FloatExGTELTE> | undefined): boolean {
     return proto3.util.equals(FloatExGTELTE, a, b);
   }
 }
@@ -525,10 +482,7 @@ export class FloatIgnore extends Message<FloatIgnore> {
     return new FloatIgnore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatIgnore | PlainMessage<FloatIgnore> | undefined,
-    b: FloatIgnore | PlainMessage<FloatIgnore> | undefined
-  ): boolean {
+  static equals(a: FloatIgnore | PlainMessage<FloatIgnore> | undefined, b: FloatIgnore | PlainMessage<FloatIgnore> | undefined): boolean {
     return proto3.util.equals(FloatIgnore, a, b);
   }
 }
@@ -565,10 +519,7 @@ export class DoubleNone extends Message<DoubleNone> {
     return new DoubleNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleNone | PlainMessage<DoubleNone> | undefined,
-    b: DoubleNone | PlainMessage<DoubleNone> | undefined
-  ): boolean {
+  static equals(a: DoubleNone | PlainMessage<DoubleNone> | undefined, b: DoubleNone | PlainMessage<DoubleNone> | undefined): boolean {
     return proto3.util.equals(DoubleNone, a, b);
   }
 }
@@ -605,10 +556,7 @@ export class DoubleConst extends Message<DoubleConst> {
     return new DoubleConst().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleConst | PlainMessage<DoubleConst> | undefined,
-    b: DoubleConst | PlainMessage<DoubleConst> | undefined
-  ): boolean {
+  static equals(a: DoubleConst | PlainMessage<DoubleConst> | undefined, b: DoubleConst | PlainMessage<DoubleConst> | undefined): boolean {
     return proto3.util.equals(DoubleConst, a, b);
   }
 }
@@ -645,10 +593,7 @@ export class DoubleIn extends Message<DoubleIn> {
     return new DoubleIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleIn | PlainMessage<DoubleIn> | undefined,
-    b: DoubleIn | PlainMessage<DoubleIn> | undefined
-  ): boolean {
+  static equals(a: DoubleIn | PlainMessage<DoubleIn> | undefined, b: DoubleIn | PlainMessage<DoubleIn> | undefined): boolean {
     return proto3.util.equals(DoubleIn, a, b);
   }
 }
@@ -685,10 +630,7 @@ export class DoubleNotIn extends Message<DoubleNotIn> {
     return new DoubleNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleNotIn | PlainMessage<DoubleNotIn> | undefined,
-    b: DoubleNotIn | PlainMessage<DoubleNotIn> | undefined
-  ): boolean {
+  static equals(a: DoubleNotIn | PlainMessage<DoubleNotIn> | undefined, b: DoubleNotIn | PlainMessage<DoubleNotIn> | undefined): boolean {
     return proto3.util.equals(DoubleNotIn, a, b);
   }
 }
@@ -725,10 +667,7 @@ export class DoubleLT extends Message<DoubleLT> {
     return new DoubleLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleLT | PlainMessage<DoubleLT> | undefined,
-    b: DoubleLT | PlainMessage<DoubleLT> | undefined
-  ): boolean {
+  static equals(a: DoubleLT | PlainMessage<DoubleLT> | undefined, b: DoubleLT | PlainMessage<DoubleLT> | undefined): boolean {
     return proto3.util.equals(DoubleLT, a, b);
   }
 }
@@ -765,10 +704,7 @@ export class DoubleLTE extends Message<DoubleLTE> {
     return new DoubleLTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleLTE | PlainMessage<DoubleLTE> | undefined,
-    b: DoubleLTE | PlainMessage<DoubleLTE> | undefined
-  ): boolean {
+  static equals(a: DoubleLTE | PlainMessage<DoubleLTE> | undefined, b: DoubleLTE | PlainMessage<DoubleLTE> | undefined): boolean {
     return proto3.util.equals(DoubleLTE, a, b);
   }
 }
@@ -805,10 +741,7 @@ export class DoubleGT extends Message<DoubleGT> {
     return new DoubleGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleGT | PlainMessage<DoubleGT> | undefined,
-    b: DoubleGT | PlainMessage<DoubleGT> | undefined
-  ): boolean {
+  static equals(a: DoubleGT | PlainMessage<DoubleGT> | undefined, b: DoubleGT | PlainMessage<DoubleGT> | undefined): boolean {
     return proto3.util.equals(DoubleGT, a, b);
   }
 }
@@ -845,10 +778,7 @@ export class DoubleGTE extends Message<DoubleGTE> {
     return new DoubleGTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleGTE | PlainMessage<DoubleGTE> | undefined,
-    b: DoubleGTE | PlainMessage<DoubleGTE> | undefined
-  ): boolean {
+  static equals(a: DoubleGTE | PlainMessage<DoubleGTE> | undefined, b: DoubleGTE | PlainMessage<DoubleGTE> | undefined): boolean {
     return proto3.util.equals(DoubleGTE, a, b);
   }
 }
@@ -885,10 +815,7 @@ export class DoubleGTLT extends Message<DoubleGTLT> {
     return new DoubleGTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleGTLT | PlainMessage<DoubleGTLT> | undefined,
-    b: DoubleGTLT | PlainMessage<DoubleGTLT> | undefined
-  ): boolean {
+  static equals(a: DoubleGTLT | PlainMessage<DoubleGTLT> | undefined, b: DoubleGTLT | PlainMessage<DoubleGTLT> | undefined): boolean {
     return proto3.util.equals(DoubleGTLT, a, b);
   }
 }
@@ -925,10 +852,7 @@ export class DoubleExLTGT extends Message<DoubleExLTGT> {
     return new DoubleExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleExLTGT | PlainMessage<DoubleExLTGT> | undefined,
-    b: DoubleExLTGT | PlainMessage<DoubleExLTGT> | undefined
-  ): boolean {
+  static equals(a: DoubleExLTGT | PlainMessage<DoubleExLTGT> | undefined, b: DoubleExLTGT | PlainMessage<DoubleExLTGT> | undefined): boolean {
     return proto3.util.equals(DoubleExLTGT, a, b);
   }
 }
@@ -965,10 +889,7 @@ export class DoubleGTELTE extends Message<DoubleGTELTE> {
     return new DoubleGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleGTELTE | PlainMessage<DoubleGTELTE> | undefined,
-    b: DoubleGTELTE | PlainMessage<DoubleGTELTE> | undefined
-  ): boolean {
+  static equals(a: DoubleGTELTE | PlainMessage<DoubleGTELTE> | undefined, b: DoubleGTELTE | PlainMessage<DoubleGTELTE> | undefined): boolean {
     return proto3.util.equals(DoubleGTELTE, a, b);
   }
 }
@@ -1005,10 +926,7 @@ export class DoubleExGTELTE extends Message<DoubleExGTELTE> {
     return new DoubleExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleExGTELTE | PlainMessage<DoubleExGTELTE> | undefined,
-    b: DoubleExGTELTE | PlainMessage<DoubleExGTELTE> | undefined
-  ): boolean {
+  static equals(a: DoubleExGTELTE | PlainMessage<DoubleExGTELTE> | undefined, b: DoubleExGTELTE | PlainMessage<DoubleExGTELTE> | undefined): boolean {
     return proto3.util.equals(DoubleExGTELTE, a, b);
   }
 }
@@ -1045,10 +963,7 @@ export class DoubleIgnore extends Message<DoubleIgnore> {
     return new DoubleIgnore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleIgnore | PlainMessage<DoubleIgnore> | undefined,
-    b: DoubleIgnore | PlainMessage<DoubleIgnore> | undefined
-  ): boolean {
+  static equals(a: DoubleIgnore | PlainMessage<DoubleIgnore> | undefined, b: DoubleIgnore | PlainMessage<DoubleIgnore> | undefined): boolean {
     return proto3.util.equals(DoubleIgnore, a, b);
   }
 }
@@ -1085,10 +1000,7 @@ export class Int32None extends Message<Int32None> {
     return new Int32None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32None | PlainMessage<Int32None> | undefined,
-    b: Int32None | PlainMessage<Int32None> | undefined
-  ): boolean {
+  static equals(a: Int32None | PlainMessage<Int32None> | undefined, b: Int32None | PlainMessage<Int32None> | undefined): boolean {
     return proto3.util.equals(Int32None, a, b);
   }
 }
@@ -1125,10 +1037,7 @@ export class Int32Const extends Message<Int32Const> {
     return new Int32Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32Const | PlainMessage<Int32Const> | undefined,
-    b: Int32Const | PlainMessage<Int32Const> | undefined
-  ): boolean {
+  static equals(a: Int32Const | PlainMessage<Int32Const> | undefined, b: Int32Const | PlainMessage<Int32Const> | undefined): boolean {
     return proto3.util.equals(Int32Const, a, b);
   }
 }
@@ -1165,10 +1074,7 @@ export class Int32In extends Message<Int32In> {
     return new Int32In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32In | PlainMessage<Int32In> | undefined,
-    b: Int32In | PlainMessage<Int32In> | undefined
-  ): boolean {
+  static equals(a: Int32In | PlainMessage<Int32In> | undefined, b: Int32In | PlainMessage<Int32In> | undefined): boolean {
     return proto3.util.equals(Int32In, a, b);
   }
 }
@@ -1205,10 +1111,7 @@ export class Int32NotIn extends Message<Int32NotIn> {
     return new Int32NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32NotIn | PlainMessage<Int32NotIn> | undefined,
-    b: Int32NotIn | PlainMessage<Int32NotIn> | undefined
-  ): boolean {
+  static equals(a: Int32NotIn | PlainMessage<Int32NotIn> | undefined, b: Int32NotIn | PlainMessage<Int32NotIn> | undefined): boolean {
     return proto3.util.equals(Int32NotIn, a, b);
   }
 }
@@ -1245,10 +1148,7 @@ export class Int32LT extends Message<Int32LT> {
     return new Int32LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32LT | PlainMessage<Int32LT> | undefined,
-    b: Int32LT | PlainMessage<Int32LT> | undefined
-  ): boolean {
+  static equals(a: Int32LT | PlainMessage<Int32LT> | undefined, b: Int32LT | PlainMessage<Int32LT> | undefined): boolean {
     return proto3.util.equals(Int32LT, a, b);
   }
 }
@@ -1285,10 +1185,7 @@ export class Int32LTE extends Message<Int32LTE> {
     return new Int32LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32LTE | PlainMessage<Int32LTE> | undefined,
-    b: Int32LTE | PlainMessage<Int32LTE> | undefined
-  ): boolean {
+  static equals(a: Int32LTE | PlainMessage<Int32LTE> | undefined, b: Int32LTE | PlainMessage<Int32LTE> | undefined): boolean {
     return proto3.util.equals(Int32LTE, a, b);
   }
 }
@@ -1325,10 +1222,7 @@ export class Int32GT extends Message<Int32GT> {
     return new Int32GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32GT | PlainMessage<Int32GT> | undefined,
-    b: Int32GT | PlainMessage<Int32GT> | undefined
-  ): boolean {
+  static equals(a: Int32GT | PlainMessage<Int32GT> | undefined, b: Int32GT | PlainMessage<Int32GT> | undefined): boolean {
     return proto3.util.equals(Int32GT, a, b);
   }
 }
@@ -1365,10 +1259,7 @@ export class Int32GTE extends Message<Int32GTE> {
     return new Int32GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32GTE | PlainMessage<Int32GTE> | undefined,
-    b: Int32GTE | PlainMessage<Int32GTE> | undefined
-  ): boolean {
+  static equals(a: Int32GTE | PlainMessage<Int32GTE> | undefined, b: Int32GTE | PlainMessage<Int32GTE> | undefined): boolean {
     return proto3.util.equals(Int32GTE, a, b);
   }
 }
@@ -1405,10 +1296,7 @@ export class Int32GTLT extends Message<Int32GTLT> {
     return new Int32GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32GTLT | PlainMessage<Int32GTLT> | undefined,
-    b: Int32GTLT | PlainMessage<Int32GTLT> | undefined
-  ): boolean {
+  static equals(a: Int32GTLT | PlainMessage<Int32GTLT> | undefined, b: Int32GTLT | PlainMessage<Int32GTLT> | undefined): boolean {
     return proto3.util.equals(Int32GTLT, a, b);
   }
 }
@@ -1445,10 +1333,7 @@ export class Int32ExLTGT extends Message<Int32ExLTGT> {
     return new Int32ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32ExLTGT | PlainMessage<Int32ExLTGT> | undefined,
-    b: Int32ExLTGT | PlainMessage<Int32ExLTGT> | undefined
-  ): boolean {
+  static equals(a: Int32ExLTGT | PlainMessage<Int32ExLTGT> | undefined, b: Int32ExLTGT | PlainMessage<Int32ExLTGT> | undefined): boolean {
     return proto3.util.equals(Int32ExLTGT, a, b);
   }
 }
@@ -1485,10 +1370,7 @@ export class Int32GTELTE extends Message<Int32GTELTE> {
     return new Int32GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32GTELTE | PlainMessage<Int32GTELTE> | undefined,
-    b: Int32GTELTE | PlainMessage<Int32GTELTE> | undefined
-  ): boolean {
+  static equals(a: Int32GTELTE | PlainMessage<Int32GTELTE> | undefined, b: Int32GTELTE | PlainMessage<Int32GTELTE> | undefined): boolean {
     return proto3.util.equals(Int32GTELTE, a, b);
   }
 }
@@ -1525,10 +1407,7 @@ export class Int32ExGTELTE extends Message<Int32ExGTELTE> {
     return new Int32ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32ExGTELTE | PlainMessage<Int32ExGTELTE> | undefined,
-    b: Int32ExGTELTE | PlainMessage<Int32ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: Int32ExGTELTE | PlainMessage<Int32ExGTELTE> | undefined, b: Int32ExGTELTE | PlainMessage<Int32ExGTELTE> | undefined): boolean {
     return proto3.util.equals(Int32ExGTELTE, a, b);
   }
 }
@@ -1565,10 +1444,7 @@ export class Int32Ignore extends Message<Int32Ignore> {
     return new Int32Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32Ignore | PlainMessage<Int32Ignore> | undefined,
-    b: Int32Ignore | PlainMessage<Int32Ignore> | undefined
-  ): boolean {
+  static equals(a: Int32Ignore | PlainMessage<Int32Ignore> | undefined, b: Int32Ignore | PlainMessage<Int32Ignore> | undefined): boolean {
     return proto3.util.equals(Int32Ignore, a, b);
   }
 }
@@ -1605,10 +1481,7 @@ export class Int64None extends Message<Int64None> {
     return new Int64None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64None | PlainMessage<Int64None> | undefined,
-    b: Int64None | PlainMessage<Int64None> | undefined
-  ): boolean {
+  static equals(a: Int64None | PlainMessage<Int64None> | undefined, b: Int64None | PlainMessage<Int64None> | undefined): boolean {
     return proto3.util.equals(Int64None, a, b);
   }
 }
@@ -1645,10 +1518,7 @@ export class Int64Const extends Message<Int64Const> {
     return new Int64Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64Const | PlainMessage<Int64Const> | undefined,
-    b: Int64Const | PlainMessage<Int64Const> | undefined
-  ): boolean {
+  static equals(a: Int64Const | PlainMessage<Int64Const> | undefined, b: Int64Const | PlainMessage<Int64Const> | undefined): boolean {
     return proto3.util.equals(Int64Const, a, b);
   }
 }
@@ -1685,10 +1555,7 @@ export class Int64In extends Message<Int64In> {
     return new Int64In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64In | PlainMessage<Int64In> | undefined,
-    b: Int64In | PlainMessage<Int64In> | undefined
-  ): boolean {
+  static equals(a: Int64In | PlainMessage<Int64In> | undefined, b: Int64In | PlainMessage<Int64In> | undefined): boolean {
     return proto3.util.equals(Int64In, a, b);
   }
 }
@@ -1725,10 +1592,7 @@ export class Int64NotIn extends Message<Int64NotIn> {
     return new Int64NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64NotIn | PlainMessage<Int64NotIn> | undefined,
-    b: Int64NotIn | PlainMessage<Int64NotIn> | undefined
-  ): boolean {
+  static equals(a: Int64NotIn | PlainMessage<Int64NotIn> | undefined, b: Int64NotIn | PlainMessage<Int64NotIn> | undefined): boolean {
     return proto3.util.equals(Int64NotIn, a, b);
   }
 }
@@ -1765,10 +1629,7 @@ export class Int64LT extends Message<Int64LT> {
     return new Int64LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64LT | PlainMessage<Int64LT> | undefined,
-    b: Int64LT | PlainMessage<Int64LT> | undefined
-  ): boolean {
+  static equals(a: Int64LT | PlainMessage<Int64LT> | undefined, b: Int64LT | PlainMessage<Int64LT> | undefined): boolean {
     return proto3.util.equals(Int64LT, a, b);
   }
 }
@@ -1805,10 +1666,7 @@ export class Int64LTE extends Message<Int64LTE> {
     return new Int64LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64LTE | PlainMessage<Int64LTE> | undefined,
-    b: Int64LTE | PlainMessage<Int64LTE> | undefined
-  ): boolean {
+  static equals(a: Int64LTE | PlainMessage<Int64LTE> | undefined, b: Int64LTE | PlainMessage<Int64LTE> | undefined): boolean {
     return proto3.util.equals(Int64LTE, a, b);
   }
 }
@@ -1845,10 +1703,7 @@ export class Int64GT extends Message<Int64GT> {
     return new Int64GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64GT | PlainMessage<Int64GT> | undefined,
-    b: Int64GT | PlainMessage<Int64GT> | undefined
-  ): boolean {
+  static equals(a: Int64GT | PlainMessage<Int64GT> | undefined, b: Int64GT | PlainMessage<Int64GT> | undefined): boolean {
     return proto3.util.equals(Int64GT, a, b);
   }
 }
@@ -1885,10 +1740,7 @@ export class Int64GTE extends Message<Int64GTE> {
     return new Int64GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64GTE | PlainMessage<Int64GTE> | undefined,
-    b: Int64GTE | PlainMessage<Int64GTE> | undefined
-  ): boolean {
+  static equals(a: Int64GTE | PlainMessage<Int64GTE> | undefined, b: Int64GTE | PlainMessage<Int64GTE> | undefined): boolean {
     return proto3.util.equals(Int64GTE, a, b);
   }
 }
@@ -1925,10 +1777,7 @@ export class Int64GTLT extends Message<Int64GTLT> {
     return new Int64GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64GTLT | PlainMessage<Int64GTLT> | undefined,
-    b: Int64GTLT | PlainMessage<Int64GTLT> | undefined
-  ): boolean {
+  static equals(a: Int64GTLT | PlainMessage<Int64GTLT> | undefined, b: Int64GTLT | PlainMessage<Int64GTLT> | undefined): boolean {
     return proto3.util.equals(Int64GTLT, a, b);
   }
 }
@@ -1965,10 +1814,7 @@ export class Int64ExLTGT extends Message<Int64ExLTGT> {
     return new Int64ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64ExLTGT | PlainMessage<Int64ExLTGT> | undefined,
-    b: Int64ExLTGT | PlainMessage<Int64ExLTGT> | undefined
-  ): boolean {
+  static equals(a: Int64ExLTGT | PlainMessage<Int64ExLTGT> | undefined, b: Int64ExLTGT | PlainMessage<Int64ExLTGT> | undefined): boolean {
     return proto3.util.equals(Int64ExLTGT, a, b);
   }
 }
@@ -2005,10 +1851,7 @@ export class Int64GTELTE extends Message<Int64GTELTE> {
     return new Int64GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64GTELTE | PlainMessage<Int64GTELTE> | undefined,
-    b: Int64GTELTE | PlainMessage<Int64GTELTE> | undefined
-  ): boolean {
+  static equals(a: Int64GTELTE | PlainMessage<Int64GTELTE> | undefined, b: Int64GTELTE | PlainMessage<Int64GTELTE> | undefined): boolean {
     return proto3.util.equals(Int64GTELTE, a, b);
   }
 }
@@ -2045,10 +1888,7 @@ export class Int64ExGTELTE extends Message<Int64ExGTELTE> {
     return new Int64ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64ExGTELTE | PlainMessage<Int64ExGTELTE> | undefined,
-    b: Int64ExGTELTE | PlainMessage<Int64ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: Int64ExGTELTE | PlainMessage<Int64ExGTELTE> | undefined, b: Int64ExGTELTE | PlainMessage<Int64ExGTELTE> | undefined): boolean {
     return proto3.util.equals(Int64ExGTELTE, a, b);
   }
 }
@@ -2085,10 +1925,7 @@ export class Int64Ignore extends Message<Int64Ignore> {
     return new Int64Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64Ignore | PlainMessage<Int64Ignore> | undefined,
-    b: Int64Ignore | PlainMessage<Int64Ignore> | undefined
-  ): boolean {
+  static equals(a: Int64Ignore | PlainMessage<Int64Ignore> | undefined, b: Int64Ignore | PlainMessage<Int64Ignore> | undefined): boolean {
     return proto3.util.equals(Int64Ignore, a, b);
   }
 }
@@ -2125,10 +1962,7 @@ export class UInt32None extends Message<UInt32None> {
     return new UInt32None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32None | PlainMessage<UInt32None> | undefined,
-    b: UInt32None | PlainMessage<UInt32None> | undefined
-  ): boolean {
+  static equals(a: UInt32None | PlainMessage<UInt32None> | undefined, b: UInt32None | PlainMessage<UInt32None> | undefined): boolean {
     return proto3.util.equals(UInt32None, a, b);
   }
 }
@@ -2165,10 +1999,7 @@ export class UInt32Const extends Message<UInt32Const> {
     return new UInt32Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32Const | PlainMessage<UInt32Const> | undefined,
-    b: UInt32Const | PlainMessage<UInt32Const> | undefined
-  ): boolean {
+  static equals(a: UInt32Const | PlainMessage<UInt32Const> | undefined, b: UInt32Const | PlainMessage<UInt32Const> | undefined): boolean {
     return proto3.util.equals(UInt32Const, a, b);
   }
 }
@@ -2205,10 +2036,7 @@ export class UInt32In extends Message<UInt32In> {
     return new UInt32In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32In | PlainMessage<UInt32In> | undefined,
-    b: UInt32In | PlainMessage<UInt32In> | undefined
-  ): boolean {
+  static equals(a: UInt32In | PlainMessage<UInt32In> | undefined, b: UInt32In | PlainMessage<UInt32In> | undefined): boolean {
     return proto3.util.equals(UInt32In, a, b);
   }
 }
@@ -2245,10 +2073,7 @@ export class UInt32NotIn extends Message<UInt32NotIn> {
     return new UInt32NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32NotIn | PlainMessage<UInt32NotIn> | undefined,
-    b: UInt32NotIn | PlainMessage<UInt32NotIn> | undefined
-  ): boolean {
+  static equals(a: UInt32NotIn | PlainMessage<UInt32NotIn> | undefined, b: UInt32NotIn | PlainMessage<UInt32NotIn> | undefined): boolean {
     return proto3.util.equals(UInt32NotIn, a, b);
   }
 }
@@ -2285,10 +2110,7 @@ export class UInt32LT extends Message<UInt32LT> {
     return new UInt32LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32LT | PlainMessage<UInt32LT> | undefined,
-    b: UInt32LT | PlainMessage<UInt32LT> | undefined
-  ): boolean {
+  static equals(a: UInt32LT | PlainMessage<UInt32LT> | undefined, b: UInt32LT | PlainMessage<UInt32LT> | undefined): boolean {
     return proto3.util.equals(UInt32LT, a, b);
   }
 }
@@ -2325,10 +2147,7 @@ export class UInt32LTE extends Message<UInt32LTE> {
     return new UInt32LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32LTE | PlainMessage<UInt32LTE> | undefined,
-    b: UInt32LTE | PlainMessage<UInt32LTE> | undefined
-  ): boolean {
+  static equals(a: UInt32LTE | PlainMessage<UInt32LTE> | undefined, b: UInt32LTE | PlainMessage<UInt32LTE> | undefined): boolean {
     return proto3.util.equals(UInt32LTE, a, b);
   }
 }
@@ -2365,10 +2184,7 @@ export class UInt32GT extends Message<UInt32GT> {
     return new UInt32GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32GT | PlainMessage<UInt32GT> | undefined,
-    b: UInt32GT | PlainMessage<UInt32GT> | undefined
-  ): boolean {
+  static equals(a: UInt32GT | PlainMessage<UInt32GT> | undefined, b: UInt32GT | PlainMessage<UInt32GT> | undefined): boolean {
     return proto3.util.equals(UInt32GT, a, b);
   }
 }
@@ -2405,10 +2221,7 @@ export class UInt32GTE extends Message<UInt32GTE> {
     return new UInt32GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32GTE | PlainMessage<UInt32GTE> | undefined,
-    b: UInt32GTE | PlainMessage<UInt32GTE> | undefined
-  ): boolean {
+  static equals(a: UInt32GTE | PlainMessage<UInt32GTE> | undefined, b: UInt32GTE | PlainMessage<UInt32GTE> | undefined): boolean {
     return proto3.util.equals(UInt32GTE, a, b);
   }
 }
@@ -2445,10 +2258,7 @@ export class UInt32GTLT extends Message<UInt32GTLT> {
     return new UInt32GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32GTLT | PlainMessage<UInt32GTLT> | undefined,
-    b: UInt32GTLT | PlainMessage<UInt32GTLT> | undefined
-  ): boolean {
+  static equals(a: UInt32GTLT | PlainMessage<UInt32GTLT> | undefined, b: UInt32GTLT | PlainMessage<UInt32GTLT> | undefined): boolean {
     return proto3.util.equals(UInt32GTLT, a, b);
   }
 }
@@ -2485,10 +2295,7 @@ export class UInt32ExLTGT extends Message<UInt32ExLTGT> {
     return new UInt32ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32ExLTGT | PlainMessage<UInt32ExLTGT> | undefined,
-    b: UInt32ExLTGT | PlainMessage<UInt32ExLTGT> | undefined
-  ): boolean {
+  static equals(a: UInt32ExLTGT | PlainMessage<UInt32ExLTGT> | undefined, b: UInt32ExLTGT | PlainMessage<UInt32ExLTGT> | undefined): boolean {
     return proto3.util.equals(UInt32ExLTGT, a, b);
   }
 }
@@ -2525,10 +2332,7 @@ export class UInt32GTELTE extends Message<UInt32GTELTE> {
     return new UInt32GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32GTELTE | PlainMessage<UInt32GTELTE> | undefined,
-    b: UInt32GTELTE | PlainMessage<UInt32GTELTE> | undefined
-  ): boolean {
+  static equals(a: UInt32GTELTE | PlainMessage<UInt32GTELTE> | undefined, b: UInt32GTELTE | PlainMessage<UInt32GTELTE> | undefined): boolean {
     return proto3.util.equals(UInt32GTELTE, a, b);
   }
 }
@@ -2565,10 +2369,7 @@ export class UInt32ExGTELTE extends Message<UInt32ExGTELTE> {
     return new UInt32ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32ExGTELTE | PlainMessage<UInt32ExGTELTE> | undefined,
-    b: UInt32ExGTELTE | PlainMessage<UInt32ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: UInt32ExGTELTE | PlainMessage<UInt32ExGTELTE> | undefined, b: UInt32ExGTELTE | PlainMessage<UInt32ExGTELTE> | undefined): boolean {
     return proto3.util.equals(UInt32ExGTELTE, a, b);
   }
 }
@@ -2605,10 +2406,7 @@ export class UInt32Ignore extends Message<UInt32Ignore> {
     return new UInt32Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32Ignore | PlainMessage<UInt32Ignore> | undefined,
-    b: UInt32Ignore | PlainMessage<UInt32Ignore> | undefined
-  ): boolean {
+  static equals(a: UInt32Ignore | PlainMessage<UInt32Ignore> | undefined, b: UInt32Ignore | PlainMessage<UInt32Ignore> | undefined): boolean {
     return proto3.util.equals(UInt32Ignore, a, b);
   }
 }
@@ -2645,10 +2443,7 @@ export class UInt64None extends Message<UInt64None> {
     return new UInt64None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64None | PlainMessage<UInt64None> | undefined,
-    b: UInt64None | PlainMessage<UInt64None> | undefined
-  ): boolean {
+  static equals(a: UInt64None | PlainMessage<UInt64None> | undefined, b: UInt64None | PlainMessage<UInt64None> | undefined): boolean {
     return proto3.util.equals(UInt64None, a, b);
   }
 }
@@ -2685,10 +2480,7 @@ export class UInt64Const extends Message<UInt64Const> {
     return new UInt64Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64Const | PlainMessage<UInt64Const> | undefined,
-    b: UInt64Const | PlainMessage<UInt64Const> | undefined
-  ): boolean {
+  static equals(a: UInt64Const | PlainMessage<UInt64Const> | undefined, b: UInt64Const | PlainMessage<UInt64Const> | undefined): boolean {
     return proto3.util.equals(UInt64Const, a, b);
   }
 }
@@ -2725,10 +2517,7 @@ export class UInt64In extends Message<UInt64In> {
     return new UInt64In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64In | PlainMessage<UInt64In> | undefined,
-    b: UInt64In | PlainMessage<UInt64In> | undefined
-  ): boolean {
+  static equals(a: UInt64In | PlainMessage<UInt64In> | undefined, b: UInt64In | PlainMessage<UInt64In> | undefined): boolean {
     return proto3.util.equals(UInt64In, a, b);
   }
 }
@@ -2765,10 +2554,7 @@ export class UInt64NotIn extends Message<UInt64NotIn> {
     return new UInt64NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64NotIn | PlainMessage<UInt64NotIn> | undefined,
-    b: UInt64NotIn | PlainMessage<UInt64NotIn> | undefined
-  ): boolean {
+  static equals(a: UInt64NotIn | PlainMessage<UInt64NotIn> | undefined, b: UInt64NotIn | PlainMessage<UInt64NotIn> | undefined): boolean {
     return proto3.util.equals(UInt64NotIn, a, b);
   }
 }
@@ -2805,10 +2591,7 @@ export class UInt64LT extends Message<UInt64LT> {
     return new UInt64LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64LT | PlainMessage<UInt64LT> | undefined,
-    b: UInt64LT | PlainMessage<UInt64LT> | undefined
-  ): boolean {
+  static equals(a: UInt64LT | PlainMessage<UInt64LT> | undefined, b: UInt64LT | PlainMessage<UInt64LT> | undefined): boolean {
     return proto3.util.equals(UInt64LT, a, b);
   }
 }
@@ -2845,10 +2628,7 @@ export class UInt64LTE extends Message<UInt64LTE> {
     return new UInt64LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64LTE | PlainMessage<UInt64LTE> | undefined,
-    b: UInt64LTE | PlainMessage<UInt64LTE> | undefined
-  ): boolean {
+  static equals(a: UInt64LTE | PlainMessage<UInt64LTE> | undefined, b: UInt64LTE | PlainMessage<UInt64LTE> | undefined): boolean {
     return proto3.util.equals(UInt64LTE, a, b);
   }
 }
@@ -2885,10 +2665,7 @@ export class UInt64GT extends Message<UInt64GT> {
     return new UInt64GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64GT | PlainMessage<UInt64GT> | undefined,
-    b: UInt64GT | PlainMessage<UInt64GT> | undefined
-  ): boolean {
+  static equals(a: UInt64GT | PlainMessage<UInt64GT> | undefined, b: UInt64GT | PlainMessage<UInt64GT> | undefined): boolean {
     return proto3.util.equals(UInt64GT, a, b);
   }
 }
@@ -2925,10 +2702,7 @@ export class UInt64GTE extends Message<UInt64GTE> {
     return new UInt64GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64GTE | PlainMessage<UInt64GTE> | undefined,
-    b: UInt64GTE | PlainMessage<UInt64GTE> | undefined
-  ): boolean {
+  static equals(a: UInt64GTE | PlainMessage<UInt64GTE> | undefined, b: UInt64GTE | PlainMessage<UInt64GTE> | undefined): boolean {
     return proto3.util.equals(UInt64GTE, a, b);
   }
 }
@@ -2965,10 +2739,7 @@ export class UInt64GTLT extends Message<UInt64GTLT> {
     return new UInt64GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64GTLT | PlainMessage<UInt64GTLT> | undefined,
-    b: UInt64GTLT | PlainMessage<UInt64GTLT> | undefined
-  ): boolean {
+  static equals(a: UInt64GTLT | PlainMessage<UInt64GTLT> | undefined, b: UInt64GTLT | PlainMessage<UInt64GTLT> | undefined): boolean {
     return proto3.util.equals(UInt64GTLT, a, b);
   }
 }
@@ -3005,10 +2776,7 @@ export class UInt64ExLTGT extends Message<UInt64ExLTGT> {
     return new UInt64ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64ExLTGT | PlainMessage<UInt64ExLTGT> | undefined,
-    b: UInt64ExLTGT | PlainMessage<UInt64ExLTGT> | undefined
-  ): boolean {
+  static equals(a: UInt64ExLTGT | PlainMessage<UInt64ExLTGT> | undefined, b: UInt64ExLTGT | PlainMessage<UInt64ExLTGT> | undefined): boolean {
     return proto3.util.equals(UInt64ExLTGT, a, b);
   }
 }
@@ -3045,10 +2813,7 @@ export class UInt64GTELTE extends Message<UInt64GTELTE> {
     return new UInt64GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64GTELTE | PlainMessage<UInt64GTELTE> | undefined,
-    b: UInt64GTELTE | PlainMessage<UInt64GTELTE> | undefined
-  ): boolean {
+  static equals(a: UInt64GTELTE | PlainMessage<UInt64GTELTE> | undefined, b: UInt64GTELTE | PlainMessage<UInt64GTELTE> | undefined): boolean {
     return proto3.util.equals(UInt64GTELTE, a, b);
   }
 }
@@ -3085,10 +2850,7 @@ export class UInt64ExGTELTE extends Message<UInt64ExGTELTE> {
     return new UInt64ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64ExGTELTE | PlainMessage<UInt64ExGTELTE> | undefined,
-    b: UInt64ExGTELTE | PlainMessage<UInt64ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: UInt64ExGTELTE | PlainMessage<UInt64ExGTELTE> | undefined, b: UInt64ExGTELTE | PlainMessage<UInt64ExGTELTE> | undefined): boolean {
     return proto3.util.equals(UInt64ExGTELTE, a, b);
   }
 }
@@ -3125,10 +2887,7 @@ export class UInt64Ignore extends Message<UInt64Ignore> {
     return new UInt64Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64Ignore | PlainMessage<UInt64Ignore> | undefined,
-    b: UInt64Ignore | PlainMessage<UInt64Ignore> | undefined
-  ): boolean {
+  static equals(a: UInt64Ignore | PlainMessage<UInt64Ignore> | undefined, b: UInt64Ignore | PlainMessage<UInt64Ignore> | undefined): boolean {
     return proto3.util.equals(UInt64Ignore, a, b);
   }
 }
@@ -3165,10 +2924,7 @@ export class SInt32None extends Message<SInt32None> {
     return new SInt32None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32None | PlainMessage<SInt32None> | undefined,
-    b: SInt32None | PlainMessage<SInt32None> | undefined
-  ): boolean {
+  static equals(a: SInt32None | PlainMessage<SInt32None> | undefined, b: SInt32None | PlainMessage<SInt32None> | undefined): boolean {
     return proto3.util.equals(SInt32None, a, b);
   }
 }
@@ -3205,10 +2961,7 @@ export class SInt32Const extends Message<SInt32Const> {
     return new SInt32Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32Const | PlainMessage<SInt32Const> | undefined,
-    b: SInt32Const | PlainMessage<SInt32Const> | undefined
-  ): boolean {
+  static equals(a: SInt32Const | PlainMessage<SInt32Const> | undefined, b: SInt32Const | PlainMessage<SInt32Const> | undefined): boolean {
     return proto3.util.equals(SInt32Const, a, b);
   }
 }
@@ -3245,10 +2998,7 @@ export class SInt32In extends Message<SInt32In> {
     return new SInt32In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32In | PlainMessage<SInt32In> | undefined,
-    b: SInt32In | PlainMessage<SInt32In> | undefined
-  ): boolean {
+  static equals(a: SInt32In | PlainMessage<SInt32In> | undefined, b: SInt32In | PlainMessage<SInt32In> | undefined): boolean {
     return proto3.util.equals(SInt32In, a, b);
   }
 }
@@ -3285,10 +3035,7 @@ export class SInt32NotIn extends Message<SInt32NotIn> {
     return new SInt32NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32NotIn | PlainMessage<SInt32NotIn> | undefined,
-    b: SInt32NotIn | PlainMessage<SInt32NotIn> | undefined
-  ): boolean {
+  static equals(a: SInt32NotIn | PlainMessage<SInt32NotIn> | undefined, b: SInt32NotIn | PlainMessage<SInt32NotIn> | undefined): boolean {
     return proto3.util.equals(SInt32NotIn, a, b);
   }
 }
@@ -3325,10 +3072,7 @@ export class SInt32LT extends Message<SInt32LT> {
     return new SInt32LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32LT | PlainMessage<SInt32LT> | undefined,
-    b: SInt32LT | PlainMessage<SInt32LT> | undefined
-  ): boolean {
+  static equals(a: SInt32LT | PlainMessage<SInt32LT> | undefined, b: SInt32LT | PlainMessage<SInt32LT> | undefined): boolean {
     return proto3.util.equals(SInt32LT, a, b);
   }
 }
@@ -3365,10 +3109,7 @@ export class SInt32LTE extends Message<SInt32LTE> {
     return new SInt32LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32LTE | PlainMessage<SInt32LTE> | undefined,
-    b: SInt32LTE | PlainMessage<SInt32LTE> | undefined
-  ): boolean {
+  static equals(a: SInt32LTE | PlainMessage<SInt32LTE> | undefined, b: SInt32LTE | PlainMessage<SInt32LTE> | undefined): boolean {
     return proto3.util.equals(SInt32LTE, a, b);
   }
 }
@@ -3405,10 +3146,7 @@ export class SInt32GT extends Message<SInt32GT> {
     return new SInt32GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32GT | PlainMessage<SInt32GT> | undefined,
-    b: SInt32GT | PlainMessage<SInt32GT> | undefined
-  ): boolean {
+  static equals(a: SInt32GT | PlainMessage<SInt32GT> | undefined, b: SInt32GT | PlainMessage<SInt32GT> | undefined): boolean {
     return proto3.util.equals(SInt32GT, a, b);
   }
 }
@@ -3445,10 +3183,7 @@ export class SInt32GTE extends Message<SInt32GTE> {
     return new SInt32GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32GTE | PlainMessage<SInt32GTE> | undefined,
-    b: SInt32GTE | PlainMessage<SInt32GTE> | undefined
-  ): boolean {
+  static equals(a: SInt32GTE | PlainMessage<SInt32GTE> | undefined, b: SInt32GTE | PlainMessage<SInt32GTE> | undefined): boolean {
     return proto3.util.equals(SInt32GTE, a, b);
   }
 }
@@ -3485,10 +3220,7 @@ export class SInt32GTLT extends Message<SInt32GTLT> {
     return new SInt32GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32GTLT | PlainMessage<SInt32GTLT> | undefined,
-    b: SInt32GTLT | PlainMessage<SInt32GTLT> | undefined
-  ): boolean {
+  static equals(a: SInt32GTLT | PlainMessage<SInt32GTLT> | undefined, b: SInt32GTLT | PlainMessage<SInt32GTLT> | undefined): boolean {
     return proto3.util.equals(SInt32GTLT, a, b);
   }
 }
@@ -3525,10 +3257,7 @@ export class SInt32ExLTGT extends Message<SInt32ExLTGT> {
     return new SInt32ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32ExLTGT | PlainMessage<SInt32ExLTGT> | undefined,
-    b: SInt32ExLTGT | PlainMessage<SInt32ExLTGT> | undefined
-  ): boolean {
+  static equals(a: SInt32ExLTGT | PlainMessage<SInt32ExLTGT> | undefined, b: SInt32ExLTGT | PlainMessage<SInt32ExLTGT> | undefined): boolean {
     return proto3.util.equals(SInt32ExLTGT, a, b);
   }
 }
@@ -3565,10 +3294,7 @@ export class SInt32GTELTE extends Message<SInt32GTELTE> {
     return new SInt32GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32GTELTE | PlainMessage<SInt32GTELTE> | undefined,
-    b: SInt32GTELTE | PlainMessage<SInt32GTELTE> | undefined
-  ): boolean {
+  static equals(a: SInt32GTELTE | PlainMessage<SInt32GTELTE> | undefined, b: SInt32GTELTE | PlainMessage<SInt32GTELTE> | undefined): boolean {
     return proto3.util.equals(SInt32GTELTE, a, b);
   }
 }
@@ -3605,10 +3331,7 @@ export class SInt32ExGTELTE extends Message<SInt32ExGTELTE> {
     return new SInt32ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32ExGTELTE | PlainMessage<SInt32ExGTELTE> | undefined,
-    b: SInt32ExGTELTE | PlainMessage<SInt32ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: SInt32ExGTELTE | PlainMessage<SInt32ExGTELTE> | undefined, b: SInt32ExGTELTE | PlainMessage<SInt32ExGTELTE> | undefined): boolean {
     return proto3.util.equals(SInt32ExGTELTE, a, b);
   }
 }
@@ -3645,10 +3368,7 @@ export class SInt32Ignore extends Message<SInt32Ignore> {
     return new SInt32Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32Ignore | PlainMessage<SInt32Ignore> | undefined,
-    b: SInt32Ignore | PlainMessage<SInt32Ignore> | undefined
-  ): boolean {
+  static equals(a: SInt32Ignore | PlainMessage<SInt32Ignore> | undefined, b: SInt32Ignore | PlainMessage<SInt32Ignore> | undefined): boolean {
     return proto3.util.equals(SInt32Ignore, a, b);
   }
 }
@@ -3685,10 +3405,7 @@ export class SInt64None extends Message<SInt64None> {
     return new SInt64None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64None | PlainMessage<SInt64None> | undefined,
-    b: SInt64None | PlainMessage<SInt64None> | undefined
-  ): boolean {
+  static equals(a: SInt64None | PlainMessage<SInt64None> | undefined, b: SInt64None | PlainMessage<SInt64None> | undefined): boolean {
     return proto3.util.equals(SInt64None, a, b);
   }
 }
@@ -3725,10 +3442,7 @@ export class SInt64Const extends Message<SInt64Const> {
     return new SInt64Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64Const | PlainMessage<SInt64Const> | undefined,
-    b: SInt64Const | PlainMessage<SInt64Const> | undefined
-  ): boolean {
+  static equals(a: SInt64Const | PlainMessage<SInt64Const> | undefined, b: SInt64Const | PlainMessage<SInt64Const> | undefined): boolean {
     return proto3.util.equals(SInt64Const, a, b);
   }
 }
@@ -3765,10 +3479,7 @@ export class SInt64In extends Message<SInt64In> {
     return new SInt64In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64In | PlainMessage<SInt64In> | undefined,
-    b: SInt64In | PlainMessage<SInt64In> | undefined
-  ): boolean {
+  static equals(a: SInt64In | PlainMessage<SInt64In> | undefined, b: SInt64In | PlainMessage<SInt64In> | undefined): boolean {
     return proto3.util.equals(SInt64In, a, b);
   }
 }
@@ -3805,10 +3516,7 @@ export class SInt64NotIn extends Message<SInt64NotIn> {
     return new SInt64NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64NotIn | PlainMessage<SInt64NotIn> | undefined,
-    b: SInt64NotIn | PlainMessage<SInt64NotIn> | undefined
-  ): boolean {
+  static equals(a: SInt64NotIn | PlainMessage<SInt64NotIn> | undefined, b: SInt64NotIn | PlainMessage<SInt64NotIn> | undefined): boolean {
     return proto3.util.equals(SInt64NotIn, a, b);
   }
 }
@@ -3845,10 +3553,7 @@ export class SInt64LT extends Message<SInt64LT> {
     return new SInt64LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64LT | PlainMessage<SInt64LT> | undefined,
-    b: SInt64LT | PlainMessage<SInt64LT> | undefined
-  ): boolean {
+  static equals(a: SInt64LT | PlainMessage<SInt64LT> | undefined, b: SInt64LT | PlainMessage<SInt64LT> | undefined): boolean {
     return proto3.util.equals(SInt64LT, a, b);
   }
 }
@@ -3885,10 +3590,7 @@ export class SInt64LTE extends Message<SInt64LTE> {
     return new SInt64LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64LTE | PlainMessage<SInt64LTE> | undefined,
-    b: SInt64LTE | PlainMessage<SInt64LTE> | undefined
-  ): boolean {
+  static equals(a: SInt64LTE | PlainMessage<SInt64LTE> | undefined, b: SInt64LTE | PlainMessage<SInt64LTE> | undefined): boolean {
     return proto3.util.equals(SInt64LTE, a, b);
   }
 }
@@ -3925,10 +3627,7 @@ export class SInt64GT extends Message<SInt64GT> {
     return new SInt64GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64GT | PlainMessage<SInt64GT> | undefined,
-    b: SInt64GT | PlainMessage<SInt64GT> | undefined
-  ): boolean {
+  static equals(a: SInt64GT | PlainMessage<SInt64GT> | undefined, b: SInt64GT | PlainMessage<SInt64GT> | undefined): boolean {
     return proto3.util.equals(SInt64GT, a, b);
   }
 }
@@ -3965,10 +3664,7 @@ export class SInt64GTE extends Message<SInt64GTE> {
     return new SInt64GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64GTE | PlainMessage<SInt64GTE> | undefined,
-    b: SInt64GTE | PlainMessage<SInt64GTE> | undefined
-  ): boolean {
+  static equals(a: SInt64GTE | PlainMessage<SInt64GTE> | undefined, b: SInt64GTE | PlainMessage<SInt64GTE> | undefined): boolean {
     return proto3.util.equals(SInt64GTE, a, b);
   }
 }
@@ -4005,10 +3701,7 @@ export class SInt64GTLT extends Message<SInt64GTLT> {
     return new SInt64GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64GTLT | PlainMessage<SInt64GTLT> | undefined,
-    b: SInt64GTLT | PlainMessage<SInt64GTLT> | undefined
-  ): boolean {
+  static equals(a: SInt64GTLT | PlainMessage<SInt64GTLT> | undefined, b: SInt64GTLT | PlainMessage<SInt64GTLT> | undefined): boolean {
     return proto3.util.equals(SInt64GTLT, a, b);
   }
 }
@@ -4045,10 +3738,7 @@ export class SInt64ExLTGT extends Message<SInt64ExLTGT> {
     return new SInt64ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64ExLTGT | PlainMessage<SInt64ExLTGT> | undefined,
-    b: SInt64ExLTGT | PlainMessage<SInt64ExLTGT> | undefined
-  ): boolean {
+  static equals(a: SInt64ExLTGT | PlainMessage<SInt64ExLTGT> | undefined, b: SInt64ExLTGT | PlainMessage<SInt64ExLTGT> | undefined): boolean {
     return proto3.util.equals(SInt64ExLTGT, a, b);
   }
 }
@@ -4085,10 +3775,7 @@ export class SInt64GTELTE extends Message<SInt64GTELTE> {
     return new SInt64GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64GTELTE | PlainMessage<SInt64GTELTE> | undefined,
-    b: SInt64GTELTE | PlainMessage<SInt64GTELTE> | undefined
-  ): boolean {
+  static equals(a: SInt64GTELTE | PlainMessage<SInt64GTELTE> | undefined, b: SInt64GTELTE | PlainMessage<SInt64GTELTE> | undefined): boolean {
     return proto3.util.equals(SInt64GTELTE, a, b);
   }
 }
@@ -4125,10 +3812,7 @@ export class SInt64ExGTELTE extends Message<SInt64ExGTELTE> {
     return new SInt64ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64ExGTELTE | PlainMessage<SInt64ExGTELTE> | undefined,
-    b: SInt64ExGTELTE | PlainMessage<SInt64ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: SInt64ExGTELTE | PlainMessage<SInt64ExGTELTE> | undefined, b: SInt64ExGTELTE | PlainMessage<SInt64ExGTELTE> | undefined): boolean {
     return proto3.util.equals(SInt64ExGTELTE, a, b);
   }
 }
@@ -4165,10 +3849,7 @@ export class SInt64Ignore extends Message<SInt64Ignore> {
     return new SInt64Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64Ignore | PlainMessage<SInt64Ignore> | undefined,
-    b: SInt64Ignore | PlainMessage<SInt64Ignore> | undefined
-  ): boolean {
+  static equals(a: SInt64Ignore | PlainMessage<SInt64Ignore> | undefined, b: SInt64Ignore | PlainMessage<SInt64Ignore> | undefined): boolean {
     return proto3.util.equals(SInt64Ignore, a, b);
   }
 }
@@ -4205,10 +3886,7 @@ export class Fixed32None extends Message<Fixed32None> {
     return new Fixed32None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32None | PlainMessage<Fixed32None> | undefined,
-    b: Fixed32None | PlainMessage<Fixed32None> | undefined
-  ): boolean {
+  static equals(a: Fixed32None | PlainMessage<Fixed32None> | undefined, b: Fixed32None | PlainMessage<Fixed32None> | undefined): boolean {
     return proto3.util.equals(Fixed32None, a, b);
   }
 }
@@ -4245,10 +3923,7 @@ export class Fixed32Const extends Message<Fixed32Const> {
     return new Fixed32Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32Const | PlainMessage<Fixed32Const> | undefined,
-    b: Fixed32Const | PlainMessage<Fixed32Const> | undefined
-  ): boolean {
+  static equals(a: Fixed32Const | PlainMessage<Fixed32Const> | undefined, b: Fixed32Const | PlainMessage<Fixed32Const> | undefined): boolean {
     return proto3.util.equals(Fixed32Const, a, b);
   }
 }
@@ -4285,10 +3960,7 @@ export class Fixed32In extends Message<Fixed32In> {
     return new Fixed32In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32In | PlainMessage<Fixed32In> | undefined,
-    b: Fixed32In | PlainMessage<Fixed32In> | undefined
-  ): boolean {
+  static equals(a: Fixed32In | PlainMessage<Fixed32In> | undefined, b: Fixed32In | PlainMessage<Fixed32In> | undefined): boolean {
     return proto3.util.equals(Fixed32In, a, b);
   }
 }
@@ -4325,10 +3997,7 @@ export class Fixed32NotIn extends Message<Fixed32NotIn> {
     return new Fixed32NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32NotIn | PlainMessage<Fixed32NotIn> | undefined,
-    b: Fixed32NotIn | PlainMessage<Fixed32NotIn> | undefined
-  ): boolean {
+  static equals(a: Fixed32NotIn | PlainMessage<Fixed32NotIn> | undefined, b: Fixed32NotIn | PlainMessage<Fixed32NotIn> | undefined): boolean {
     return proto3.util.equals(Fixed32NotIn, a, b);
   }
 }
@@ -4365,10 +4034,7 @@ export class Fixed32LT extends Message<Fixed32LT> {
     return new Fixed32LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32LT | PlainMessage<Fixed32LT> | undefined,
-    b: Fixed32LT | PlainMessage<Fixed32LT> | undefined
-  ): boolean {
+  static equals(a: Fixed32LT | PlainMessage<Fixed32LT> | undefined, b: Fixed32LT | PlainMessage<Fixed32LT> | undefined): boolean {
     return proto3.util.equals(Fixed32LT, a, b);
   }
 }
@@ -4405,10 +4071,7 @@ export class Fixed32LTE extends Message<Fixed32LTE> {
     return new Fixed32LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32LTE | PlainMessage<Fixed32LTE> | undefined,
-    b: Fixed32LTE | PlainMessage<Fixed32LTE> | undefined
-  ): boolean {
+  static equals(a: Fixed32LTE | PlainMessage<Fixed32LTE> | undefined, b: Fixed32LTE | PlainMessage<Fixed32LTE> | undefined): boolean {
     return proto3.util.equals(Fixed32LTE, a, b);
   }
 }
@@ -4445,10 +4108,7 @@ export class Fixed32GT extends Message<Fixed32GT> {
     return new Fixed32GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32GT | PlainMessage<Fixed32GT> | undefined,
-    b: Fixed32GT | PlainMessage<Fixed32GT> | undefined
-  ): boolean {
+  static equals(a: Fixed32GT | PlainMessage<Fixed32GT> | undefined, b: Fixed32GT | PlainMessage<Fixed32GT> | undefined): boolean {
     return proto3.util.equals(Fixed32GT, a, b);
   }
 }
@@ -4485,10 +4145,7 @@ export class Fixed32GTE extends Message<Fixed32GTE> {
     return new Fixed32GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32GTE | PlainMessage<Fixed32GTE> | undefined,
-    b: Fixed32GTE | PlainMessage<Fixed32GTE> | undefined
-  ): boolean {
+  static equals(a: Fixed32GTE | PlainMessage<Fixed32GTE> | undefined, b: Fixed32GTE | PlainMessage<Fixed32GTE> | undefined): boolean {
     return proto3.util.equals(Fixed32GTE, a, b);
   }
 }
@@ -4525,10 +4182,7 @@ export class Fixed32GTLT extends Message<Fixed32GTLT> {
     return new Fixed32GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32GTLT | PlainMessage<Fixed32GTLT> | undefined,
-    b: Fixed32GTLT | PlainMessage<Fixed32GTLT> | undefined
-  ): boolean {
+  static equals(a: Fixed32GTLT | PlainMessage<Fixed32GTLT> | undefined, b: Fixed32GTLT | PlainMessage<Fixed32GTLT> | undefined): boolean {
     return proto3.util.equals(Fixed32GTLT, a, b);
   }
 }
@@ -4565,10 +4219,7 @@ export class Fixed32ExLTGT extends Message<Fixed32ExLTGT> {
     return new Fixed32ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32ExLTGT | PlainMessage<Fixed32ExLTGT> | undefined,
-    b: Fixed32ExLTGT | PlainMessage<Fixed32ExLTGT> | undefined
-  ): boolean {
+  static equals(a: Fixed32ExLTGT | PlainMessage<Fixed32ExLTGT> | undefined, b: Fixed32ExLTGT | PlainMessage<Fixed32ExLTGT> | undefined): boolean {
     return proto3.util.equals(Fixed32ExLTGT, a, b);
   }
 }
@@ -4605,10 +4256,7 @@ export class Fixed32GTELTE extends Message<Fixed32GTELTE> {
     return new Fixed32GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32GTELTE | PlainMessage<Fixed32GTELTE> | undefined,
-    b: Fixed32GTELTE | PlainMessage<Fixed32GTELTE> | undefined
-  ): boolean {
+  static equals(a: Fixed32GTELTE | PlainMessage<Fixed32GTELTE> | undefined, b: Fixed32GTELTE | PlainMessage<Fixed32GTELTE> | undefined): boolean {
     return proto3.util.equals(Fixed32GTELTE, a, b);
   }
 }
@@ -4645,10 +4293,7 @@ export class Fixed32ExGTELTE extends Message<Fixed32ExGTELTE> {
     return new Fixed32ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32ExGTELTE | PlainMessage<Fixed32ExGTELTE> | undefined,
-    b: Fixed32ExGTELTE | PlainMessage<Fixed32ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: Fixed32ExGTELTE | PlainMessage<Fixed32ExGTELTE> | undefined, b: Fixed32ExGTELTE | PlainMessage<Fixed32ExGTELTE> | undefined): boolean {
     return proto3.util.equals(Fixed32ExGTELTE, a, b);
   }
 }
@@ -4685,10 +4330,7 @@ export class Fixed32Ignore extends Message<Fixed32Ignore> {
     return new Fixed32Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32Ignore | PlainMessage<Fixed32Ignore> | undefined,
-    b: Fixed32Ignore | PlainMessage<Fixed32Ignore> | undefined
-  ): boolean {
+  static equals(a: Fixed32Ignore | PlainMessage<Fixed32Ignore> | undefined, b: Fixed32Ignore | PlainMessage<Fixed32Ignore> | undefined): boolean {
     return proto3.util.equals(Fixed32Ignore, a, b);
   }
 }
@@ -4725,10 +4367,7 @@ export class Fixed64None extends Message<Fixed64None> {
     return new Fixed64None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64None | PlainMessage<Fixed64None> | undefined,
-    b: Fixed64None | PlainMessage<Fixed64None> | undefined
-  ): boolean {
+  static equals(a: Fixed64None | PlainMessage<Fixed64None> | undefined, b: Fixed64None | PlainMessage<Fixed64None> | undefined): boolean {
     return proto3.util.equals(Fixed64None, a, b);
   }
 }
@@ -4765,10 +4404,7 @@ export class Fixed64Const extends Message<Fixed64Const> {
     return new Fixed64Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64Const | PlainMessage<Fixed64Const> | undefined,
-    b: Fixed64Const | PlainMessage<Fixed64Const> | undefined
-  ): boolean {
+  static equals(a: Fixed64Const | PlainMessage<Fixed64Const> | undefined, b: Fixed64Const | PlainMessage<Fixed64Const> | undefined): boolean {
     return proto3.util.equals(Fixed64Const, a, b);
   }
 }
@@ -4805,10 +4441,7 @@ export class Fixed64In extends Message<Fixed64In> {
     return new Fixed64In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64In | PlainMessage<Fixed64In> | undefined,
-    b: Fixed64In | PlainMessage<Fixed64In> | undefined
-  ): boolean {
+  static equals(a: Fixed64In | PlainMessage<Fixed64In> | undefined, b: Fixed64In | PlainMessage<Fixed64In> | undefined): boolean {
     return proto3.util.equals(Fixed64In, a, b);
   }
 }
@@ -4845,10 +4478,7 @@ export class Fixed64NotIn extends Message<Fixed64NotIn> {
     return new Fixed64NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64NotIn | PlainMessage<Fixed64NotIn> | undefined,
-    b: Fixed64NotIn | PlainMessage<Fixed64NotIn> | undefined
-  ): boolean {
+  static equals(a: Fixed64NotIn | PlainMessage<Fixed64NotIn> | undefined, b: Fixed64NotIn | PlainMessage<Fixed64NotIn> | undefined): boolean {
     return proto3.util.equals(Fixed64NotIn, a, b);
   }
 }
@@ -4885,10 +4515,7 @@ export class Fixed64LT extends Message<Fixed64LT> {
     return new Fixed64LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64LT | PlainMessage<Fixed64LT> | undefined,
-    b: Fixed64LT | PlainMessage<Fixed64LT> | undefined
-  ): boolean {
+  static equals(a: Fixed64LT | PlainMessage<Fixed64LT> | undefined, b: Fixed64LT | PlainMessage<Fixed64LT> | undefined): boolean {
     return proto3.util.equals(Fixed64LT, a, b);
   }
 }
@@ -4925,10 +4552,7 @@ export class Fixed64LTE extends Message<Fixed64LTE> {
     return new Fixed64LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64LTE | PlainMessage<Fixed64LTE> | undefined,
-    b: Fixed64LTE | PlainMessage<Fixed64LTE> | undefined
-  ): boolean {
+  static equals(a: Fixed64LTE | PlainMessage<Fixed64LTE> | undefined, b: Fixed64LTE | PlainMessage<Fixed64LTE> | undefined): boolean {
     return proto3.util.equals(Fixed64LTE, a, b);
   }
 }
@@ -4965,10 +4589,7 @@ export class Fixed64GT extends Message<Fixed64GT> {
     return new Fixed64GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64GT | PlainMessage<Fixed64GT> | undefined,
-    b: Fixed64GT | PlainMessage<Fixed64GT> | undefined
-  ): boolean {
+  static equals(a: Fixed64GT | PlainMessage<Fixed64GT> | undefined, b: Fixed64GT | PlainMessage<Fixed64GT> | undefined): boolean {
     return proto3.util.equals(Fixed64GT, a, b);
   }
 }
@@ -5005,10 +4626,7 @@ export class Fixed64GTE extends Message<Fixed64GTE> {
     return new Fixed64GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64GTE | PlainMessage<Fixed64GTE> | undefined,
-    b: Fixed64GTE | PlainMessage<Fixed64GTE> | undefined
-  ): boolean {
+  static equals(a: Fixed64GTE | PlainMessage<Fixed64GTE> | undefined, b: Fixed64GTE | PlainMessage<Fixed64GTE> | undefined): boolean {
     return proto3.util.equals(Fixed64GTE, a, b);
   }
 }
@@ -5045,10 +4663,7 @@ export class Fixed64GTLT extends Message<Fixed64GTLT> {
     return new Fixed64GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64GTLT | PlainMessage<Fixed64GTLT> | undefined,
-    b: Fixed64GTLT | PlainMessage<Fixed64GTLT> | undefined
-  ): boolean {
+  static equals(a: Fixed64GTLT | PlainMessage<Fixed64GTLT> | undefined, b: Fixed64GTLT | PlainMessage<Fixed64GTLT> | undefined): boolean {
     return proto3.util.equals(Fixed64GTLT, a, b);
   }
 }
@@ -5085,10 +4700,7 @@ export class Fixed64ExLTGT extends Message<Fixed64ExLTGT> {
     return new Fixed64ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64ExLTGT | PlainMessage<Fixed64ExLTGT> | undefined,
-    b: Fixed64ExLTGT | PlainMessage<Fixed64ExLTGT> | undefined
-  ): boolean {
+  static equals(a: Fixed64ExLTGT | PlainMessage<Fixed64ExLTGT> | undefined, b: Fixed64ExLTGT | PlainMessage<Fixed64ExLTGT> | undefined): boolean {
     return proto3.util.equals(Fixed64ExLTGT, a, b);
   }
 }
@@ -5125,10 +4737,7 @@ export class Fixed64GTELTE extends Message<Fixed64GTELTE> {
     return new Fixed64GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64GTELTE | PlainMessage<Fixed64GTELTE> | undefined,
-    b: Fixed64GTELTE | PlainMessage<Fixed64GTELTE> | undefined
-  ): boolean {
+  static equals(a: Fixed64GTELTE | PlainMessage<Fixed64GTELTE> | undefined, b: Fixed64GTELTE | PlainMessage<Fixed64GTELTE> | undefined): boolean {
     return proto3.util.equals(Fixed64GTELTE, a, b);
   }
 }
@@ -5165,10 +4774,7 @@ export class Fixed64ExGTELTE extends Message<Fixed64ExGTELTE> {
     return new Fixed64ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64ExGTELTE | PlainMessage<Fixed64ExGTELTE> | undefined,
-    b: Fixed64ExGTELTE | PlainMessage<Fixed64ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: Fixed64ExGTELTE | PlainMessage<Fixed64ExGTELTE> | undefined, b: Fixed64ExGTELTE | PlainMessage<Fixed64ExGTELTE> | undefined): boolean {
     return proto3.util.equals(Fixed64ExGTELTE, a, b);
   }
 }
@@ -5205,10 +4811,7 @@ export class Fixed64Ignore extends Message<Fixed64Ignore> {
     return new Fixed64Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64Ignore | PlainMessage<Fixed64Ignore> | undefined,
-    b: Fixed64Ignore | PlainMessage<Fixed64Ignore> | undefined
-  ): boolean {
+  static equals(a: Fixed64Ignore | PlainMessage<Fixed64Ignore> | undefined, b: Fixed64Ignore | PlainMessage<Fixed64Ignore> | undefined): boolean {
     return proto3.util.equals(Fixed64Ignore, a, b);
   }
 }
@@ -5245,10 +4848,7 @@ export class SFixed32None extends Message<SFixed32None> {
     return new SFixed32None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32None | PlainMessage<SFixed32None> | undefined,
-    b: SFixed32None | PlainMessage<SFixed32None> | undefined
-  ): boolean {
+  static equals(a: SFixed32None | PlainMessage<SFixed32None> | undefined, b: SFixed32None | PlainMessage<SFixed32None> | undefined): boolean {
     return proto3.util.equals(SFixed32None, a, b);
   }
 }
@@ -5285,10 +4885,7 @@ export class SFixed32Const extends Message<SFixed32Const> {
     return new SFixed32Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32Const | PlainMessage<SFixed32Const> | undefined,
-    b: SFixed32Const | PlainMessage<SFixed32Const> | undefined
-  ): boolean {
+  static equals(a: SFixed32Const | PlainMessage<SFixed32Const> | undefined, b: SFixed32Const | PlainMessage<SFixed32Const> | undefined): boolean {
     return proto3.util.equals(SFixed32Const, a, b);
   }
 }
@@ -5325,10 +4922,7 @@ export class SFixed32In extends Message<SFixed32In> {
     return new SFixed32In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32In | PlainMessage<SFixed32In> | undefined,
-    b: SFixed32In | PlainMessage<SFixed32In> | undefined
-  ): boolean {
+  static equals(a: SFixed32In | PlainMessage<SFixed32In> | undefined, b: SFixed32In | PlainMessage<SFixed32In> | undefined): boolean {
     return proto3.util.equals(SFixed32In, a, b);
   }
 }
@@ -5365,10 +4959,7 @@ export class SFixed32NotIn extends Message<SFixed32NotIn> {
     return new SFixed32NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32NotIn | PlainMessage<SFixed32NotIn> | undefined,
-    b: SFixed32NotIn | PlainMessage<SFixed32NotIn> | undefined
-  ): boolean {
+  static equals(a: SFixed32NotIn | PlainMessage<SFixed32NotIn> | undefined, b: SFixed32NotIn | PlainMessage<SFixed32NotIn> | undefined): boolean {
     return proto3.util.equals(SFixed32NotIn, a, b);
   }
 }
@@ -5405,10 +4996,7 @@ export class SFixed32LT extends Message<SFixed32LT> {
     return new SFixed32LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32LT | PlainMessage<SFixed32LT> | undefined,
-    b: SFixed32LT | PlainMessage<SFixed32LT> | undefined
-  ): boolean {
+  static equals(a: SFixed32LT | PlainMessage<SFixed32LT> | undefined, b: SFixed32LT | PlainMessage<SFixed32LT> | undefined): boolean {
     return proto3.util.equals(SFixed32LT, a, b);
   }
 }
@@ -5445,10 +5033,7 @@ export class SFixed32LTE extends Message<SFixed32LTE> {
     return new SFixed32LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32LTE | PlainMessage<SFixed32LTE> | undefined,
-    b: SFixed32LTE | PlainMessage<SFixed32LTE> | undefined
-  ): boolean {
+  static equals(a: SFixed32LTE | PlainMessage<SFixed32LTE> | undefined, b: SFixed32LTE | PlainMessage<SFixed32LTE> | undefined): boolean {
     return proto3.util.equals(SFixed32LTE, a, b);
   }
 }
@@ -5485,10 +5070,7 @@ export class SFixed32GT extends Message<SFixed32GT> {
     return new SFixed32GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32GT | PlainMessage<SFixed32GT> | undefined,
-    b: SFixed32GT | PlainMessage<SFixed32GT> | undefined
-  ): boolean {
+  static equals(a: SFixed32GT | PlainMessage<SFixed32GT> | undefined, b: SFixed32GT | PlainMessage<SFixed32GT> | undefined): boolean {
     return proto3.util.equals(SFixed32GT, a, b);
   }
 }
@@ -5525,10 +5107,7 @@ export class SFixed32GTE extends Message<SFixed32GTE> {
     return new SFixed32GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32GTE | PlainMessage<SFixed32GTE> | undefined,
-    b: SFixed32GTE | PlainMessage<SFixed32GTE> | undefined
-  ): boolean {
+  static equals(a: SFixed32GTE | PlainMessage<SFixed32GTE> | undefined, b: SFixed32GTE | PlainMessage<SFixed32GTE> | undefined): boolean {
     return proto3.util.equals(SFixed32GTE, a, b);
   }
 }
@@ -5565,10 +5144,7 @@ export class SFixed32GTLT extends Message<SFixed32GTLT> {
     return new SFixed32GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32GTLT | PlainMessage<SFixed32GTLT> | undefined,
-    b: SFixed32GTLT | PlainMessage<SFixed32GTLT> | undefined
-  ): boolean {
+  static equals(a: SFixed32GTLT | PlainMessage<SFixed32GTLT> | undefined, b: SFixed32GTLT | PlainMessage<SFixed32GTLT> | undefined): boolean {
     return proto3.util.equals(SFixed32GTLT, a, b);
   }
 }
@@ -5605,10 +5181,7 @@ export class SFixed32ExLTGT extends Message<SFixed32ExLTGT> {
     return new SFixed32ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32ExLTGT | PlainMessage<SFixed32ExLTGT> | undefined,
-    b: SFixed32ExLTGT | PlainMessage<SFixed32ExLTGT> | undefined
-  ): boolean {
+  static equals(a: SFixed32ExLTGT | PlainMessage<SFixed32ExLTGT> | undefined, b: SFixed32ExLTGT | PlainMessage<SFixed32ExLTGT> | undefined): boolean {
     return proto3.util.equals(SFixed32ExLTGT, a, b);
   }
 }
@@ -5645,10 +5218,7 @@ export class SFixed32GTELTE extends Message<SFixed32GTELTE> {
     return new SFixed32GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32GTELTE | PlainMessage<SFixed32GTELTE> | undefined,
-    b: SFixed32GTELTE | PlainMessage<SFixed32GTELTE> | undefined
-  ): boolean {
+  static equals(a: SFixed32GTELTE | PlainMessage<SFixed32GTELTE> | undefined, b: SFixed32GTELTE | PlainMessage<SFixed32GTELTE> | undefined): boolean {
     return proto3.util.equals(SFixed32GTELTE, a, b);
   }
 }
@@ -5685,10 +5255,7 @@ export class SFixed32ExGTELTE extends Message<SFixed32ExGTELTE> {
     return new SFixed32ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32ExGTELTE | PlainMessage<SFixed32ExGTELTE> | undefined,
-    b: SFixed32ExGTELTE | PlainMessage<SFixed32ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: SFixed32ExGTELTE | PlainMessage<SFixed32ExGTELTE> | undefined, b: SFixed32ExGTELTE | PlainMessage<SFixed32ExGTELTE> | undefined): boolean {
     return proto3.util.equals(SFixed32ExGTELTE, a, b);
   }
 }
@@ -5725,10 +5292,7 @@ export class SFixed32Ignore extends Message<SFixed32Ignore> {
     return new SFixed32Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32Ignore | PlainMessage<SFixed32Ignore> | undefined,
-    b: SFixed32Ignore | PlainMessage<SFixed32Ignore> | undefined
-  ): boolean {
+  static equals(a: SFixed32Ignore | PlainMessage<SFixed32Ignore> | undefined, b: SFixed32Ignore | PlainMessage<SFixed32Ignore> | undefined): boolean {
     return proto3.util.equals(SFixed32Ignore, a, b);
   }
 }
@@ -5765,10 +5329,7 @@ export class SFixed64None extends Message<SFixed64None> {
     return new SFixed64None().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64None | PlainMessage<SFixed64None> | undefined,
-    b: SFixed64None | PlainMessage<SFixed64None> | undefined
-  ): boolean {
+  static equals(a: SFixed64None | PlainMessage<SFixed64None> | undefined, b: SFixed64None | PlainMessage<SFixed64None> | undefined): boolean {
     return proto3.util.equals(SFixed64None, a, b);
   }
 }
@@ -5805,10 +5366,7 @@ export class SFixed64Const extends Message<SFixed64Const> {
     return new SFixed64Const().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64Const | PlainMessage<SFixed64Const> | undefined,
-    b: SFixed64Const | PlainMessage<SFixed64Const> | undefined
-  ): boolean {
+  static equals(a: SFixed64Const | PlainMessage<SFixed64Const> | undefined, b: SFixed64Const | PlainMessage<SFixed64Const> | undefined): boolean {
     return proto3.util.equals(SFixed64Const, a, b);
   }
 }
@@ -5845,10 +5403,7 @@ export class SFixed64In extends Message<SFixed64In> {
     return new SFixed64In().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64In | PlainMessage<SFixed64In> | undefined,
-    b: SFixed64In | PlainMessage<SFixed64In> | undefined
-  ): boolean {
+  static equals(a: SFixed64In | PlainMessage<SFixed64In> | undefined, b: SFixed64In | PlainMessage<SFixed64In> | undefined): boolean {
     return proto3.util.equals(SFixed64In, a, b);
   }
 }
@@ -5885,10 +5440,7 @@ export class SFixed64NotIn extends Message<SFixed64NotIn> {
     return new SFixed64NotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64NotIn | PlainMessage<SFixed64NotIn> | undefined,
-    b: SFixed64NotIn | PlainMessage<SFixed64NotIn> | undefined
-  ): boolean {
+  static equals(a: SFixed64NotIn | PlainMessage<SFixed64NotIn> | undefined, b: SFixed64NotIn | PlainMessage<SFixed64NotIn> | undefined): boolean {
     return proto3.util.equals(SFixed64NotIn, a, b);
   }
 }
@@ -5925,10 +5477,7 @@ export class SFixed64LT extends Message<SFixed64LT> {
     return new SFixed64LT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64LT | PlainMessage<SFixed64LT> | undefined,
-    b: SFixed64LT | PlainMessage<SFixed64LT> | undefined
-  ): boolean {
+  static equals(a: SFixed64LT | PlainMessage<SFixed64LT> | undefined, b: SFixed64LT | PlainMessage<SFixed64LT> | undefined): boolean {
     return proto3.util.equals(SFixed64LT, a, b);
   }
 }
@@ -5965,10 +5514,7 @@ export class SFixed64LTE extends Message<SFixed64LTE> {
     return new SFixed64LTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64LTE | PlainMessage<SFixed64LTE> | undefined,
-    b: SFixed64LTE | PlainMessage<SFixed64LTE> | undefined
-  ): boolean {
+  static equals(a: SFixed64LTE | PlainMessage<SFixed64LTE> | undefined, b: SFixed64LTE | PlainMessage<SFixed64LTE> | undefined): boolean {
     return proto3.util.equals(SFixed64LTE, a, b);
   }
 }
@@ -6005,10 +5551,7 @@ export class SFixed64GT extends Message<SFixed64GT> {
     return new SFixed64GT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64GT | PlainMessage<SFixed64GT> | undefined,
-    b: SFixed64GT | PlainMessage<SFixed64GT> | undefined
-  ): boolean {
+  static equals(a: SFixed64GT | PlainMessage<SFixed64GT> | undefined, b: SFixed64GT | PlainMessage<SFixed64GT> | undefined): boolean {
     return proto3.util.equals(SFixed64GT, a, b);
   }
 }
@@ -6045,10 +5588,7 @@ export class SFixed64GTE extends Message<SFixed64GTE> {
     return new SFixed64GTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64GTE | PlainMessage<SFixed64GTE> | undefined,
-    b: SFixed64GTE | PlainMessage<SFixed64GTE> | undefined
-  ): boolean {
+  static equals(a: SFixed64GTE | PlainMessage<SFixed64GTE> | undefined, b: SFixed64GTE | PlainMessage<SFixed64GTE> | undefined): boolean {
     return proto3.util.equals(SFixed64GTE, a, b);
   }
 }
@@ -6085,10 +5625,7 @@ export class SFixed64GTLT extends Message<SFixed64GTLT> {
     return new SFixed64GTLT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64GTLT | PlainMessage<SFixed64GTLT> | undefined,
-    b: SFixed64GTLT | PlainMessage<SFixed64GTLT> | undefined
-  ): boolean {
+  static equals(a: SFixed64GTLT | PlainMessage<SFixed64GTLT> | undefined, b: SFixed64GTLT | PlainMessage<SFixed64GTLT> | undefined): boolean {
     return proto3.util.equals(SFixed64GTLT, a, b);
   }
 }
@@ -6125,10 +5662,7 @@ export class SFixed64ExLTGT extends Message<SFixed64ExLTGT> {
     return new SFixed64ExLTGT().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64ExLTGT | PlainMessage<SFixed64ExLTGT> | undefined,
-    b: SFixed64ExLTGT | PlainMessage<SFixed64ExLTGT> | undefined
-  ): boolean {
+  static equals(a: SFixed64ExLTGT | PlainMessage<SFixed64ExLTGT> | undefined, b: SFixed64ExLTGT | PlainMessage<SFixed64ExLTGT> | undefined): boolean {
     return proto3.util.equals(SFixed64ExLTGT, a, b);
   }
 }
@@ -6165,10 +5699,7 @@ export class SFixed64GTELTE extends Message<SFixed64GTELTE> {
     return new SFixed64GTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64GTELTE | PlainMessage<SFixed64GTELTE> | undefined,
-    b: SFixed64GTELTE | PlainMessage<SFixed64GTELTE> | undefined
-  ): boolean {
+  static equals(a: SFixed64GTELTE | PlainMessage<SFixed64GTELTE> | undefined, b: SFixed64GTELTE | PlainMessage<SFixed64GTELTE> | undefined): boolean {
     return proto3.util.equals(SFixed64GTELTE, a, b);
   }
 }
@@ -6205,10 +5736,7 @@ export class SFixed64ExGTELTE extends Message<SFixed64ExGTELTE> {
     return new SFixed64ExGTELTE().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64ExGTELTE | PlainMessage<SFixed64ExGTELTE> | undefined,
-    b: SFixed64ExGTELTE | PlainMessage<SFixed64ExGTELTE> | undefined
-  ): boolean {
+  static equals(a: SFixed64ExGTELTE | PlainMessage<SFixed64ExGTELTE> | undefined, b: SFixed64ExGTELTE | PlainMessage<SFixed64ExGTELTE> | undefined): boolean {
     return proto3.util.equals(SFixed64ExGTELTE, a, b);
   }
 }
@@ -6245,10 +5773,7 @@ export class SFixed64Ignore extends Message<SFixed64Ignore> {
     return new SFixed64Ignore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64Ignore | PlainMessage<SFixed64Ignore> | undefined,
-    b: SFixed64Ignore | PlainMessage<SFixed64Ignore> | undefined
-  ): boolean {
+  static equals(a: SFixed64Ignore | PlainMessage<SFixed64Ignore> | undefined, b: SFixed64Ignore | PlainMessage<SFixed64Ignore> | undefined): boolean {
     return proto3.util.equals(SFixed64Ignore, a, b);
   }
 }
@@ -6285,10 +5810,8 @@ export class Int64LTEOptional extends Message<Int64LTEOptional> {
     return new Int64LTEOptional().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64LTEOptional | PlainMessage<Int64LTEOptional> | undefined,
-    b: Int64LTEOptional | PlainMessage<Int64LTEOptional> | undefined
-  ): boolean {
+  static equals(a: Int64LTEOptional | PlainMessage<Int64LTEOptional> | undefined, b: Int64LTEOptional | PlainMessage<Int64LTEOptional> | undefined): boolean {
     return proto3.util.equals(Int64LTEOptional, a, b);
   }
 }
+

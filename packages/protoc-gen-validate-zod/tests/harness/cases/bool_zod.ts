@@ -3,7 +3,7 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
+import {z} from "zod";
 
 /**
  * @generated from message tests.harness.cases.BoolNone
@@ -36,3 +36,4 @@ export const BoolConstFalseSchema = z.object({
    */
   val: z.boolean().and(z.literal(false)),
 });
+

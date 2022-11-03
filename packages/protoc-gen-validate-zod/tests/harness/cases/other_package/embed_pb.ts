@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3, protoInt64} from "@bufbuild/protobuf";
 
 /**
  * Validate message embedding across packages.
@@ -77,7 +70,8 @@ export class Embed_DoubleEmbed extends Message<Embed_DoubleEmbed> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.other_package.Embed.DoubleEmbed";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => []);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Embed_DoubleEmbed {
     return new Embed_DoubleEmbed().fromBinary(bytes, options);
@@ -91,10 +85,7 @@ export class Embed_DoubleEmbed extends Message<Embed_DoubleEmbed> {
     return new Embed_DoubleEmbed().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Embed_DoubleEmbed | PlainMessage<Embed_DoubleEmbed> | undefined,
-    b: Embed_DoubleEmbed | PlainMessage<Embed_DoubleEmbed> | undefined
-  ): boolean {
+  static equals(a: Embed_DoubleEmbed | PlainMessage<Embed_DoubleEmbed> | undefined, b: Embed_DoubleEmbed | PlainMessage<Embed_DoubleEmbed> | undefined): boolean {
     return proto3.util.equals(Embed_DoubleEmbed, a, b);
   }
 }
@@ -109,8 +100,7 @@ export enum Embed_DoubleEmbed_DoubleEnumerated {
   VALUE = 0,
 }
 // Retrieve enum metadata with: proto3.getEnumType(Embed_DoubleEmbed_DoubleEnumerated)
-proto3.util.setEnumType(
-  Embed_DoubleEmbed_DoubleEnumerated,
-  "tests.harness.cases.other_package.Embed.DoubleEmbed.DoubleEnumerated",
-  [{ no: 0, name: "VALUE" }]
-);
+proto3.util.setEnumType(Embed_DoubleEmbed_DoubleEnumerated, "tests.harness.cases.other_package.Embed.DoubleEmbed.DoubleEnumerated", [
+  { no: 0, name: "VALUE" },
+]);
+

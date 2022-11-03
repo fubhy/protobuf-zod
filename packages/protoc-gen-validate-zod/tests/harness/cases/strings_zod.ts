@@ -3,25 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import { z } from "zod";
-import {
-  bytesLength,
-  bytesMaxLength,
-  bytesMinLength,
-  isIn,
-  isNotIn,
-  oneof,
-  stringContains,
-  stringIsAddress,
-  stringIsEmail,
-  stringIsHostname,
-  stringIsHttpHeaderName,
-  stringIsHttpHeaderValue,
-  stringIsIp,
-  stringIsUrl,
-  stringIsUuid,
-  stringNotContains,
-} from "protobuf-zod";
+import {z} from "zod";
+import {bytesLength, bytesMaxLength, bytesMinLength, isIn, isNotIn, oneof, stringContains, stringIsAddress, stringIsEmail, stringIsHostname, stringIsHttpHeaderName, stringIsHttpHeaderValue, stringIsIp, stringIsUrl, stringIsUuid, stringNotContains} from "protobuf-zod";
 
 /**
  * @generated from message tests.harness.cases.StringNone
@@ -52,7 +35,10 @@ export const StringInSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"in":["bar","baz"]}}
    */
-  val: z.string().refine(isIn(["bar", "baz"])),
+  val: z.string().refine(isIn([
+    "bar",
+    "baz",
+  ])),
 });
 
 /**
@@ -63,7 +49,10 @@ export const StringNotInSchema = z.object({
    * @generated from field: string val = 1;
    * @validate  {"string":{"notIn":["fizz","buzz"]}}
    */
-  val: z.string().refine(isNotIn(["fizz", "buzz"])),
+  val: z.string().refine(isNotIn([
+    "fizz",
+    "buzz",
+  ])),
 });
 
 /**
@@ -403,7 +392,11 @@ export const StringInOneOfSchema = z.object({
        * @validate  {"string":{"in":["a","b"]}}
        */
       case: z.literal("bar"),
-      value: z.string().refine(isIn(["a", "b"])),
+      value: z.string().refine(isIn([
+    "a",
+    "b",
+  ])),
     }),
   ]).nullish(),
 });
+

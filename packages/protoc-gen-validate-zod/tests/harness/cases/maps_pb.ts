@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.MapNone
@@ -30,13 +23,7 @@ export class MapNone extends Message<MapNone> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapNone";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 13 /* ScalarType.UINT32 */,
-      V: { kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 13 /* ScalarType.UINT32 */, V: {kind: "scalar", T: 8 /* ScalarType.BOOL */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapNone {
@@ -51,10 +38,7 @@ export class MapNone extends Message<MapNone> {
     return new MapNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapNone | PlainMessage<MapNone> | undefined,
-    b: MapNone | PlainMessage<MapNone> | undefined
-  ): boolean {
+  static equals(a: MapNone | PlainMessage<MapNone> | undefined, b: MapNone | PlainMessage<MapNone> | undefined): boolean {
     return proto3.util.equals(MapNone, a, b);
   }
 }
@@ -76,13 +60,7 @@ export class MapMin extends Message<MapMin> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapMin";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 5 /* ScalarType.INT32 */,
-      V: { kind: "scalar", T: 2 /* ScalarType.FLOAT */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 5 /* ScalarType.INT32 */, V: {kind: "scalar", T: 2 /* ScalarType.FLOAT */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapMin {
@@ -119,13 +97,7 @@ export class MapMax extends Message<MapMax> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapMax";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 3 /* ScalarType.INT64 */,
-      V: { kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 3 /* ScalarType.INT64 */, V: {kind: "scalar", T: 1 /* ScalarType.DOUBLE */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapMax {
@@ -162,13 +134,7 @@ export class MapMinMax extends Message<MapMinMax> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapMinMax";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "scalar", T: 8 /* ScalarType.BOOL */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapMinMax {
@@ -183,10 +149,7 @@ export class MapMinMax extends Message<MapMinMax> {
     return new MapMinMax().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapMinMax | PlainMessage<MapMinMax> | undefined,
-    b: MapMinMax | PlainMessage<MapMinMax> | undefined
-  ): boolean {
+  static equals(a: MapMinMax | PlainMessage<MapMinMax> | undefined, b: MapMinMax | PlainMessage<MapMinMax> | undefined): boolean {
     return proto3.util.equals(MapMinMax, a, b);
   }
 }
@@ -208,13 +171,7 @@ export class MapExact extends Message<MapExact> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapExact";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 4 /* ScalarType.UINT64 */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 4 /* ScalarType.UINT64 */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapExact {
@@ -229,10 +186,7 @@ export class MapExact extends Message<MapExact> {
     return new MapExact().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapExact | PlainMessage<MapExact> | undefined,
-    b: MapExact | PlainMessage<MapExact> | undefined
-  ): boolean {
+  static equals(a: MapExact | PlainMessage<MapExact> | undefined, b: MapExact | PlainMessage<MapExact> | undefined): boolean {
     return proto3.util.equals(MapExact, a, b);
   }
 }
@@ -254,7 +208,7 @@ export class MapNoSparse extends Message<MapNoSparse> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapNoSparse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "val", kind: "map", K: 13 /* ScalarType.UINT32 */, V: { kind: "message", T: MapNoSparse_Msg } },
+    { no: 1, name: "val", kind: "map", K: 13 /* ScalarType.UINT32 */, V: {kind: "message", T: MapNoSparse_Msg} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapNoSparse {
@@ -269,10 +223,7 @@ export class MapNoSparse extends Message<MapNoSparse> {
     return new MapNoSparse().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapNoSparse | PlainMessage<MapNoSparse> | undefined,
-    b: MapNoSparse | PlainMessage<MapNoSparse> | undefined
-  ): boolean {
+  static equals(a: MapNoSparse | PlainMessage<MapNoSparse> | undefined, b: MapNoSparse | PlainMessage<MapNoSparse> | undefined): boolean {
     return proto3.util.equals(MapNoSparse, a, b);
   }
 }
@@ -288,7 +239,8 @@ export class MapNoSparse_Msg extends Message<MapNoSparse_Msg> {
 
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapNoSparse.Msg";
-  static readonly fields: FieldList = proto3.util.newFieldList(() => []);
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+  ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapNoSparse_Msg {
     return new MapNoSparse_Msg().fromBinary(bytes, options);
@@ -302,10 +254,7 @@ export class MapNoSparse_Msg extends Message<MapNoSparse_Msg> {
     return new MapNoSparse_Msg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapNoSparse_Msg | PlainMessage<MapNoSparse_Msg> | undefined,
-    b: MapNoSparse_Msg | PlainMessage<MapNoSparse_Msg> | undefined
-  ): boolean {
+  static equals(a: MapNoSparse_Msg | PlainMessage<MapNoSparse_Msg> | undefined, b: MapNoSparse_Msg | PlainMessage<MapNoSparse_Msg> | undefined): boolean {
     return proto3.util.equals(MapNoSparse_Msg, a, b);
   }
 }
@@ -327,13 +276,7 @@ export class MapKeys extends Message<MapKeys> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapKeys";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 18 /* ScalarType.SINT64 */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 18 /* ScalarType.SINT64 */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapKeys {
@@ -348,10 +291,7 @@ export class MapKeys extends Message<MapKeys> {
     return new MapKeys().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapKeys | PlainMessage<MapKeys> | undefined,
-    b: MapKeys | PlainMessage<MapKeys> | undefined
-  ): boolean {
+  static equals(a: MapKeys | PlainMessage<MapKeys> | undefined, b: MapKeys | PlainMessage<MapKeys> | undefined): boolean {
     return proto3.util.equals(MapKeys, a, b);
   }
 }
@@ -373,13 +313,7 @@ export class MapValues extends Message<MapValues> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapValues";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapValues {
@@ -394,10 +328,7 @@ export class MapValues extends Message<MapValues> {
     return new MapValues().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapValues | PlainMessage<MapValues> | undefined,
-    b: MapValues | PlainMessage<MapValues> | undefined
-  ): boolean {
+  static equals(a: MapValues | PlainMessage<MapValues> | undefined, b: MapValues | PlainMessage<MapValues> | undefined): boolean {
     return proto3.util.equals(MapValues, a, b);
   }
 }
@@ -419,13 +350,7 @@ export class MapKeysPattern extends Message<MapKeysPattern> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapKeysPattern";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapKeysPattern {
@@ -440,10 +365,7 @@ export class MapKeysPattern extends Message<MapKeysPattern> {
     return new MapKeysPattern().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapKeysPattern | PlainMessage<MapKeysPattern> | undefined,
-    b: MapKeysPattern | PlainMessage<MapKeysPattern> | undefined
-  ): boolean {
+  static equals(a: MapKeysPattern | PlainMessage<MapKeysPattern> | undefined, b: MapKeysPattern | PlainMessage<MapKeysPattern> | undefined): boolean {
     return proto3.util.equals(MapKeysPattern, a, b);
   }
 }
@@ -465,13 +387,7 @@ export class MapValuesPattern extends Message<MapValuesPattern> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapValuesPattern";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 9 /* ScalarType.STRING */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 9 /* ScalarType.STRING */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapValuesPattern {
@@ -486,10 +402,7 @@ export class MapValuesPattern extends Message<MapValuesPattern> {
     return new MapValuesPattern().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapValuesPattern | PlainMessage<MapValuesPattern> | undefined,
-    b: MapValuesPattern | PlainMessage<MapValuesPattern> | undefined
-  ): boolean {
+  static equals(a: MapValuesPattern | PlainMessage<MapValuesPattern> | undefined, b: MapValuesPattern | PlainMessage<MapValuesPattern> | undefined): boolean {
     return proto3.util.equals(MapValuesPattern, a, b);
   }
 }
@@ -511,7 +424,7 @@ export class MapRecursive extends Message<MapRecursive> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapRecursive";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "val", kind: "map", K: 13 /* ScalarType.UINT32 */, V: { kind: "message", T: MapRecursive_Msg } },
+    { no: 1, name: "val", kind: "map", K: 13 /* ScalarType.UINT32 */, V: {kind: "message", T: MapRecursive_Msg} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapRecursive {
@@ -526,10 +439,7 @@ export class MapRecursive extends Message<MapRecursive> {
     return new MapRecursive().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapRecursive | PlainMessage<MapRecursive> | undefined,
-    b: MapRecursive | PlainMessage<MapRecursive> | undefined
-  ): boolean {
+  static equals(a: MapRecursive | PlainMessage<MapRecursive> | undefined, b: MapRecursive | PlainMessage<MapRecursive> | undefined): boolean {
     return proto3.util.equals(MapRecursive, a, b);
   }
 }
@@ -566,10 +476,7 @@ export class MapRecursive_Msg extends Message<MapRecursive_Msg> {
     return new MapRecursive_Msg().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapRecursive_Msg | PlainMessage<MapRecursive_Msg> | undefined,
-    b: MapRecursive_Msg | PlainMessage<MapRecursive_Msg> | undefined
-  ): boolean {
+  static equals(a: MapRecursive_Msg | PlainMessage<MapRecursive_Msg> | undefined, b: MapRecursive_Msg | PlainMessage<MapRecursive_Msg> | undefined): boolean {
     return proto3.util.equals(MapRecursive_Msg, a, b);
   }
 }
@@ -591,13 +498,7 @@ export class MapExactIgnore extends Message<MapExactIgnore> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MapExactIgnore";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "map",
-      K: 4 /* ScalarType.UINT64 */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
+    { no: 1, name: "val", kind: "map", K: 4 /* ScalarType.UINT64 */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapExactIgnore {
@@ -612,10 +513,7 @@ export class MapExactIgnore extends Message<MapExactIgnore> {
     return new MapExactIgnore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapExactIgnore | PlainMessage<MapExactIgnore> | undefined,
-    b: MapExactIgnore | PlainMessage<MapExactIgnore> | undefined
-  ): boolean {
+  static equals(a: MapExactIgnore | PlainMessage<MapExactIgnore> | undefined, b: MapExactIgnore | PlainMessage<MapExactIgnore> | undefined): boolean {
     return proto3.util.equals(MapExactIgnore, a, b);
   }
 }
@@ -647,27 +545,9 @@ export class MultipleMaps extends Message<MultipleMaps> {
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.MultipleMaps";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "first",
-      kind: "map",
-      K: 13 /* ScalarType.UINT32 */,
-      V: { kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    },
-    {
-      no: 2,
-      name: "second",
-      kind: "map",
-      K: 5 /* ScalarType.INT32 */,
-      V: { kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    },
-    {
-      no: 3,
-      name: "third",
-      kind: "map",
-      K: 5 /* ScalarType.INT32 */,
-      V: { kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    },
+    { no: 1, name: "first", kind: "map", K: 13 /* ScalarType.UINT32 */, V: {kind: "scalar", T: 9 /* ScalarType.STRING */} },
+    { no: 2, name: "second", kind: "map", K: 5 /* ScalarType.INT32 */, V: {kind: "scalar", T: 8 /* ScalarType.BOOL */} },
+    { no: 3, name: "third", kind: "map", K: 5 /* ScalarType.INT32 */, V: {kind: "scalar", T: 8 /* ScalarType.BOOL */} },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MultipleMaps {
@@ -682,10 +562,8 @@ export class MultipleMaps extends Message<MultipleMaps> {
     return new MultipleMaps().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MultipleMaps | PlainMessage<MultipleMaps> | undefined,
-    b: MultipleMaps | PlainMessage<MultipleMaps> | undefined
-  ): boolean {
+  static equals(a: MultipleMaps | PlainMessage<MultipleMaps> | undefined, b: MultipleMaps | PlainMessage<MultipleMaps> | undefined): boolean {
     return proto3.util.equals(MultipleMaps, a, b);
   }
 }
+

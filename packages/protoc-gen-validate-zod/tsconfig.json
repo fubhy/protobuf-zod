@@ -3,7 +3,6 @@
   "include": ["**/*.ts"],
   "compilerOptions": {
     "outDir": "dist",
-    "declaration": true,
     // Necessary for lazy message schemas using `z.lazy`,
     "noImplicitAny": false
   },

@@ -3,16 +3,9 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Any, Duration, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
-import { Embed as Embed$1 } from "./other_package/embed_pb.js";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Any, Duration, Message, proto3, protoInt64} from "@bufbuild/protobuf";
+import {Embed as Embed$1} from "./other_package/embed_pb.js";
 
 /**
  * @generated from enum tests.harness.cases.AnEnum
@@ -103,10 +96,7 @@ export class RepeatedNone extends Message<RepeatedNone> {
     return new RepeatedNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedNone | PlainMessage<RepeatedNone> | undefined,
-    b: RepeatedNone | PlainMessage<RepeatedNone> | undefined
-  ): boolean {
+  static equals(a: RepeatedNone | PlainMessage<RepeatedNone> | undefined, b: RepeatedNone | PlainMessage<RepeatedNone> | undefined): boolean {
     return proto3.util.equals(RepeatedNone, a, b);
   }
 }
@@ -143,10 +133,7 @@ export class RepeatedEmbedNone extends Message<RepeatedEmbedNone> {
     return new RepeatedEmbedNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEmbedNone | PlainMessage<RepeatedEmbedNone> | undefined,
-    b: RepeatedEmbedNone | PlainMessage<RepeatedEmbedNone> | undefined
-  ): boolean {
+  static equals(a: RepeatedEmbedNone | PlainMessage<RepeatedEmbedNone> | undefined, b: RepeatedEmbedNone | PlainMessage<RepeatedEmbedNone> | undefined): boolean {
     return proto3.util.equals(RepeatedEmbedNone, a, b);
   }
 }
@@ -183,10 +170,7 @@ export class RepeatedEmbedCrossPackageNone extends Message<RepeatedEmbedCrossPac
     return new RepeatedEmbedCrossPackageNone().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEmbedCrossPackageNone | PlainMessage<RepeatedEmbedCrossPackageNone> | undefined,
-    b: RepeatedEmbedCrossPackageNone | PlainMessage<RepeatedEmbedCrossPackageNone> | undefined
-  ): boolean {
+  static equals(a: RepeatedEmbedCrossPackageNone | PlainMessage<RepeatedEmbedCrossPackageNone> | undefined, b: RepeatedEmbedCrossPackageNone | PlainMessage<RepeatedEmbedCrossPackageNone> | undefined): boolean {
     return proto3.util.equals(RepeatedEmbedCrossPackageNone, a, b);
   }
 }
@@ -223,10 +207,7 @@ export class RepeatedMin extends Message<RepeatedMin> {
     return new RepeatedMin().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedMin | PlainMessage<RepeatedMin> | undefined,
-    b: RepeatedMin | PlainMessage<RepeatedMin> | undefined
-  ): boolean {
+  static equals(a: RepeatedMin | PlainMessage<RepeatedMin> | undefined, b: RepeatedMin | PlainMessage<RepeatedMin> | undefined): boolean {
     return proto3.util.equals(RepeatedMin, a, b);
   }
 }
@@ -263,10 +244,7 @@ export class RepeatedMax extends Message<RepeatedMax> {
     return new RepeatedMax().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedMax | PlainMessage<RepeatedMax> | undefined,
-    b: RepeatedMax | PlainMessage<RepeatedMax> | undefined
-  ): boolean {
+  static equals(a: RepeatedMax | PlainMessage<RepeatedMax> | undefined, b: RepeatedMax | PlainMessage<RepeatedMax> | undefined): boolean {
     return proto3.util.equals(RepeatedMax, a, b);
   }
 }
@@ -303,10 +281,7 @@ export class RepeatedMinMax extends Message<RepeatedMinMax> {
     return new RepeatedMinMax().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedMinMax | PlainMessage<RepeatedMinMax> | undefined,
-    b: RepeatedMinMax | PlainMessage<RepeatedMinMax> | undefined
-  ): boolean {
+  static equals(a: RepeatedMinMax | PlainMessage<RepeatedMinMax> | undefined, b: RepeatedMinMax | PlainMessage<RepeatedMinMax> | undefined): boolean {
     return proto3.util.equals(RepeatedMinMax, a, b);
   }
 }
@@ -343,10 +318,7 @@ export class RepeatedExact extends Message<RepeatedExact> {
     return new RepeatedExact().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedExact | PlainMessage<RepeatedExact> | undefined,
-    b: RepeatedExact | PlainMessage<RepeatedExact> | undefined
-  ): boolean {
+  static equals(a: RepeatedExact | PlainMessage<RepeatedExact> | undefined, b: RepeatedExact | PlainMessage<RepeatedExact> | undefined): boolean {
     return proto3.util.equals(RepeatedExact, a, b);
   }
 }
@@ -383,10 +355,7 @@ export class RepeatedUnique extends Message<RepeatedUnique> {
     return new RepeatedUnique().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedUnique | PlainMessage<RepeatedUnique> | undefined,
-    b: RepeatedUnique | PlainMessage<RepeatedUnique> | undefined
-  ): boolean {
+  static equals(a: RepeatedUnique | PlainMessage<RepeatedUnique> | undefined, b: RepeatedUnique | PlainMessage<RepeatedUnique> | undefined): boolean {
     return proto3.util.equals(RepeatedUnique, a, b);
   }
 }
@@ -423,10 +392,7 @@ export class RepeatedItemRule extends Message<RepeatedItemRule> {
     return new RepeatedItemRule().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedItemRule | PlainMessage<RepeatedItemRule> | undefined,
-    b: RepeatedItemRule | PlainMessage<RepeatedItemRule> | undefined
-  ): boolean {
+  static equals(a: RepeatedItemRule | PlainMessage<RepeatedItemRule> | undefined, b: RepeatedItemRule | PlainMessage<RepeatedItemRule> | undefined): boolean {
     return proto3.util.equals(RepeatedItemRule, a, b);
   }
 }
@@ -463,10 +429,7 @@ export class RepeatedItemPattern extends Message<RepeatedItemPattern> {
     return new RepeatedItemPattern().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedItemPattern | PlainMessage<RepeatedItemPattern> | undefined,
-    b: RepeatedItemPattern | PlainMessage<RepeatedItemPattern> | undefined
-  ): boolean {
+  static equals(a: RepeatedItemPattern | PlainMessage<RepeatedItemPattern> | undefined, b: RepeatedItemPattern | PlainMessage<RepeatedItemPattern> | undefined): boolean {
     return proto3.util.equals(RepeatedItemPattern, a, b);
   }
 }
@@ -503,10 +466,7 @@ export class RepeatedEmbedSkip extends Message<RepeatedEmbedSkip> {
     return new RepeatedEmbedSkip().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEmbedSkip | PlainMessage<RepeatedEmbedSkip> | undefined,
-    b: RepeatedEmbedSkip | PlainMessage<RepeatedEmbedSkip> | undefined
-  ): boolean {
+  static equals(a: RepeatedEmbedSkip | PlainMessage<RepeatedEmbedSkip> | undefined, b: RepeatedEmbedSkip | PlainMessage<RepeatedEmbedSkip> | undefined): boolean {
     return proto3.util.equals(RepeatedEmbedSkip, a, b);
   }
 }
@@ -543,10 +503,7 @@ export class RepeatedItemIn extends Message<RepeatedItemIn> {
     return new RepeatedItemIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedItemIn | PlainMessage<RepeatedItemIn> | undefined,
-    b: RepeatedItemIn | PlainMessage<RepeatedItemIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedItemIn | PlainMessage<RepeatedItemIn> | undefined, b: RepeatedItemIn | PlainMessage<RepeatedItemIn> | undefined): boolean {
     return proto3.util.equals(RepeatedItemIn, a, b);
   }
 }
@@ -583,10 +540,7 @@ export class RepeatedItemNotIn extends Message<RepeatedItemNotIn> {
     return new RepeatedItemNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedItemNotIn | PlainMessage<RepeatedItemNotIn> | undefined,
-    b: RepeatedItemNotIn | PlainMessage<RepeatedItemNotIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedItemNotIn | PlainMessage<RepeatedItemNotIn> | undefined, b: RepeatedItemNotIn | PlainMessage<RepeatedItemNotIn> | undefined): boolean {
     return proto3.util.equals(RepeatedItemNotIn, a, b);
   }
 }
@@ -623,10 +577,7 @@ export class RepeatedEnumIn extends Message<RepeatedEnumIn> {
     return new RepeatedEnumIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEnumIn | PlainMessage<RepeatedEnumIn> | undefined,
-    b: RepeatedEnumIn | PlainMessage<RepeatedEnumIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedEnumIn | PlainMessage<RepeatedEnumIn> | undefined, b: RepeatedEnumIn | PlainMessage<RepeatedEnumIn> | undefined): boolean {
     return proto3.util.equals(RepeatedEnumIn, a, b);
   }
 }
@@ -663,10 +614,7 @@ export class RepeatedEnumNotIn extends Message<RepeatedEnumNotIn> {
     return new RepeatedEnumNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEnumNotIn | PlainMessage<RepeatedEnumNotIn> | undefined,
-    b: RepeatedEnumNotIn | PlainMessage<RepeatedEnumNotIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedEnumNotIn | PlainMessage<RepeatedEnumNotIn> | undefined, b: RepeatedEnumNotIn | PlainMessage<RepeatedEnumNotIn> | undefined): boolean {
     return proto3.util.equals(RepeatedEnumNotIn, a, b);
   }
 }
@@ -703,10 +651,7 @@ export class RepeatedEmbeddedEnumIn extends Message<RepeatedEmbeddedEnumIn> {
     return new RepeatedEmbeddedEnumIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEmbeddedEnumIn | PlainMessage<RepeatedEmbeddedEnumIn> | undefined,
-    b: RepeatedEmbeddedEnumIn | PlainMessage<RepeatedEmbeddedEnumIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedEmbeddedEnumIn | PlainMessage<RepeatedEmbeddedEnumIn> | undefined, b: RepeatedEmbeddedEnumIn | PlainMessage<RepeatedEmbeddedEnumIn> | undefined): boolean {
     return proto3.util.equals(RepeatedEmbeddedEnumIn, a, b);
   }
 }
@@ -726,14 +671,10 @@ export enum RepeatedEmbeddedEnumIn_AnotherInEnum {
   B = 1,
 }
 // Retrieve enum metadata with: proto3.getEnumType(RepeatedEmbeddedEnumIn_AnotherInEnum)
-proto3.util.setEnumType(
-  RepeatedEmbeddedEnumIn_AnotherInEnum,
-  "tests.harness.cases.RepeatedEmbeddedEnumIn.AnotherInEnum",
-  [
-    { no: 0, name: "A" },
-    { no: 1, name: "B" },
-  ]
-);
+proto3.util.setEnumType(RepeatedEmbeddedEnumIn_AnotherInEnum, "tests.harness.cases.RepeatedEmbeddedEnumIn.AnotherInEnum", [
+  { no: 0, name: "A" },
+  { no: 1, name: "B" },
+]);
 
 /**
  * @generated from message tests.harness.cases.RepeatedEmbeddedEnumNotIn
@@ -752,13 +693,7 @@ export class RepeatedEmbeddedEnumNotIn extends Message<RepeatedEmbeddedEnumNotIn
   static readonly runtime = proto3;
   static readonly typeName = "tests.harness.cases.RepeatedEmbeddedEnumNotIn";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    {
-      no: 1,
-      name: "val",
-      kind: "enum",
-      T: proto3.getEnumType(RepeatedEmbeddedEnumNotIn_AnotherNotInEnum),
-      repeated: true,
-    },
+    { no: 1, name: "val", kind: "enum", T: proto3.getEnumType(RepeatedEmbeddedEnumNotIn_AnotherNotInEnum), repeated: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RepeatedEmbeddedEnumNotIn {
@@ -773,10 +708,7 @@ export class RepeatedEmbeddedEnumNotIn extends Message<RepeatedEmbeddedEnumNotIn
     return new RepeatedEmbeddedEnumNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedEmbeddedEnumNotIn | PlainMessage<RepeatedEmbeddedEnumNotIn> | undefined,
-    b: RepeatedEmbeddedEnumNotIn | PlainMessage<RepeatedEmbeddedEnumNotIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedEmbeddedEnumNotIn | PlainMessage<RepeatedEmbeddedEnumNotIn> | undefined, b: RepeatedEmbeddedEnumNotIn | PlainMessage<RepeatedEmbeddedEnumNotIn> | undefined): boolean {
     return proto3.util.equals(RepeatedEmbeddedEnumNotIn, a, b);
   }
 }
@@ -796,14 +728,10 @@ export enum RepeatedEmbeddedEnumNotIn_AnotherNotInEnum {
   B = 1,
 }
 // Retrieve enum metadata with: proto3.getEnumType(RepeatedEmbeddedEnumNotIn_AnotherNotInEnum)
-proto3.util.setEnumType(
-  RepeatedEmbeddedEnumNotIn_AnotherNotInEnum,
-  "tests.harness.cases.RepeatedEmbeddedEnumNotIn.AnotherNotInEnum",
-  [
-    { no: 0, name: "A" },
-    { no: 1, name: "B" },
-  ]
-);
+proto3.util.setEnumType(RepeatedEmbeddedEnumNotIn_AnotherNotInEnum, "tests.harness.cases.RepeatedEmbeddedEnumNotIn.AnotherNotInEnum", [
+  { no: 0, name: "A" },
+  { no: 1, name: "B" },
+]);
 
 /**
  * @generated from message tests.harness.cases.RepeatedAnyIn
@@ -837,10 +765,7 @@ export class RepeatedAnyIn extends Message<RepeatedAnyIn> {
     return new RepeatedAnyIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedAnyIn | PlainMessage<RepeatedAnyIn> | undefined,
-    b: RepeatedAnyIn | PlainMessage<RepeatedAnyIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedAnyIn | PlainMessage<RepeatedAnyIn> | undefined, b: RepeatedAnyIn | PlainMessage<RepeatedAnyIn> | undefined): boolean {
     return proto3.util.equals(RepeatedAnyIn, a, b);
   }
 }
@@ -877,10 +802,7 @@ export class RepeatedAnyNotIn extends Message<RepeatedAnyNotIn> {
     return new RepeatedAnyNotIn().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedAnyNotIn | PlainMessage<RepeatedAnyNotIn> | undefined,
-    b: RepeatedAnyNotIn | PlainMessage<RepeatedAnyNotIn> | undefined
-  ): boolean {
+  static equals(a: RepeatedAnyNotIn | PlainMessage<RepeatedAnyNotIn> | undefined, b: RepeatedAnyNotIn | PlainMessage<RepeatedAnyNotIn> | undefined): boolean {
     return proto3.util.equals(RepeatedAnyNotIn, a, b);
   }
 }
@@ -917,10 +839,7 @@ export class RepeatedMinAndItemLen extends Message<RepeatedMinAndItemLen> {
     return new RepeatedMinAndItemLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedMinAndItemLen | PlainMessage<RepeatedMinAndItemLen> | undefined,
-    b: RepeatedMinAndItemLen | PlainMessage<RepeatedMinAndItemLen> | undefined
-  ): boolean {
+  static equals(a: RepeatedMinAndItemLen | PlainMessage<RepeatedMinAndItemLen> | undefined, b: RepeatedMinAndItemLen | PlainMessage<RepeatedMinAndItemLen> | undefined): boolean {
     return proto3.util.equals(RepeatedMinAndItemLen, a, b);
   }
 }
@@ -957,10 +876,7 @@ export class RepeatedMinAndMaxItemLen extends Message<RepeatedMinAndMaxItemLen> 
     return new RepeatedMinAndMaxItemLen().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedMinAndMaxItemLen | PlainMessage<RepeatedMinAndMaxItemLen> | undefined,
-    b: RepeatedMinAndMaxItemLen | PlainMessage<RepeatedMinAndMaxItemLen> | undefined
-  ): boolean {
+  static equals(a: RepeatedMinAndMaxItemLen | PlainMessage<RepeatedMinAndMaxItemLen> | undefined, b: RepeatedMinAndMaxItemLen | PlainMessage<RepeatedMinAndMaxItemLen> | undefined): boolean {
     return proto3.util.equals(RepeatedMinAndMaxItemLen, a, b);
   }
 }
@@ -997,10 +913,7 @@ export class RepeatedDuration extends Message<RepeatedDuration> {
     return new RepeatedDuration().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedDuration | PlainMessage<RepeatedDuration> | undefined,
-    b: RepeatedDuration | PlainMessage<RepeatedDuration> | undefined
-  ): boolean {
+  static equals(a: RepeatedDuration | PlainMessage<RepeatedDuration> | undefined, b: RepeatedDuration | PlainMessage<RepeatedDuration> | undefined): boolean {
     return proto3.util.equals(RepeatedDuration, a, b);
   }
 }
@@ -1037,10 +950,8 @@ export class RepeatedExactIgnore extends Message<RepeatedExactIgnore> {
     return new RepeatedExactIgnore().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedExactIgnore | PlainMessage<RepeatedExactIgnore> | undefined,
-    b: RepeatedExactIgnore | PlainMessage<RepeatedExactIgnore> | undefined
-  ): boolean {
+  static equals(a: RepeatedExactIgnore | PlainMessage<RepeatedExactIgnore> | undefined, b: RepeatedExactIgnore | PlainMessage<RepeatedExactIgnore> | undefined): boolean {
     return proto3.util.equals(RepeatedExactIgnore, a, b);
   }
 }
+
