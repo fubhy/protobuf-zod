@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Duration, Message, proto2, Timestamp } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Duration, Message, proto2, Timestamp} from "@bufbuild/protobuf";
 
 /**
  * WellKnownRegex contain some well-known patterns.
@@ -60,161 +53,139 @@ export class FieldRules extends Message<FieldRules> {
   /**
    * @generated from oneof validate.FieldRules.type
    */
-  type:
-    | {
-        /**
-         * Scalar Field Types
-         *
-         * @generated from field: validate.FloatRules float = 1;
-         */
-        value: FloatRules;
-        case: "float";
-      }
-    | {
-        /**
-         * @generated from field: validate.DoubleRules double = 2;
-         */
-        value: DoubleRules;
-        case: "double";
-      }
-    | {
-        /**
-         * @generated from field: validate.Int32Rules int32 = 3;
-         */
-        value: Int32Rules;
-        case: "int32";
-      }
-    | {
-        /**
-         * @generated from field: validate.Int64Rules int64 = 4;
-         */
-        value: Int64Rules;
-        case: "int64";
-      }
-    | {
-        /**
-         * @generated from field: validate.UInt32Rules uint32 = 5;
-         */
-        value: UInt32Rules;
-        case: "uint32";
-      }
-    | {
-        /**
-         * @generated from field: validate.UInt64Rules uint64 = 6;
-         */
-        value: UInt64Rules;
-        case: "uint64";
-      }
-    | {
-        /**
-         * @generated from field: validate.SInt32Rules sint32 = 7;
-         */
-        value: SInt32Rules;
-        case: "sint32";
-      }
-    | {
-        /**
-         * @generated from field: validate.SInt64Rules sint64 = 8;
-         */
-        value: SInt64Rules;
-        case: "sint64";
-      }
-    | {
-        /**
-         * @generated from field: validate.Fixed32Rules fixed32 = 9;
-         */
-        value: Fixed32Rules;
-        case: "fixed32";
-      }
-    | {
-        /**
-         * @generated from field: validate.Fixed64Rules fixed64 = 10;
-         */
-        value: Fixed64Rules;
-        case: "fixed64";
-      }
-    | {
-        /**
-         * @generated from field: validate.SFixed32Rules sfixed32 = 11;
-         */
-        value: SFixed32Rules;
-        case: "sfixed32";
-      }
-    | {
-        /**
-         * @generated from field: validate.SFixed64Rules sfixed64 = 12;
-         */
-        value: SFixed64Rules;
-        case: "sfixed64";
-      }
-    | {
-        /**
-         * @generated from field: validate.BoolRules bool = 13;
-         */
-        value: BoolRules;
-        case: "bool";
-      }
-    | {
-        /**
-         * @generated from field: validate.StringRules string = 14;
-         */
-        value: StringRules;
-        case: "string";
-      }
-    | {
-        /**
-         * @generated from field: validate.BytesRules bytes = 15;
-         */
-        value: BytesRules;
-        case: "bytes";
-      }
-    | {
-        /**
-         * Complex Field Types
-         *
-         * @generated from field: validate.EnumRules enum = 16;
-         */
-        value: EnumRules;
-        case: "enum";
-      }
-    | {
-        /**
-         * @generated from field: validate.RepeatedRules repeated = 18;
-         */
-        value: RepeatedRules;
-        case: "repeated";
-      }
-    | {
-        /**
-         * @generated from field: validate.MapRules map = 19;
-         */
-        value: MapRules;
-        case: "map";
-      }
-    | {
-        /**
-         * Well-Known Field Types
-         *
-         * @generated from field: validate.AnyRules any = 20;
-         */
-        value: AnyRules;
-        case: "any";
-      }
-    | {
-        /**
-         * @generated from field: validate.DurationRules duration = 21;
-         */
-        value: DurationRules;
-        case: "duration";
-      }
-    | {
-        /**
-         * @generated from field: validate.TimestampRules timestamp = 22;
-         */
-        value: TimestampRules;
-        case: "timestamp";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  type: {
+    /**
+     * Scalar Field Types
+     *
+     * @generated from field: validate.FloatRules float = 1;
+     */
+    value: FloatRules;
+    case: "float";
+  } | {
+    /**
+     * @generated from field: validate.DoubleRules double = 2;
+     */
+    value: DoubleRules;
+    case: "double";
+  } | {
+    /**
+     * @generated from field: validate.Int32Rules int32 = 3;
+     */
+    value: Int32Rules;
+    case: "int32";
+  } | {
+    /**
+     * @generated from field: validate.Int64Rules int64 = 4;
+     */
+    value: Int64Rules;
+    case: "int64";
+  } | {
+    /**
+     * @generated from field: validate.UInt32Rules uint32 = 5;
+     */
+    value: UInt32Rules;
+    case: "uint32";
+  } | {
+    /**
+     * @generated from field: validate.UInt64Rules uint64 = 6;
+     */
+    value: UInt64Rules;
+    case: "uint64";
+  } | {
+    /**
+     * @generated from field: validate.SInt32Rules sint32 = 7;
+     */
+    value: SInt32Rules;
+    case: "sint32";
+  } | {
+    /**
+     * @generated from field: validate.SInt64Rules sint64 = 8;
+     */
+    value: SInt64Rules;
+    case: "sint64";
+  } | {
+    /**
+     * @generated from field: validate.Fixed32Rules fixed32 = 9;
+     */
+    value: Fixed32Rules;
+    case: "fixed32";
+  } | {
+    /**
+     * @generated from field: validate.Fixed64Rules fixed64 = 10;
+     */
+    value: Fixed64Rules;
+    case: "fixed64";
+  } | {
+    /**
+     * @generated from field: validate.SFixed32Rules sfixed32 = 11;
+     */
+    value: SFixed32Rules;
+    case: "sfixed32";
+  } | {
+    /**
+     * @generated from field: validate.SFixed64Rules sfixed64 = 12;
+     */
+    value: SFixed64Rules;
+    case: "sfixed64";
+  } | {
+    /**
+     * @generated from field: validate.BoolRules bool = 13;
+     */
+    value: BoolRules;
+    case: "bool";
+  } | {
+    /**
+     * @generated from field: validate.StringRules string = 14;
+     */
+    value: StringRules;
+    case: "string";
+  } | {
+    /**
+     * @generated from field: validate.BytesRules bytes = 15;
+     */
+    value: BytesRules;
+    case: "bytes";
+  } | {
+    /**
+     * Complex Field Types
+     *
+     * @generated from field: validate.EnumRules enum = 16;
+     */
+    value: EnumRules;
+    case: "enum";
+  } | {
+    /**
+     * @generated from field: validate.RepeatedRules repeated = 18;
+     */
+    value: RepeatedRules;
+    case: "repeated";
+  } | {
+    /**
+     * @generated from field: validate.MapRules map = 19;
+     */
+    value: MapRules;
+    case: "map";
+  } | {
+    /**
+     * Well-Known Field Types
+     *
+     * @generated from field: validate.AnyRules any = 20;
+     */
+    value: AnyRules;
+    case: "any";
+  } | {
+    /**
+     * @generated from field: validate.DurationRules duration = 21;
+     */
+    value: DurationRules;
+    case: "duration";
+  } | {
+    /**
+     * @generated from field: validate.TimestampRules timestamp = 22;
+     */
+    value: TimestampRules;
+    case: "timestamp";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   constructor(data?: PartialMessage<FieldRules>) {
     super();
@@ -260,10 +231,7 @@ export class FieldRules extends Message<FieldRules> {
     return new FieldRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FieldRules | PlainMessage<FieldRules> | undefined,
-    b: FieldRules | PlainMessage<FieldRules> | undefined
-  ): boolean {
+  static equals(a: FieldRules | PlainMessage<FieldRules> | undefined, b: FieldRules | PlainMessage<FieldRules> | undefined): boolean {
     return proto2.util.equals(FieldRules, a, b);
   }
 }
@@ -369,10 +337,7 @@ export class FloatRules extends Message<FloatRules> {
     return new FloatRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: FloatRules | PlainMessage<FloatRules> | undefined,
-    b: FloatRules | PlainMessage<FloatRules> | undefined
-  ): boolean {
+  static equals(a: FloatRules | PlainMessage<FloatRules> | undefined, b: FloatRules | PlainMessage<FloatRules> | undefined): boolean {
     return proto2.util.equals(FloatRules, a, b);
   }
 }
@@ -478,10 +443,7 @@ export class DoubleRules extends Message<DoubleRules> {
     return new DoubleRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DoubleRules | PlainMessage<DoubleRules> | undefined,
-    b: DoubleRules | PlainMessage<DoubleRules> | undefined
-  ): boolean {
+  static equals(a: DoubleRules | PlainMessage<DoubleRules> | undefined, b: DoubleRules | PlainMessage<DoubleRules> | undefined): boolean {
     return proto2.util.equals(DoubleRules, a, b);
   }
 }
@@ -587,10 +549,7 @@ export class Int32Rules extends Message<Int32Rules> {
     return new Int32Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int32Rules | PlainMessage<Int32Rules> | undefined,
-    b: Int32Rules | PlainMessage<Int32Rules> | undefined
-  ): boolean {
+  static equals(a: Int32Rules | PlainMessage<Int32Rules> | undefined, b: Int32Rules | PlainMessage<Int32Rules> | undefined): boolean {
     return proto2.util.equals(Int32Rules, a, b);
   }
 }
@@ -696,10 +655,7 @@ export class Int64Rules extends Message<Int64Rules> {
     return new Int64Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Int64Rules | PlainMessage<Int64Rules> | undefined,
-    b: Int64Rules | PlainMessage<Int64Rules> | undefined
-  ): boolean {
+  static equals(a: Int64Rules | PlainMessage<Int64Rules> | undefined, b: Int64Rules | PlainMessage<Int64Rules> | undefined): boolean {
     return proto2.util.equals(Int64Rules, a, b);
   }
 }
@@ -805,10 +761,7 @@ export class UInt32Rules extends Message<UInt32Rules> {
     return new UInt32Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt32Rules | PlainMessage<UInt32Rules> | undefined,
-    b: UInt32Rules | PlainMessage<UInt32Rules> | undefined
-  ): boolean {
+  static equals(a: UInt32Rules | PlainMessage<UInt32Rules> | undefined, b: UInt32Rules | PlainMessage<UInt32Rules> | undefined): boolean {
     return proto2.util.equals(UInt32Rules, a, b);
   }
 }
@@ -914,10 +867,7 @@ export class UInt64Rules extends Message<UInt64Rules> {
     return new UInt64Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: UInt64Rules | PlainMessage<UInt64Rules> | undefined,
-    b: UInt64Rules | PlainMessage<UInt64Rules> | undefined
-  ): boolean {
+  static equals(a: UInt64Rules | PlainMessage<UInt64Rules> | undefined, b: UInt64Rules | PlainMessage<UInt64Rules> | undefined): boolean {
     return proto2.util.equals(UInt64Rules, a, b);
   }
 }
@@ -1023,10 +973,7 @@ export class SInt32Rules extends Message<SInt32Rules> {
     return new SInt32Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt32Rules | PlainMessage<SInt32Rules> | undefined,
-    b: SInt32Rules | PlainMessage<SInt32Rules> | undefined
-  ): boolean {
+  static equals(a: SInt32Rules | PlainMessage<SInt32Rules> | undefined, b: SInt32Rules | PlainMessage<SInt32Rules> | undefined): boolean {
     return proto2.util.equals(SInt32Rules, a, b);
   }
 }
@@ -1132,10 +1079,7 @@ export class SInt64Rules extends Message<SInt64Rules> {
     return new SInt64Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SInt64Rules | PlainMessage<SInt64Rules> | undefined,
-    b: SInt64Rules | PlainMessage<SInt64Rules> | undefined
-  ): boolean {
+  static equals(a: SInt64Rules | PlainMessage<SInt64Rules> | undefined, b: SInt64Rules | PlainMessage<SInt64Rules> | undefined): boolean {
     return proto2.util.equals(SInt64Rules, a, b);
   }
 }
@@ -1241,10 +1185,7 @@ export class Fixed32Rules extends Message<Fixed32Rules> {
     return new Fixed32Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined,
-    b: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined
-  ): boolean {
+  static equals(a: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined, b: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined): boolean {
     return proto2.util.equals(Fixed32Rules, a, b);
   }
 }
@@ -1350,10 +1291,7 @@ export class Fixed64Rules extends Message<Fixed64Rules> {
     return new Fixed64Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined,
-    b: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined
-  ): boolean {
+  static equals(a: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined, b: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined): boolean {
     return proto2.util.equals(Fixed64Rules, a, b);
   }
 }
@@ -1459,10 +1397,7 @@ export class SFixed32Rules extends Message<SFixed32Rules> {
     return new SFixed32Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined,
-    b: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined
-  ): boolean {
+  static equals(a: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined, b: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined): boolean {
     return proto2.util.equals(SFixed32Rules, a, b);
   }
 }
@@ -1568,10 +1503,7 @@ export class SFixed64Rules extends Message<SFixed64Rules> {
     return new SFixed64Rules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined,
-    b: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined
-  ): boolean {
+  static equals(a: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined, b: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined): boolean {
     return proto2.util.equals(SFixed64Rules, a, b);
   }
 }
@@ -1612,10 +1544,7 @@ export class BoolRules extends Message<BoolRules> {
     return new BoolRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: BoolRules | PlainMessage<BoolRules> | undefined,
-    b: BoolRules | PlainMessage<BoolRules> | undefined
-  ): boolean {
+  static equals(a: BoolRules | PlainMessage<BoolRules> | undefined, b: BoolRules | PlainMessage<BoolRules> | undefined): boolean {
     return proto2.util.equals(BoolRules, a, b);
   }
 }
@@ -1746,108 +1675,97 @@ export class StringRules extends Message<StringRules> {
    *
    * @generated from oneof validate.StringRules.well_known
    */
-  wellKnown:
-    | {
-        /**
-         * Email specifies that the field must be a valid email address as
-         * defined by RFC 5322
-         *
-         * @generated from field: bool email = 12;
-         */
-        value: boolean;
-        case: "email";
-      }
-    | {
-        /**
-         * Hostname specifies that the field must be a valid hostname as
-         * defined by RFC 1034. This constraint does not support
-         * internationalized domain names (IDNs).
-         *
-         * @generated from field: bool hostname = 13;
-         */
-        value: boolean;
-        case: "hostname";
-      }
-    | {
-        /**
-         * Ip specifies that the field must be a valid IP (v4 or v6) address.
-         * Valid IPv6 addresses should not include surrounding square brackets.
-         *
-         * @generated from field: bool ip = 14;
-         */
-        value: boolean;
-        case: "ip";
-      }
-    | {
-        /**
-         * Ipv4 specifies that the field must be a valid IPv4 address.
-         *
-         * @generated from field: bool ipv4 = 15;
-         */
-        value: boolean;
-        case: "ipv4";
-      }
-    | {
-        /**
-         * Ipv6 specifies that the field must be a valid IPv6 address. Valid
-         * IPv6 addresses should not include surrounding square brackets.
-         *
-         * @generated from field: bool ipv6 = 16;
-         */
-        value: boolean;
-        case: "ipv6";
-      }
-    | {
-        /**
-         * Uri specifies that the field must be a valid, absolute URI as defined
-         * by RFC 3986
-         *
-         * @generated from field: bool uri = 17;
-         */
-        value: boolean;
-        case: "uri";
-      }
-    | {
-        /**
-         * UriRef specifies that the field must be a valid URI as defined by RFC
-         * 3986 and may be relative or absolute.
-         *
-         * @generated from field: bool uri_ref = 18;
-         */
-        value: boolean;
-        case: "uriRef";
-      }
-    | {
-        /**
-         * Address specifies that the field must be either a valid hostname as
-         * defined by RFC 1034 (which does not support internationalized domain
-         * names or IDNs), or it can be a valid IP (v4 or v6).
-         *
-         * @generated from field: bool address = 21;
-         */
-        value: boolean;
-        case: "address";
-      }
-    | {
-        /**
-         * Uuid specifies that the field must be a valid UUID as defined by
-         * RFC 4122
-         *
-         * @generated from field: bool uuid = 22;
-         */
-        value: boolean;
-        case: "uuid";
-      }
-    | {
-        /**
-         * WellKnownRegex specifies a common well known pattern defined as a regex.
-         *
-         * @generated from field: validate.KnownRegex well_known_regex = 24;
-         */
-        value: KnownRegex;
-        case: "wellKnownRegex";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  wellKnown: {
+    /**
+     * Email specifies that the field must be a valid email address as
+     * defined by RFC 5322
+     *
+     * @generated from field: bool email = 12;
+     */
+    value: boolean;
+    case: "email";
+  } | {
+    /**
+     * Hostname specifies that the field must be a valid hostname as
+     * defined by RFC 1034. This constraint does not support
+     * internationalized domain names (IDNs).
+     *
+     * @generated from field: bool hostname = 13;
+     */
+    value: boolean;
+    case: "hostname";
+  } | {
+    /**
+     * Ip specifies that the field must be a valid IP (v4 or v6) address.
+     * Valid IPv6 addresses should not include surrounding square brackets.
+     *
+     * @generated from field: bool ip = 14;
+     */
+    value: boolean;
+    case: "ip";
+  } | {
+    /**
+     * Ipv4 specifies that the field must be a valid IPv4 address.
+     *
+     * @generated from field: bool ipv4 = 15;
+     */
+    value: boolean;
+    case: "ipv4";
+  } | {
+    /**
+     * Ipv6 specifies that the field must be a valid IPv6 address. Valid
+     * IPv6 addresses should not include surrounding square brackets.
+     *
+     * @generated from field: bool ipv6 = 16;
+     */
+    value: boolean;
+    case: "ipv6";
+  } | {
+    /**
+     * Uri specifies that the field must be a valid, absolute URI as defined
+     * by RFC 3986
+     *
+     * @generated from field: bool uri = 17;
+     */
+    value: boolean;
+    case: "uri";
+  } | {
+    /**
+     * UriRef specifies that the field must be a valid URI as defined by RFC
+     * 3986 and may be relative or absolute.
+     *
+     * @generated from field: bool uri_ref = 18;
+     */
+    value: boolean;
+    case: "uriRef";
+  } | {
+    /**
+     * Address specifies that the field must be either a valid hostname as
+     * defined by RFC 1034 (which does not support internationalized domain
+     * names or IDNs), or it can be a valid IP (v4 or v6).
+     *
+     * @generated from field: bool address = 21;
+     */
+    value: boolean;
+    case: "address";
+  } | {
+    /**
+     * Uuid specifies that the field must be a valid UUID as defined by
+     * RFC 4122
+     *
+     * @generated from field: bool uuid = 22;
+     */
+    value: boolean;
+    case: "uuid";
+  } | {
+    /**
+     * WellKnownRegex specifies a common well known pattern defined as a regex.
+     *
+     * @generated from field: validate.KnownRegex well_known_regex = 24;
+     */
+    value: KnownRegex;
+    case: "wellKnownRegex";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   /**
    * This applies to regexes HTTP_HEADER_NAME and HTTP_HEADER_VALUE to enable
@@ -1916,10 +1834,7 @@ export class StringRules extends Message<StringRules> {
     return new StringRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: StringRules | PlainMessage<StringRules> | undefined,
-    b: StringRules | PlainMessage<StringRules> | undefined
-  ): boolean {
+  static equals(a: StringRules | PlainMessage<StringRules> | undefined, b: StringRules | PlainMessage<StringRules> | undefined): boolean {
     return proto2.util.equals(StringRules, a, b);
   }
 }
@@ -2015,38 +1930,34 @@ export class BytesRules extends Message<BytesRules> {
    *
    * @generated from oneof validate.BytesRules.well_known
    */
-  wellKnown:
-    | {
-        /**
-         * Ip specifies that the field must be a valid IP (v4 or v6) address in
-         * byte format
-         *
-         * @generated from field: bool ip = 10;
-         */
-        value: boolean;
-        case: "ip";
-      }
-    | {
-        /**
-         * Ipv4 specifies that the field must be a valid IPv4 address in byte
-         * format
-         *
-         * @generated from field: bool ipv4 = 11;
-         */
-        value: boolean;
-        case: "ipv4";
-      }
-    | {
-        /**
-         * Ipv6 specifies that the field must be a valid IPv6 address in byte
-         * format
-         *
-         * @generated from field: bool ipv6 = 12;
-         */
-        value: boolean;
-        case: "ipv6";
-      }
-    | { case: undefined; value?: undefined } = { case: undefined };
+  wellKnown: {
+    /**
+     * Ip specifies that the field must be a valid IP (v4 or v6) address in
+     * byte format
+     *
+     * @generated from field: bool ip = 10;
+     */
+    value: boolean;
+    case: "ip";
+  } | {
+    /**
+     * Ipv4 specifies that the field must be a valid IPv4 address in byte
+     * format
+     *
+     * @generated from field: bool ipv4 = 11;
+     */
+    value: boolean;
+    case: "ipv4";
+  } | {
+    /**
+     * Ipv6 specifies that the field must be a valid IPv6 address in byte
+     * format
+     *
+     * @generated from field: bool ipv6 = 12;
+     */
+    value: boolean;
+    case: "ipv6";
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   /**
    * IgnoreEmpty specifies that the validation rules of this field should be
@@ -2092,10 +2003,7 @@ export class BytesRules extends Message<BytesRules> {
     return new BytesRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: BytesRules | PlainMessage<BytesRules> | undefined,
-    b: BytesRules | PlainMessage<BytesRules> | undefined
-  ): boolean {
+  static equals(a: BytesRules | PlainMessage<BytesRules> | undefined, b: BytesRules | PlainMessage<BytesRules> | undefined): boolean {
     return proto2.util.equals(BytesRules, a, b);
   }
 }
@@ -2163,10 +2071,7 @@ export class EnumRules extends Message<EnumRules> {
     return new EnumRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: EnumRules | PlainMessage<EnumRules> | undefined,
-    b: EnumRules | PlainMessage<EnumRules> | undefined
-  ): boolean {
+  static equals(a: EnumRules | PlainMessage<EnumRules> | undefined, b: EnumRules | PlainMessage<EnumRules> | undefined): boolean {
     return proto2.util.equals(EnumRules, a, b);
   }
 }
@@ -2217,10 +2122,7 @@ export class MessageRules extends Message<MessageRules> {
     return new MessageRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MessageRules | PlainMessage<MessageRules> | undefined,
-    b: MessageRules | PlainMessage<MessageRules> | undefined
-  ): boolean {
+  static equals(a: MessageRules | PlainMessage<MessageRules> | undefined, b: MessageRules | PlainMessage<MessageRules> | undefined): boolean {
     return proto2.util.equals(MessageRules, a, b);
   }
 }
@@ -2300,10 +2202,7 @@ export class RepeatedRules extends Message<RepeatedRules> {
     return new RepeatedRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: RepeatedRules | PlainMessage<RepeatedRules> | undefined,
-    b: RepeatedRules | PlainMessage<RepeatedRules> | undefined
-  ): boolean {
+  static equals(a: RepeatedRules | PlainMessage<RepeatedRules> | undefined, b: RepeatedRules | PlainMessage<RepeatedRules> | undefined): boolean {
     return proto2.util.equals(RepeatedRules, a, b);
   }
 }
@@ -2390,10 +2289,7 @@ export class MapRules extends Message<MapRules> {
     return new MapRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: MapRules | PlainMessage<MapRules> | undefined,
-    b: MapRules | PlainMessage<MapRules> | undefined
-  ): boolean {
+  static equals(a: MapRules | PlainMessage<MapRules> | undefined, b: MapRules | PlainMessage<MapRules> | undefined): boolean {
     return proto2.util.equals(MapRules, a, b);
   }
 }
@@ -2453,10 +2349,7 @@ export class AnyRules extends Message<AnyRules> {
     return new AnyRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: AnyRules | PlainMessage<AnyRules> | undefined,
-    b: AnyRules | PlainMessage<AnyRules> | undefined
-  ): boolean {
+  static equals(a: AnyRules | PlainMessage<AnyRules> | undefined, b: AnyRules | PlainMessage<AnyRules> | undefined): boolean {
     return proto2.util.equals(AnyRules, a, b);
   }
 }
@@ -2560,10 +2453,7 @@ export class DurationRules extends Message<DurationRules> {
     return new DurationRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: DurationRules | PlainMessage<DurationRules> | undefined,
-    b: DurationRules | PlainMessage<DurationRules> | undefined
-  ): boolean {
+  static equals(a: DurationRules | PlainMessage<DurationRules> | undefined, b: DurationRules | PlainMessage<DurationRules> | undefined): boolean {
     return proto2.util.equals(DurationRules, a, b);
   }
 }
@@ -2677,10 +2567,8 @@ export class TimestampRules extends Message<TimestampRules> {
     return new TimestampRules().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TimestampRules | PlainMessage<TimestampRules> | undefined,
-    b: TimestampRules | PlainMessage<TimestampRules> | undefined
-  ): boolean {
+  static equals(a: TimestampRules | PlainMessage<TimestampRules> | undefined, b: TimestampRules | PlainMessage<TimestampRules> | undefined): boolean {
     return proto2.util.equals(TimestampRules, a, b);
   }
 }
+

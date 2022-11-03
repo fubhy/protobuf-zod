@@ -9,5 +9,9 @@ CHANGELOG.md
 **/build/
 **/coverage/
 
+# Ignore generated code
+**/generated/
+**/tests/harness/
+
 # Ignore dot files and directories
 **/.*

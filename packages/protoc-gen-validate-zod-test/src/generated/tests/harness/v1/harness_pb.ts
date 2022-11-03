@@ -3,15 +3,8 @@
 /* eslint-disable */
 /* @ts-nocheck */
 
-import type {
-  BinaryReadOptions,
-  FieldList,
-  JsonReadOptions,
-  JsonValue,
-  PartialMessage,
-  PlainMessage,
-} from "@bufbuild/protobuf";
-import { Any, Message, proto3 } from "@bufbuild/protobuf";
+import type {BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage} from "@bufbuild/protobuf";
+import {Any, Message, proto3} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.v1.TestCase
@@ -57,10 +50,8 @@ export class TestCase extends Message<TestCase> {
     return new TestCase().fromJsonString(jsonString, options);
   }
 
-  static equals(
-    a: TestCase | PlainMessage<TestCase> | undefined,
-    b: TestCase | PlainMessage<TestCase> | undefined
-  ): boolean {
+  static equals(a: TestCase | PlainMessage<TestCase> | undefined, b: TestCase | PlainMessage<TestCase> | undefined): boolean {
     return proto3.util.equals(TestCase, a, b);
   }
 }
+
