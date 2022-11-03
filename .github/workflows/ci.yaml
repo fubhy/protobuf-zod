@@ -48,10 +48,10 @@ jobs:
             ${{ runner.os }}-turbocache-
 
       - name: Lint
-        run: pnpm turbo run lint --cache-dir .turbocache
+        run: pnpm prettier && pnpm turbo run lint --cache-dir .turbocache
 
       - name: Typecheck
         run: pnpm turbo run typecheck --cache-dir .turbocache
 
       - name: Test
-        run: pnpm turbo run test --cache-dir .turbocache
+        run: pnpm test
