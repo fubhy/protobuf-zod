@@ -72,6 +72,7 @@ importers:
       '@bufbuild/protoc-gen-es': ^0.2.1
       '@bufbuild/protoplugin': ^0.2.1
       protobuf-zod: workspace:*
+      protobuf-zod-vitest: workspace:*
       zod: ^3.19.1
     dependencies:
       '@bufbuild/protobuf': 0.2.1
@@ -79,6 +80,7 @@ importers:
     devDependencies:
       '@bufbuild/protoc-gen-es': 0.2.1_@bufbuild+protobuf@0.2.1
       protobuf-zod: link:../protobuf-zod
+      protobuf-zod-vitest: link:../protobuf-zod-vitest
       zod: 3.19.1
 
   packages/protoc-gen-validate-zod-test:
