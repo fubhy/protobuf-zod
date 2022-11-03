@@ -5,8 +5,5 @@
     "outDir": "dist",
     // Necessary for lazy message schemas using `z.lazy`,
     "noImplicitAny": false
-  },
-  "ts-node": {
-    "transpileOnly": true
   }
 }

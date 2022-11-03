@@ -1,38 +1,15 @@
-import {
-  BinaryReadOptions,
-  JsonReadOptions,
-  JsonValue,
-  MessageType,
-  PartialMessage,
-  PlainMessage,
-  proto3,
-  Value,
-} from "@bufbuild/protobuf";
-import { TestCase } from "./generated/tests/harness/v1/harness_pb.js";
+import { Any, IMessageTypeRegistry, JsonValue } from "@bufbuild/protobuf";
+import { TestCase } from "./generated/harness_pb.js";
 import fs from "node:fs";
 
 export interface TestCaseJson {
   test: TestCase;
   type: string;
   value: string;
+  registry: Set<string>;
 }
 
-function readTestCase(test: TestCase): TestCaseJson {
-  if (test.message?.value === undefined) {
-    throw new Error("Missing message");
-  }
-
-  const type = test.message.typeUrl.replace("type.googleapis.com/", "");
-  const value = Value.fromBinary(test.message.value).toJsonString();
-
-  return {
-    type,
-    test,
-    value,
-  };
-}
-
-export function readTestCases(files: string[]): TestCaseJson[] {
+export function readTestCases(files: string[], types: IMessageTypeRegistry): TestCaseJson[] {
   const cases: TestCaseJson[] = [];
 
   for (const input of files) {
@@ -43,57 +20,54 @@ export function readTestCases(files: string[]): TestCaseJson[] {
         continue;
       }
 
-      // Unmarshal the test case using a fake registry that simply produces a generic Value message for all messages.
-      const test = TestCase.fromJson(JSON.parse(line), {
-        typeRegistry: {
-          findMessage,
-        },
-      });
+      const test = TestCase.fromJson(JSON.parse(line), { typeRegistry: types });
+      if (test.message?.value === undefined) {
+        throw new Error("Missing message value");
+      }
 
-      // In absence of the full registry, simply parse the json using the generic type.googleapis.com/google.protobuf.Value.
-      cases.push(readTestCase(test));
+      const message = unpackAny(test.message, types);
+      const json = message.toJson({ typeRegistry: types });
+      const type = message.getType().typeName;
+      const registry = new Set(collectAnyTypes(json));
+
+      cases.push({
+        type,
+        test,
+        registry,
+        value: JSON.stringify(json),
+      });
     }
   }
 
   return cases;
 }
 
-const registry = new Map<string, MessageType>();
+// NOTE: Limits the list of types to only those present in the message payload.
+function collectAnyTypes(json: JsonValue): string[] {
+  const types: string[] = [];
 
-function findMessage(name: string) {
-  let type = registry.get(name);
-
-  if (type === undefined) {
-    type = class ValueFacade extends Value {
-      static override readonly typeName = name as any;
-
-      constructor(data?: PartialMessage<ValueFacade>) {
-        super();
-        proto3.util.initPartial(data, this);
+  if (json !== null && Array.isArray(json)) {
+    for (const item of json) {
+      types.push(...collectAnyTypes(item));
+    }
+  } else if (json !== null && typeof json === "object") {
+    for (const [key, value] of Object.entries(json)) {
+      if (key === "@type" && typeof value === "string") {
+        types.push(value.replace("type.googleapis.com/", ""));
+      } else if (typeof value === "object" && value !== null) {
+        types.push(...collectAnyTypes(value));
       }
-
-      static override fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ValueFacade {
-        return new ValueFacade().fromBinary(bytes, options);
-      }
-
-      static override fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ValueFacade {
-        return new ValueFacade().fromJson(jsonValue, options);
-      }
-
-      static override fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ValueFacade {
-        return new ValueFacade().fromJsonString(jsonString, options);
-      }
-
-      static override equals(
-        a: ValueFacade | PlainMessage<ValueFacade> | undefined,
-        b: ValueFacade | PlainMessage<ValueFacade> | undefined
-      ): boolean {
-        return proto3.util.equals(ValueFacade, a, b);
-      }
-    };
-
-    registry.set(name, type);
+    }
   }
 
-  return type;
+  return types;
+}
+
+// TODO: This would be useful in @bufbuild/protobuf.
+function unpackAny(any: Any, registry: IMessageTypeRegistry) {
+  const type = any.typeUrl.replace("type.googleapis.com/", "");
+  const message = registry.findMessage(type);
+  const instance = new message!();
+  any.unpackTo(instance);
+  return instance;
 }

@@ -4,8 +4,5 @@
   "compilerOptions": {
     "outDir": "dist",
     "declaration": true
-  },
-  "ts-node": {
-    "transpileOnly": true
   }
 }
