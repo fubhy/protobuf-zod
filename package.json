@@ -13,7 +13,7 @@
     "format": "pnpm prettier --write && turbo run format",
     "lint": "pnpm prettier && turbo run lint",
     "typecheck": "turbo run typecheck",
-    "watch": "nodemon --watch packages/protoc-gen-validate-zod/src --ext ts --exec \"pnpm cases\"",
+    "watch": "nodemon --watch packages/protoc-gen-validate-zod/src --ext ts --exec \"pnpm codegen:cases\"",
     "test": "vitest --run",
     "dev": "vitest --ui"
   },
@@ -25,7 +25,6 @@
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "@vitest/ui": "^0.24.5",
-    "concurrently": "^7.5.0",
     "eslint": "^8.26.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",

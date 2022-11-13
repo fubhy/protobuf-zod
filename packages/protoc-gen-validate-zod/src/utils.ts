@@ -120,6 +120,9 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       [ScalarType.SFIXED64]: runtime("sfixed64"),
       [ScalarType.FIXED64]: runtime("fixed64"),
     },
+    wkt: {
+      timestamp: runtime("timestamp"),
+    },
     validate: {
       bytesMatches: (pattern: string) => refine("bytesMatches", regexp(pattern)),
       bytesEquals: (value: Uint8Array) => refine("bytesEquals", value),
@@ -163,6 +166,7 @@ export function createGeneratorUtils(f: GeneratedFileBase) {
       floatEquals: (value: number) => refine("floatEquals", value),
       floatIsIn: (list: number[]) => refine("floatIsIn", array(list)),
       floatIsNotIn: (list: number[]) => refine("floatIsNotIn", array(list)),
+      timestampIsConst: (seconds: bigint, nanos: number) => refine("timestampIsConst", args([seconds, nanos])),
     },
   };
 }

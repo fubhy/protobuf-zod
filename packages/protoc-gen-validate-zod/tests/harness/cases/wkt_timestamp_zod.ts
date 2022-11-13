@@ -4,6 +4,8 @@
 /* @ts-nocheck */
 
 import {z} from "zod";
+import {timestamp, timestampIsConst} from "protobuf-zod";
+import {protoInt64} from "@bufbuild/protobuf";
 
 /**
  * @generated from message tests.harness.cases.TimestampNone
@@ -12,7 +14,7 @@ export const TimestampNoneSchema = z.object({
   /**
    * @generated from field: google.protobuf.Timestamp val = 1;
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -23,7 +25,7 @@ export const TimestampRequiredSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"required":true}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -34,7 +36,7 @@ export const TimestampConstSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"const":"1970-01-01T00:00:03Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.refine(timestampIsConst(protoInt64.parse("3"), 0)).nullish(),
 });
 
 /**
@@ -45,7 +47,7 @@ export const TimestampLTSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lt":"1970-01-01T00:00:00Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -56,7 +58,7 @@ export const TimestampLTESchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lte":"1970-01-01T00:00:01Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -67,7 +69,7 @@ export const TimestampGTSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"gt":"1970-01-01T00:00:00.000001Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -78,7 +80,7 @@ export const TimestampGTESchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"gte":"1970-01-01T00:00:00.001Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -89,7 +91,7 @@ export const TimestampGTLTSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lt":"1970-01-01T00:00:01Z","gt":"1970-01-01T00:00:00Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -100,7 +102,7 @@ export const TimestampExLTGTSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lt":"1970-01-01T00:00:00Z","gt":"1970-01-01T00:00:01Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -111,7 +113,7 @@ export const TimestampGTELTESchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lte":"1970-01-01T01:00:00Z","gte":"1970-01-01T00:01:00Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -122,7 +124,7 @@ export const TimestampExGTELTESchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"lte":"1970-01-01T00:01:00Z","gte":"1970-01-01T01:00:00Z"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -133,7 +135,7 @@ export const TimestampLTNowSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"ltNow":true}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -144,7 +146,7 @@ export const TimestampGTNowSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"gtNow":true}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -155,7 +157,7 @@ export const TimestampWithinSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"within":"3600s"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -166,7 +168,7 @@ export const TimestampLTNowWithinSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"ltNow":true,"within":"3600s"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 
 /**
@@ -177,6 +179,6 @@ export const TimestampGTNowWithinSchema = z.object({
    * @generated from field: google.protobuf.Timestamp val = 1;
    * @validate  {"timestamp":{"gtNow":true,"within":"3600s"}}
    */
-  val: z.any().nullish(),
+  val: timestamp.nullish(),
 });
 

@@ -3,6 +3,7 @@ import isEmail from "validator/es/lib/isEmail";
 import isIP from "validator/es/lib/isIP";
 import isURL from "validator/es/lib/isURL";
 import isUUID from "validator/es/lib/isUUID";
+import { Timestamp } from "@bufbuild/protobuf";
 
 function parseOrReport<TSchema extends z.ZodTypeAny>(
   value: unknown,
@@ -78,6 +79,11 @@ export const FLOAT32_MIN = -3.4e38;
 export const FLOAT64_MAX = 1.7e308;
 export const FLOAT64_MIN = -1.7e308;
 
+export const numberish = z
+  .number()
+  .or(z.string().regex(/^-?[0-9]+$/))
+  .transform((value) => Number(value));
+
 export const bigintish = z
   .bigint()
   .or(z.union([z.string().regex(/^-?[0-9]+$/), z.number().int()]).transform((value) => BigInt(value)));
@@ -105,6 +111,11 @@ export const sfixed64 = int64;
 export const fixed64 = uint64;
 
 export const bytes = z.instanceof(Uint8Array);
+
+export const timestamp = z.object({
+  nanos: int32,
+  seconds: int64,
+});
 
 const encoder = new TextEncoder();
 function toBytes(value: Uint8Array | string) {
@@ -388,4 +399,8 @@ export function stringIsHttpHeaderValue(strict = true) {
     // eslint-disable-next-line no-control-regex
     return /^[^\u0000\u000A\u000D]*$/.test(value);
   };
+}
+
+export function timestampIsConst(seconds: bigint, nanos: number) {
+  return (value: Timestamp) => value.seconds === seconds && value.nanos === nanos;
 }

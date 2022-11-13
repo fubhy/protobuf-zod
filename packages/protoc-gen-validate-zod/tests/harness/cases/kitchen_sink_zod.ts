@@ -5,7 +5,7 @@
 
 import {z} from "zod";
 import {ComplexTestEnum} from "./kitchen_sink_pb.js";
-import {bytes, bytesEquals, double, float, int32, isIn, map, numberGt, numberLt, oneof, sint32} from "protobuf-zod";
+import {bytes, bytesEquals, double, float, int32, isIn, map, numberGt, numberLt, oneof, sint32, timestamp} from "protobuf-zod";
 
 /**
  * @generated from enum tests.harness.cases.ComplexTestEnum
@@ -49,7 +49,7 @@ export const ComplexTestMsgSchema = z.object({
    * @generated from field: google.protobuf.Timestamp ts_val = 7;
    * @validate  {"timestamp":{"gt":"1970-01-01T00:00:07Z"}}
    */
-  tsVal: z.any().nullish(),
+  tsVal: timestamp.nullish(),
   /**
    * @generated from field: tests.harness.cases.ComplexTestMsg another = 8;
    */
@@ -81,7 +81,7 @@ export const ComplexTestMsgSchema = z.object({
    * @generated from field: repeated google.protobuf.Timestamp rep_ts_val = 13;
    * @validate  {"repeated":{"items":{"timestamp":{"gte":"1970-01-01T00:00:00.001Z"}}}}
    */
-  repTsVal: z.any().nullish().array(),
+  repTsVal: timestamp.nullish().array(),
   /**
    * @generated from field: map<sint32, string> map_val = 14;
    * @validate  {"map":{"keys":{"sint32":{"lt":0}}}}

@@ -38,8 +38,5 @@
 
     // Completeness
     "skipLibCheck": true // skip all type checks for .d.ts files
-  },
-  "ts-node": {
-    "transpileOnly": true
   }
 }

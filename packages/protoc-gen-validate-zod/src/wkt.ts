@@ -3,6 +3,8 @@ import { getMapSchema } from "./map.js";
 import { getScalarSchema } from "./scalar.js";
 import { GeneratedFile } from "./utils.js";
 import { FieldRules } from "./generated/validate_pb.js";
+import { hasRulesFor } from "./rules.js";
+import { Printable } from "@bufbuild/protoplugin/ecmascript";
 
 // TODO: This should probably be exported from @bufbuild/protobuf
 export type DescWkt = NonNullable<ReturnType<typeof codegenInfo.reifyWkt>>;
@@ -11,9 +13,20 @@ export function getWktSchema(f: GeneratedFile, wkt: DescWkt, rules?: FieldRules)
   switch (wkt.typeName) {
     case "google.protobuf.Any":
       return [f.zod, ".any()"];
-    case "google.protobuf.Timestamp":
-      // TODO: Implement
-      return [f.zod, ".any()"];
+    case "google.protobuf.Timestamp": {
+      const typing: Printable[] = [f.wkt.timestamp];
+      if (hasRulesFor("timestamp", rules)) {
+        if (rules.type.value.gt !== undefined) {
+          typing.push(f.validate.timestampIsConst(rules.type.value.const.seconds, rules.type.value.const.nanos));
+        }
+
+        if (rules.type.value.const !== undefined) {
+          typing.push(f.validate.timestampIsConst(rules.type.value.const.seconds, rules.type.value.const.nanos));
+        }
+      }
+
+      return typing;
+    }
     case "google.protobuf.Duration":
       // TODO: Implement
       return [f.zod, ".any()"];
